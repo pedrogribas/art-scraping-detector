@@ -1,0 +1,86 @@
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib60/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ---------------------------------------------------------------------------
+# Ambientes virtuais
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---------------------------------------------------------------------------
+# Variáveis de ambiente e credenciais (NUNCA versionar)
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# ---------------------------------------------------------------------------
+# Dataset (não versionado: volume alto e direitos autorais de terceiros).
+# Apenas os marcadores .gitkeep preservam a estrutura de pastas no Git.
+# ---------------------------------------------------------------------------
+data/*
+!data/raw/
+!data/processed/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ---------------------------------------------------------------------------
+# Logs e artefatos de execução
+# ---------------------------------------------------------------------------
+logs/
+*.log
+manifest.json
+
+# ---------------------------------------------------------------------------
+# Testes e cobertura
+# ---------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ---------------------------------------------------------------------------
+# Jupyter
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# IDEs e sistema operacional
+# ---------------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
