@@ -32,7 +32,7 @@ _MAGIC_SIGNATURES: tuple[tuple[bytes, str], ...] = (
     (b"\x89PNG\r\n\x1a\n", ".png"),
 )
 
-_FILENAME_RE = re.compile(r"^arte_[a-z0-9]+_(\d+)\.[a-z]+$", re.IGNORECASE)
+_FILENAME_RE = re.compile(r"^(?P<fonte>[a-z0-9]+)_(?P<indice>\d+)\.[a-z]+$", re.IGNORECASE)
 
 
 def detect_extension(conteudo: bytes) -> str | None:
@@ -57,7 +57,8 @@ class Manifest:
         self.caminho = caminho or config.MANIFEST_PATH
         self.images: dict[str, dict[str, Any]] = {}
         self.seen_urls: set[str] = set()
-        self.next_index: int = 1
+        # Cada fonte tem sua própria numeração: metmuseum_0001, safebooru_0001...
+        self.next_index: dict[str, int] = {}
         self._load()
 
     def _load(self) -> None:
@@ -72,27 +73,36 @@ class Manifest:
 
         self.images = dados.get("images", {})
         self.seen_urls = set(dados.get("seen_urls", []))
-        self.next_index = int(dados.get("next_index", len(self.images) + 1))
+        indices = dados.get("next_index", {})
+        if isinstance(indices, dict):
+            self.next_index = {str(k): int(v) for k, v in indices.items()}
         logger.info(
             "Manifesto carregado: %d imagem(ns) já registrada(s).", len(self.images)
         )
 
     def sync_with_disk(self, diretorio: Path) -> None:
-        """Alinha o contador sequencial com os arquivos presentes em disco.
+        """Alinha os contadores sequenciais com os arquivos presentes em disco.
 
         Protege contra manifesto apagado manualmente ou arquivos copiados de
         outra execução, evitando sobrescrever imagens já coletadas.
         """
-        maior = 0
-        for arquivo in diretorio.glob("arte_*"):
+        maiores: dict[str, int] = {}
+        for arquivo in diretorio.iterdir():
             achado = _FILENAME_RE.match(arquivo.name)
-            if achado:
-                maior = max(maior, int(achado.group(1)))
-        if maior >= self.next_index:
-            logger.info(
-                "Contador ajustado pelo disco: próximo índice = %d.", maior + 1
-            )
-            self.next_index = maior + 1
+            if not achado:
+                continue
+            fonte = achado.group("fonte").lower()
+            indice = int(achado.group("indice"))
+            maiores[fonte] = max(maiores.get(fonte, 0), indice)
+
+        for fonte, maior in maiores.items():
+            if maior >= self.next_index.get(fonte, 1):
+                self.next_index[fonte] = maior + 1
+                logger.info(
+                    "Contador de '%s' ajustado pelo disco: próximo índice = %d.",
+                    fonte,
+                    maior + 1,
+                )
 
     @property
     def total_saved(self) -> int:
@@ -128,10 +138,10 @@ class Manifest:
             **resultado.candidate.as_metadata(),
         }
 
-    def take_index(self) -> int:
-        """Reserva e devolve o próximo número sequencial."""
-        indice = self.next_index
-        self.next_index += 1
+    def take_index(self, fonte: str) -> int:
+        """Reserva e devolve o próximo número sequencial da fonte."""
+        indice = self.next_index.get(fonte, 1)
+        self.next_index[fonte] = indice + 1
         return indice
 
     def save(self) -> None:
@@ -140,7 +150,7 @@ class Manifest:
             "generated_at": time.strftime("%Y-%m-%d %H:%M:%S"),
             "total_images": len(self.images),
             "counts_by_source": self.counts_by_source(),
-            "next_index": self.next_index,
+            "next_index": dict(sorted(self.next_index.items())),
             "seen_urls": sorted(self.seen_urls),
             "images": self.images,
         }
@@ -184,7 +194,9 @@ class ImageDownloader:
 
         self.manifest.mark_url(url)
 
-        conteudo = self._fetch_bytes(url, referer=candidato.page_url)
+        conteudo = self._fetch_bytes(
+            url, referer=candidato.page_url, extras=candidato.headers
+        )
         if conteudo is None:
             return DownloadResult.fail(candidato, "falha_de_rede")
 
@@ -202,8 +214,8 @@ class ImageDownloader:
         if self.manifest.is_known_hash(sha256):
             return DownloadResult.fail(candidato, "conteudo_duplicado")
 
-        indice = self.manifest.take_index()
-        nome = f"{config.FILENAME_PREFIX}_{candidato.source}_{indice:04d}{extensao}"
+        indice = self.manifest.take_index(candidato.source)
+        nome = f"{candidato.source}_{indice:0{config.FILENAME_PADDING}d}{extensao}"
         caminho = self.destino / nome
 
         try:
@@ -220,12 +232,12 @@ class ImageDownloader:
     def download_many(
         self, candidatos: Iterable[ImageCandidate]
     ) -> Iterable[DownloadResult]:
-        """Baixa uma sequência de candidatos, respeitando o delay entre requisições."""
+        """Baixa uma sequência de candidatos, respeitando o delay de cada fonte."""
         for candidato in candidatos:
             resultado = self.download(candidato)
             if resultado.success or resultado.reason == "falha_de_rede":
                 # Só espera quando houve tráfego real de rede.
-                config.polite_sleep(0.4, 1.2)
+                config.polite_sleep(*config.get_download_delay(candidato.source))
             yield resultado
 
     def close(self) -> None:
@@ -238,15 +250,27 @@ class ImageDownloader:
 
     # -- Interno ------------------------------------------------------------
 
-    def _fetch_bytes(self, url: str, referer: str = "") -> bytes | None:
-        """Baixa o binário com retentativas e backoff exponencial."""
+    def _fetch_bytes(
+        self, url: str, referer: str = "", extras: dict[str, str] | None = None
+    ) -> bytes | None:
+        """Baixa o binário com retentativas e backoff exponencial.
+
+        Args:
+            extras: headers exigidos pela fonte — por exemplo, o
+                ``AIC-User-Agent`` sem o qual o servidor IIIF do Art Institute
+                responde HTTP 403.
+        """
         for tentativa in range(1, config.MAX_RETRIES + 1):
             try:
+                cabecalhos = config.get_headers(
+                    referer=referer or None, accept="image/*,*/*;q=0.8"
+                )
+                if extras:
+                    cabecalhos.update(extras)
+
                 resposta = self.session.get(
                     url,
-                    headers=config.get_headers(
-                        referer=referer or None, accept="image/*,*/*;q=0.8"
-                    ),
+                    headers=cabecalhos,
                     timeout=config.REQUEST_TIMEOUT,
                     stream=True,
                 )

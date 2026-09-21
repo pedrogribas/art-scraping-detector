@@ -1,12 +1,23 @@
 """Orquestrador do pipeline de coleta da Amostra de Controle.
 
-Consome os módulos de fonte (Reddit, DeviantArt e web genérico/Unsplash),
-unifica o download em um único fluxo com barra de progresso e encerra
-automaticamente ao atingir a meta de imagens salvas em ``data/raw``.
+Executa os módulos de coleta de forma balanceada: cada um recebe uma cota
+proporcional da meta (``config.SOURCE_WEIGHTS``) e é acompanhado por sua
+própria barra de progresso.
+
+A execução tem duas rodadas:
+
+1. **Rodada balanceada** — cada módulo coleta até a sua cota. Módulos
+   indisponíveis (sem credencial, fora do ar) simplesmente não produzem.
+2. **Rodada de compensação** — se a meta não foi atingida, o que faltou é
+   redistribuído entre os módulos que ainda têm material, incluindo as fontes
+   de reserva. Como os geradores são preguiçosos e preservados entre as
+   rodadas, a coleta continua da página onde havia parado, sem repetir
+   requisições já feitas.
 
 Uso:
     python -m src.scraper.main_scraper
-    python -m src.scraper.main_scraper --target 1500 --sources reddit deviantart
+    python -m src.scraper.main_scraper --target 5000
+    python -m src.scraper.main_scraper --sources museum booru --target 1000
     python -m src.scraper.main_scraper --dry-run --target 20
 
 Autor: Pedro Garcia Ribas - TCC Sistemas de Informação (IFMG Sabará)
@@ -21,48 +32,162 @@ from typing import Callable, Iterator
 
 from tqdm import tqdm
 
-from . import config, deviantart_scraper, reddit_scraper, web_scraper
+from . import (
+    booru_scraper,
+    config,
+    museum_api_scraper,
+    pexels_scraper,
+    rss_scraper,
+    web_scraper,
+)
 from .downloader import ImageDownloader
 from .models import ImageCandidate
 
 logger = config.get_logger("scraper.main")
 
-# Ordem de prioridade das fontes: da mais estável para a mais suscetível a bloqueio.
-# A fonte "web" cobre Unsplash e Openverse (ver web_scraper.collect).
-SOURCES: dict[str, Callable[[int | None], Iterator[ImageCandidate]]] = {
-    "reddit": reddit_scraper.collect,
-    "deviantart": deviantart_scraper.collect,
+Coletor = Callable[[int | None], Iterator[ImageCandidate]]
+
+# Módulos de coleta disponíveis. A fonte "web" (Openverse/Unsplash) é reserva:
+# só entra na rodada de compensação, conforme config.RESERVE_SOURCES.
+SOURCES: dict[str, Coletor] = {
+    "museum": museum_api_scraper.collect,
+    "booru": booru_scraper.collect,
+    "pexels": pexels_scraper.collect,
+    "rss": rss_scraper.collect,
     "web": web_scraper.collect,
 }
 
-# Candidatos avaliados por fonte para cada imagem ainda faltante. Compensa
-# duplicatas, links quebrados e arquivos reprovados na validação.
-OVERSAMPLING_FACTOR = 4
+DESCRICOES: dict[str, str] = {
+    "museum": "Met + Art Institute of Chicago",
+    "booru": "Safebooru",
+    "pexels": "Pexels",
+    "rss": "DeviantArt + Flickr (RSS)",
+    "web": "Openverse / Unsplash (reserva)",
+}
+
+# Candidatos consecutivos rejeitados que fazem um módulo ser considerado
+# improdutivo (links quebrados, duplicatas ou arquivos fora dos critérios).
+MAX_FALHAS_CONSECUTIVAS = 150
 
 
-def iter_candidates(fontes: list[str], faltantes: int) -> Iterator[ImageCandidate]:
-    """Encadeia os geradores das fontes selecionadas em um único fluxo.
+class SourceRunner:
+    """Mantém o estado de um módulo de coleta ao longo das rodadas.
 
-    Uma fonte que falhe por completo (credenciais ausentes, site fora do ar)
-    apenas registra o erro; as demais seguem normalmente.
+    O gerador é criado uma única vez e preservado entre as rodadas: retomá-lo
+    continua da página em que parou, em vez de refazer as requisições iniciais.
     """
-    for nome in fontes:
-        coletor = SOURCES.get(nome)
-        if coletor is None:
-            logger.warning("Fonte desconhecida ignorada: '%s'.", nome)
-            continue
 
-        logger.info("=" * 70)
-        logger.info("Iniciando coleta na fonte: %s", nome.upper())
-        logger.info("=" * 70)
+    def __init__(self, nome: str, coletor: Coletor) -> None:
+        self.nome = nome
+        self._coletor = coletor
+        self._gerador: Iterator[ImageCandidate] | None = None
+        self.exhausted = False
+        self.saved = 0
+        self.evaluated = 0
 
+    @property
+    def gerador(self) -> Iterator[ImageCandidate]:
+        """Instancia o gerador na primeira chamada e o reaproveita depois."""
+        if self._gerador is None:
+            self._gerador = self._coletor(None)
+        return self._gerador
+
+    def next_candidate(self) -> ImageCandidate | None:
+        """Obtém o próximo candidato, ou ``None`` se a fonte se esgotou."""
+        if self.exhausted:
+            return None
         try:
-            yield from coletor(faltantes * OVERSAMPLING_FACTOR)
+            return next(self.gerador)
+        except StopIteration:
+            self.exhausted = True
+            return None
         except KeyboardInterrupt:
             raise
-        except Exception as erro:  # noqa: BLE001 - isola a falha de uma fonte
-            logger.error("Fonte '%s' interrompida por erro: %s", nome, erro)
-            continue
+        except Exception as erro:  # noqa: BLE001 - isola a falha do módulo
+            logger.error("Módulo '%s' interrompido por erro: %s", self.nome, erro)
+            self.exhausted = True
+            return None
+
+
+def coletar_modulo(
+    runner: SourceRunner,
+    downloader: ImageDownloader,
+    cota: int,
+    meta_global: int,
+    descartes: dict[str, int],
+) -> int:
+    """Coleta até ``cota`` imagens de um módulo, com barra de progresso própria.
+
+    Returns:
+        Quantidade de imagens efetivamente salvas nesta chamada.
+    """
+    if cota <= 0 or runner.exhausted:
+        return 0
+
+    logger.info("-" * 70)
+    logger.info(
+        "Módulo '%s' (%s) — cota desta rodada: %d imagem(ns).",
+        runner.nome,
+        DESCRICOES.get(runner.nome, runner.nome),
+        cota,
+    )
+
+    salvas = 0
+    falhas_seguidas = 0
+    barra = tqdm(
+        total=cota,
+        unit="img",
+        desc=f"{runner.nome:>8}",
+        ncols=100,
+        leave=True,
+        file=sys.stdout,
+    )
+
+    try:
+        while salvas < cota:
+            if downloader.manifest.total_saved >= meta_global:
+                break
+
+            candidato = runner.next_candidate()
+            if candidato is None:
+                logger.info("Módulo '%s' não tem mais candidatos.", runner.nome)
+                break
+
+            runner.evaluated += 1
+            resultado = downloader.download(candidato)
+
+            if resultado.success:
+                salvas += 1
+                runner.saved += 1
+                falhas_seguidas = 0
+                barra.update(1)
+                barra.set_postfix_str(resultado.filename)
+
+                # Salvamento periódico: uma interrupção não perde o progresso.
+                if downloader.manifest.total_saved % 50 == 0:
+                    downloader.manifest.save()
+
+                config.polite_sleep(*config.get_download_delay(candidato.source))
+            else:
+                descartes[resultado.reason] = descartes.get(resultado.reason, 0) + 1
+                falhas_seguidas += 1
+
+                if resultado.reason == "falha_de_rede":
+                    config.polite_sleep(0.2, 0.6)
+
+                if falhas_seguidas >= MAX_FALHAS_CONSECUTIVAS:
+                    logger.warning(
+                        "Módulo '%s': %d candidatos seguidos descartados. "
+                        "Passando para o próximo módulo.",
+                        runner.nome,
+                        falhas_seguidas,
+                    )
+                    break
+    finally:
+        barra.close()
+
+    logger.info("Módulo '%s': %d imagem(ns) salva(s) nesta rodada.", runner.nome, salvas)
+    return salvas
 
 
 def run(
@@ -70,22 +195,22 @@ def run(
     fontes: list[str] | None = None,
     dry_run: bool = False,
 ) -> int:
-    """Executa a coleta até atingir a meta de imagens salvas.
+    """Executa a coleta balanceada até atingir a meta.
 
     Args:
         target: total de imagens desejado em ``data/raw`` (inclui as já existentes).
-        fontes: fontes a utilizar. Padrão: todas, na ordem de prioridade.
+        fontes: módulos a utilizar. Padrão: todos.
         dry_run: se ``True``, apenas lista os candidatos, sem baixar nada.
 
     Returns:
         Código de saída: ``0`` se a meta foi atingida, ``1`` caso contrário.
     """
     config.ensure_directories()
-    fontes = fontes or list(SOURCES.keys())
+    modulos = fontes or list(SOURCES.keys())
     inicio = time.time()
 
     if dry_run:
-        return _run_dry(fontes, target)
+        return _run_dry(modulos, target)
 
     downloader = ImageDownloader()
     ja_salvas = downloader.manifest.total_saved
@@ -99,72 +224,118 @@ def run(
         downloader.close()
         return 0
 
-    estatisticas: dict[str, int] = {}
-    avaliados = 0
+    runners = {nome: SourceRunner(nome, SOURCES[nome]) for nome in modulos if nome in SOURCES}
+    for nome in modulos:
+        if nome not in SOURCES:
+            logger.warning("Módulo desconhecido ignorado: '%s'.", nome)
 
-    barra = tqdm(
-        total=target,
-        initial=ja_salvas,
-        unit="img",
-        desc="Coletando",
-        ncols=100,
-        file=sys.stdout,
-    )
+    cotas = config.build_quotas(faltantes, list(runners.keys()))
+    logger.info("=" * 70)
+    logger.info("DISTRIBUIÇÃO DAS COTAS")
+    for nome, cota in cotas.items():
+        if cota:
+            logger.info("  %-8s %5d  (%s)", nome, cota, DESCRICOES.get(nome, nome))
+    reservas = [n for n in runners if n in config.RESERVE_SOURCES]
+    if reservas:
+        logger.info("  reserva: %s (acionada só se faltar imagem)", ", ".join(reservas))
+    logger.info("=" * 70)
+
+    descartes: dict[str, int] = {}
 
     try:
-        for candidato in iter_candidates(fontes, faltantes):
+        # Rodada 1: cada módulo até a sua cota.
+        for nome, runner in runners.items():
             if downloader.manifest.total_saved >= target:
                 break
+            coletar_modulo(runner, downloader, cotas.get(nome, 0), target, descartes)
+            downloader.manifest.save()
 
-            avaliados += 1
-            resultado = downloader.download(candidato)
+        # Rodada 2: redistribui o que faltou entre os módulos ainda produtivos.
+        rodada = 0
+        while downloader.manifest.total_saved < target:
+            disponiveis = [r for r in runners.values() if not r.exhausted]
+            if not disponiveis:
+                logger.warning("Todas as fontes se esgotaram antes de atingir a meta.")
+                break
 
-            if resultado.success:
-                barra.update(1)
-                barra.set_postfix_str(f"{candidato.source}: {resultado.filename}")
-                # Salvamento periódico: uma interrupção não perde o progresso.
-                if downloader.manifest.total_saved % 50 == 0:
-                    downloader.manifest.save()
-                config.polite_sleep(0.3, 1.0)
-            else:
-                estatisticas[resultado.reason] = estatisticas.get(resultado.reason, 0) + 1
-                if resultado.reason == "falha_de_rede":
-                    config.polite_sleep(0.2, 0.6)
+            rodada += 1
+            restante = target - downloader.manifest.total_saved
+            logger.info("=" * 70)
+            logger.info(
+                "RODADA DE COMPENSAÇÃO %d — faltam %d imagem(ns) para a meta.",
+                rodada,
+                restante,
+            )
+            logger.info("=" * 70)
+
+            por_modulo = max(restante // len(disponiveis), 1)
+            progresso_rodada = 0
+
+            for runner in disponiveis:
+                if downloader.manifest.total_saved >= target:
+                    break
+                cota = min(por_modulo, target - downloader.manifest.total_saved)
+                progresso_rodada += coletar_modulo(
+                    runner, downloader, cota, target, descartes
+                )
+                downloader.manifest.save()
+
+            if progresso_rodada == 0:
+                logger.warning("Nenhuma imagem nova nesta rodada. Encerrando.")
+                break
 
     except KeyboardInterrupt:
         logger.warning("Coleta interrompida pelo usuário (Ctrl+C).")
     except Exception as erro:  # noqa: BLE001 - garante o relatório final
         logger.exception("Erro inesperado no pipeline: %s", erro)
     finally:
-        barra.close()
         downloader.close()
 
     total = downloader.manifest.total_saved
     _relatorio_final(
         total=total,
         meta=target,
-        avaliados=avaliados,
+        runners=runners,
         por_fonte=downloader.manifest.counts_by_source(),
-        descartes=estatisticas,
+        descartes=descartes,
         duracao=time.time() - inicio,
     )
     return 0 if total >= target else 1
 
 
-def _run_dry(fontes: list[str], target: int) -> int:
+def _run_dry(modulos: list[str], target: int) -> int:
     """Lista candidatos sem baixá-los — útil para validar uma fonte nova."""
     logger.info("MODO DRY-RUN: nenhum arquivo será salvo.")
     contagem: dict[str, int] = {}
+    ativos = [nome for nome in modulos if nome in SOURCES]
+    if not ativos:
+        logger.error("Nenhum módulo válido informado.")
+        return 1
+
+    por_modulo = max(target // len(ativos), 1)
 
     try:
-        for indice, candidato in enumerate(iter_candidates(fontes, target), start=1):
-            contagem[candidato.source] = contagem.get(candidato.source, 0) + 1
-            logger.info("[%04d] %s | %s", indice, candidato.source, candidato.url[:110])
-            if indice >= target:
-                break
+        for nome in ativos:
+            logger.info("-" * 70)
+            logger.info("Módulo '%s' (%s)", nome, DESCRICOES.get(nome, nome))
+            runner = SourceRunner(nome, SOURCES[nome])
+
+            for indice in range(1, por_modulo + 1):
+                candidato = runner.next_candidate()
+                if candidato is None:
+                    break
+                contagem[candidato.source] = contagem.get(candidato.source, 0) + 1
+                logger.info(
+                    "[%s %03d] %-11s %s",
+                    nome,
+                    indice,
+                    candidato.source,
+                    candidato.url[:95],
+                )
     except KeyboardInterrupt:
         logger.warning("Dry-run interrompido pelo usuário.")
 
+    logger.info("-" * 70)
     logger.info("Candidatos por fonte: %s", contagem or "nenhum")
     return 0
 
@@ -172,12 +343,14 @@ def _run_dry(fontes: list[str], target: int) -> int:
 def _relatorio_final(
     total: int,
     meta: int,
-    avaliados: int,
+    runners: dict[str, SourceRunner],
     por_fonte: dict[str, int],
     descartes: dict[str, int],
     duracao: float,
 ) -> None:
     """Imprime o resumo da execução no terminal e no log."""
+    avaliados = sum(r.evaluated for r in runners.values())
+
     logger.info("=" * 70)
     logger.info("RELATÓRIO FINAL DA COLETA")
     logger.info("=" * 70)
@@ -188,10 +361,22 @@ def _relatorio_final(
     logger.info("Manifesto ............: %s", config.MANIFEST_PATH)
 
     logger.info("-" * 70)
-    logger.info("Distribuição por fonte:")
+    logger.info("Distribuição por fonte (acervo completo em data/raw):")
     for fonte, quantidade in sorted(por_fonte.items(), key=lambda par: -par[1]):
         proporcao = (quantidade / total * 100) if total else 0
-        logger.info("  %-14s %5d (%.1f%%)", fonte, quantidade, proporcao)
+        logger.info("  %-12s %5d (%.1f%%)", fonte, quantidade, proporcao)
+
+    logger.info("-" * 70)
+    logger.info("Rendimento por módulo nesta execução:")
+    for nome, runner in runners.items():
+        estado = "esgotado" if runner.exhausted else "disponível"
+        logger.info(
+            "  %-8s salvas=%-5d avaliados=%-6d (%s)",
+            nome,
+            runner.saved,
+            runner.evaluated,
+            estado,
+        )
 
     if descartes:
         logger.info("-" * 70)
@@ -231,7 +416,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         nargs="+",
         choices=list(SOURCES.keys()),
         default=list(SOURCES.keys()),
-        help="Fontes a utilizar, na ordem informada.",
+        help="Módulos a utilizar, na ordem informada.",
     )
     parser.add_argument(
         "--dry-run",

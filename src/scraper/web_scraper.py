@@ -278,6 +278,14 @@ def _collect_unsplash_html(limit: int | None) -> Iterator[ImageCandidate]:
                 url = UNSPLASH_SEARCH_URL.format(consulta=slug, pagina=pagina)
                 html = fetch_html(session, url, referer="https://unsplash.com/")
                 if not html:
+                    # Bloqueio já na primeira página da primeira consulta indica
+                    # proteção ativa no site inteiro: insistir só gasta tempo.
+                    if produzidos == 0 and pagina == 1:
+                        logger.info(
+                            "Unsplash bloqueia o acesso sem credencial. "
+                            "Abandonando o scraping de HTML."
+                        )
+                        return
                     logger.info("Interrompendo '%s': página %d inacessível.", consulta, pagina)
                     break
 

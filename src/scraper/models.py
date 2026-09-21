@@ -24,6 +24,7 @@ class ImageCandidate:
         author: autor/creditado da obra, quando disponível.
         page_url: página de origem, usada como ``Referer`` no download.
         external_id: identificador na plataforma de origem (deduplicação).
+        headers: headers extras exigidos pela fonte no download da imagem.
         extra: metadados adicionais específicos da fonte.
     """
 
@@ -33,6 +34,7 @@ class ImageCandidate:
     author: str = ""
     page_url: str = ""
     external_id: str = ""
+    headers: dict[str, str] = field(default_factory=dict)
     extra: dict[str, Any] = field(default_factory=dict)
 
     def as_metadata(self) -> dict[str, Any]:

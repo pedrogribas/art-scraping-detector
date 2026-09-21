@@ -1,7 +1,6 @@
 # Dependências do pipeline de coleta (Amostra de Controle do TCC)
 requests==2.32.3
 beautifulsoup4==4.12.3
-praw==7.7.1
 python-dotenv==1.0.1
 tqdm==4.66.5
 
