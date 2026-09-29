@@ -270,9 +270,18 @@ function Conta({ valor, casas = 0, sufixo = "" }) {
 }
 
 export default function App() {
+  const exemplosFixos = [
+    { arquivo: "laion_001.jpg", legenda: "Xícara", ausente: false, url: "/imagens/exemplos/laion_001.jpg" },
+    { arquivo: "laion_050.jpg", legenda: "Ícones", ausente: false, url: "/imagens/exemplos/laion_050.jpg" },
+    { arquivo: "laion_080.jpg", legenda: "Banquete", ausente: false, url: "/imagens/exemplos/laion_080.jpg" },
+    { arquivo: "laion_160.jpg", legenda: "Bordado", ausente: false, url: "/imagens/exemplos/laion_160.jpg" },
+    { arquivo: "laion_330.jpg", legenda: "Pôr do sol", ausente: false, url: "/imagens/exemplos/laion_330.jpg" },
+    { arquivo: "laion_400.jpg", legenda: "Cama", ausente: false, url: "/imagens/exemplos/laion_400.jpg" },
+    { arquivo: "fora.jpg", legenda: "Não está", ausente: true, url: "/imagens/exemplos/fora.jpg" },
+  ];
   const [pronto, setPronto] = useState(false);
-  const [total, setTotal] = useState(0);
-  const [exemplos, setExemplos] = useState([]);
+  const [total, setTotal] = useState(500);
+  const [exemplos, setExemplos] = useState(exemplosFixos);
   const [sobre, setSobre] = useState(false);
   const [buscando, setBuscando] = useState(false);
   const [erro, setErro] = useState("");
@@ -380,8 +389,9 @@ export default function App() {
         </Surge>
         <Surge ordem={1}>
           <p className="lead">
-            Comece pela busca: {total || 500} imagens reais do LAION.
-            A história abaixo é o caminho até esse botão, e o motivo de ele ainda não bastar.
+            {pronto
+              ? `A busca olha ${total} imagens reais. Role para ver de onde elas vieram.`
+              : "A busca CLIP precisa do computador (apresentar.ps1). A história e as imagens da amostra estão abaixo."}
           </p>
         </Surge>
 
@@ -401,7 +411,11 @@ export default function App() {
               disabled={!pronto || buscando}
               onClick={() => arquivoRef.current?.click()}
             >
-              {pronto ? (buscando ? "Procurando…" : "Escolher imagem") : "Preparando a galeria…"}
+              {pronto
+                ? buscando
+                  ? "Procurando…"
+                  : "Escolher imagem"
+                : "A busca CLIP roda no computador. Abaixo está a história."}
             </button>
             <span className="dica">ou solte um JPG aqui</span>
           </div>
