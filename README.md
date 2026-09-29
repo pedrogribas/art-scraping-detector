@@ -8,11 +8,17 @@ Instituto Federal de Minas Gerais (IFMG), Campus Sabará
 **Autor:** Pedro Garcia Ribas  
 **Repositório:** https://github.com/pedrogribas/art-scraping-detector
 
-A página do projeto é uma carta de entrada. No alto fica só o campo para inserir uma imagem. Ao rolar, o texto conta o problema, o experimento e o que os 99,6% deixam de significar quando a galeria cresce até o LAION.
+A página do projeto é uma carta de entrada. No alto fica o campo para inserir uma imagem. Ao rolar, o texto conta o problema, o experimento e o que os 99,6% deixam de significar quando a galeria cresce até o LAION.
 
-```bash
-streamlit run app.py
+Para apresentar, com as 500 imagens já em `data/raw/`:
+
+```powershell
+.\apresentar.ps1
 ```
+
+O script sobe a API CLIP em http://127.0.0.1:8000 e a página em http://localhost:5173. Na primeira vez a API leva cerca de um minuto para indexar as 500.
+
+As 500 fotos **não entram no GitHub**: o volume é alto e os direitos são de terceiros. A lista oficial do LAION também **não está mais no ar** desde dezembro de 2023. Quem clonar o repositório precisa das imagens já baixadas nesta máquina, ou tentar o downloader de novo (muitos links já falham).
 
 ---
 
@@ -69,13 +75,13 @@ O briefing usado na redação da monografia está em [`briefing-tcc-overleaf.md`
 
 ## Página
 
-`app.py` é uma página única, nas cores do Manual de Identidade Visual da marca Instituto Federal: verde `#2f9e41` e vermelho `#cd191e`.
+A página viva é o React em `web/`, nas cores do Manual de Identidade Visual da marca Instituto Federal: verde `#2f9e41` e vermelho `#cd191e`. A API está em `src/api_server.py`.
 
-1. No topo, o campo para inserir um JPG ou PNG. Se existirem arquivos em `data/exemplos/`, um bloco recolhido oferece seis consultas já adulteradas.
-2. O resultado (consulta, Top 1, Top 2 e Top 3) aparece na hora, com o cosseno do CLIP.
-3. Ao rolar: carta de entrada, o problema, o método, os gráficos da amostra de 500, a projeção de escala e os limites.
+1. No topo, o campo para inserir um JPG ou PNG e os exemplos (incluindo um que **não está** no banco).
+2. O resultado aparece na hora, com o cosseno do CLIP. Abaixo de 0,82, e sem folga sobre o segundo lugar, a resposta é que a imagem não está.
+3. Ao rolar: origem do LAION, as cópias publicadas, a prova nas 500 e o limite no banco grande, com gráficos de barra e de linha.
 
-A galeria CLIP fica em cache (`st.cache_resource`) enquanto o processo estiver no ar.
+O Streamlit em `app.py` ficou como rascunho antigo. Para a apresentação use `.\apresentar.ps1`.
 
 ## Como reproduzir
 
@@ -98,11 +104,14 @@ hf auth login
 Opcionalmente, exporte `HF_TOKEN` (veja `.env.example`). Não commite o token.
 
 ```bash
-python -m src.scraper.laion_downloader   # grava 500 JPEG em data/raw/
-python -m src.adulterator                # cópias degradadas em data/adulterated/
-python -m src.main_eval                   # acurácia e tempo dos três métodos
-python -m src.estimate_scale              # projeção; grava results/estimativa_laion.json
-streamlit run app.py
+python -m src.scraper.laion_downloader   # tenta gravar 500 JPEG em data/raw/ (muitos links ja falham)
+python -m src.adulterator                # copias degradadas em data/adulterated/
+python -m src.main_eval                   # acuracia e tempo dos tres metodos
+python -m src.estimate_scale              # projecao; grava results/estimativa_laion.json
+cd web
+npm install
+cd ..
+.\apresentar.ps1
 ```
 
 O downloader para ao chegar a 500 imagens válidas e retoma a numeração se for interrompido. Timeout de 3 s, corpo máximo de 20 MB. HTTP 404, timeout e arquivo ilegível são ignorados. Os JPEG de `data/raw/` são regravados com qualidade 90.
@@ -113,22 +122,14 @@ Para repetir a demonstração sem caçar arquivo, copie seis imagens de `data/ad
 
 ```
 art-scraping-detector/
-├── app.py                          # página única (busca + carta)
-├── briefing-tcc-overleaf.md        # fatos e limites para a monografia
+├── apresentar.ps1                  # sobe API + pagina (http://localhost:5173)
+├── app.py                          # rascunho Streamlit antigo
+├── briefing-tcc-overleaf.md
 ├── requirements.txt
-├── .env.example
-├── .streamlit/config.toml          # tema verde/vermelho do IF
-├── results/estimativa_laion.json   # projeção de escala (sem as imagens)
-├── data/
-│   ├── raw/                        # laion_001.jpg … laion_500.jpg (não versionado)
-│   ├── adulterated/                # mesmas nomes, degradados (não versionado)
-│   └── exemplos/                   # opcional, para a página (não versionado)
-└── src/
-    ├── adulterator.py              # degradação fixa
-    ├── similarity_evaluator.py     # SSIM, SIFT e CLIP
-    ├── main_eval.py                # relatório da amostra de 500
-    ├── estimate_scale.py           # projeção de tempo, memória e teto do CLIP
-    └── scraper/laion_downloader.py # streaming do subset estético
+├── web/                            # pagina React
+├── src/api_server.py               # busca CLIP e corte "nao esta"
+├── results/estimativa_laion.json
+└── data/raw/                       # 500 JPEG (nao versionado)
 ```
 
 As imagens não entram no Git: o volume é alto e os direitos são de terceiros no LAION. O que se versiona é o código, o tema, o briefing e o JSON da projeção.
