@@ -593,7 +593,7 @@ export default function App() {
         <Surge ordem={2} className="revela">
           <figure className="moldura">
             <img
-              src="/pesquisa/somepalli-fig1.png"
+              src={urlPublica("pesquisa/somepalli-fig1.png")}
               alt="Sete pares. Em cada coluna, a imagem gerada fica em cima e a foto do LAION embaixo."
             />
             <figcaption>Somepalli et al., CVPR 2023. Linha de cima gerada, linha de baixo achada no LAION.</figcaption>
@@ -609,7 +609,7 @@ export default function App() {
         <Surge ordem={4} className="revela">
           <figure className="moldura estreita">
             <img
-              src="/pesquisa/carlini-fig1.png"
+              src={urlPublica("pesquisa/carlini-fig1.png")}
               alt="Foto de Ann Graham Lotz no treino, ao lado da imagem quase igual gerada pelo Stable Diffusion."
             />
             <figcaption>Carlini et al., 2023. As duas imagens quase se encostam. A foto é CC BY-SA 3.0.</figcaption>
@@ -663,11 +663,11 @@ export default function App() {
         <Surge ordem={2} className="transparente">
           <div className="duelo">
             <figure>
-              <img src="/imagens/adulterated/laion_050.jpg" alt="Versão degradada do pôster de ícones." />
+              <img src={urlPublica("imagens/adulterated/laion_050.jpg")} alt="Versão degradada do pôster de ícones." />
               <figcaption>O que a busca recebe</figcaption>
             </figure>
             <figure>
-              <img src="/imagens/raw/laion_050.jpg" alt="Original do mesmo pôster no recorte do LAION." />
+              <img src={urlPublica("imagens/raw/laion_050.jpg")} alt="Original do mesmo pôster no recorte do LAION." />
               <figcaption>O arquivo do banco. É o exemplo Ícones, lá em cima.</figcaption>
             </figure>
           </div>
