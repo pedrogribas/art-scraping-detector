@@ -13,6 +13,7 @@ from pathlib import Path
 from fastapi import FastAPI, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from PIL import Image, UnidentifiedImageError
 
 from src.adulterator import ADULTERATED_DIR, RAW_DIR, list_images
@@ -68,7 +69,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173"],
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -163,3 +164,8 @@ def imagem(pasta: str, nome: str) -> FileResponse:
     if caminho.parent != base.resolve() or not caminho.is_file():
         raise HTTPException(status_code=404, detail="Imagem não encontrada")
     return FileResponse(caminho)
+
+
+SITE_DIR = Path(__file__).resolve().parents[1] / "web" / "dist"
+if SITE_DIR.is_dir():
+    app.mount("/", StaticFiles(directory=SITE_DIR, html=True), name="site")

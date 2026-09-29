@@ -1,0 +1,8 @@
+Amostra de 500 JPEG do recorte laion/laion2B-en-aesthetic.
+
+As imagens nao sao nossas. Estao neste repositorio so para fins academicos
+do TCC de Pedro Garcia Ribas, IFMG Campus Sabara: reproduzir a busca e a
+apresentacao. Nao republicar, nao vender, nao usar para treinar modelo.
+
+A lista oficial do LAION saiu do ar em dezembro de 2023. Estes arquivos
+ja tinham sido baixados antes, para o experimento.

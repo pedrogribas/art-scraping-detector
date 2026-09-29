@@ -18,7 +18,7 @@ Para apresentar, com as 500 imagens já em `data/raw/`:
 
 O script sobe a API CLIP em http://127.0.0.1:8000 e a página em http://localhost:5173. Na primeira vez a API leva cerca de um minuto para indexar as 500.
 
-As 500 fotos **não entram no GitHub**: o volume é alto e os direitos são de terceiros. A lista oficial do LAION também **não está mais no ar** desde dezembro de 2023. Quem clonar o repositório precisa das imagens já baixadas nesta máquina, ou tentar o downloader de novo (muitos links já falham).
+As 500 JPEG entram no repositório **só para fins acadêmicos** desta prova (TCC de Pedro Garcia Ribas, IFMG Campus Sabará). São obras de terceiros. Não republicar, não vender, não usar para treinar modelo. A lista oficial do LAION saiu do ar em dezembro de 2023; estes arquivos já tinham sido baixados. Veja `data/LEIA-ME.txt`.
 
 ---
 
@@ -129,7 +129,7 @@ art-scraping-detector/
 ├── web/                            # pagina React
 ├── src/api_server.py               # busca CLIP e corte "nao esta"
 ├── results/estimativa_laion.json
-└── data/raw/                       # 500 JPEG (nao versionado)
+└── data/                           # 500 JPEG, so para fins academicos
 ```
 
 As imagens não entram no Git: o volume é alto e os direitos são de terceiros no LAION. O que se versiona é o código, o tema, o briefing e o JSON da projeção.

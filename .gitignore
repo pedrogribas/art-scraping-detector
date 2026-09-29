@@ -41,19 +41,11 @@ ENV/
 credentials.json
 
 # ---------------------------------------------------------------------------
-# Dataset (não versionado: volume alto e direitos autorais de terceiros).
-# Apenas os marcadores .gitkeep preservam a estrutura de pastas no Git.
+# Dataset: as 500 JPEG entram no Git so para fins academicos desta prova.
+# Sao obras de terceiros; nao republicar fora deste TCC.
 # ---------------------------------------------------------------------------
-data/*
-!data/raw/
-!data/processed/
-!data/adulterated/
-data/raw/*
 data/processed/*
-data/adulterated/*
-!data/raw/.gitkeep
 !data/processed/.gitkeep
-!data/adulterated/.gitkeep
 
 # ---------------------------------------------------------------------------
 # Logs e artefatos de execução
@@ -82,7 +74,6 @@ htmlcov/
 # IDEs e sistema operacional
 # ---------------------------------------------------------------------------
 web/node_modules/
-web/dist/
 
 .idea/
 .vscode/
