@@ -1,0 +1,91 @@
+{
+  "dispositivo_clip": "cpu",
+  "clip_dimensao": 512,
+  "clip_embed_s": 0.05460884999956761,
+  "clip_scan_por_imagem_us": 0.16370500001357868,
+  "ssim_por_imagem_us": 635.4778492000769,
+  "sift_extracao_s": 0.019780149000464008,
+  "sift_match_s": 0.014451887374225899,
+  "sift_descritores_por_imagem": 434.274,
+  "sift_acuracia_na_amostra": 99.39879759519037,
+  "ssim_escore_verdadeiro_medio": 0.330625574779473,
+  "ssim_escore_impostor_medio": 0.1029144158631429,
+  "ssim_escore_impostor_dp": 0.07157903512443996,
+  "clip_escore_verdadeiro_medio": 0.9098671674728394,
+  "clip_escore_impostor_medio": 0.4694022834300995,
+  "clip_escore_impostor_dp": 0.09124505519866943,
+  "projecoes": [
+    {
+      "n": 500,
+      "rotulo": "Amostra (500)",
+      "ssim_busca_s": 0.31773892460003844,
+      "sift_busca_s": 0.034232036374689905,
+      "clip_busca_s": 0.054690702499574397,
+      "ssim_acuracia": 44.542584128126606,
+      "clip_acuracia": 99.4851982509749,
+      "ssim_memoria_gb": 0.030517578125,
+      "sift_memoria_gb": 0.10353899002075195,
+      "clip_memoria_gb": 0.00095367431640625
+    },
+    {
+      "n": 10000,
+      "rotulo": "10 mil",
+      "ssim_busca_s": 6.354778492000769,
+      "sift_busca_s": 0.037755228565890864,
+      "clip_busca_s": 0.0562458999997034,
+      "ssim_acuracia": 33.50825375774847,
+      "clip_acuracia": 95.95455649532857,
+      "ssim_memoria_gb": 0.6103515625,
+      "sift_memoria_gb": 2.070779800415039,
+      "clip_memoria_gb": 0.019073486328125
+    },
+    {
+      "n": 100000,
+      "rotulo": "100 mil",
+      "ssim_busca_s": 63.547784920007686,
+      "sift_busca_s": 0.04046323084327333,
+      "clip_busca_s": 0.07097935000092548,
+      "ssim_acuracia": 28.62389979494483,
+      "clip_acuracia": 84.20744258600882,
+      "ssim_memoria_gb": 6.103515625,
+      "sift_memoria_gb": 20.70779800415039,
+      "clip_memoria_gb": 0.19073486328125
+    },
+    {
+      "n": 1000000,
+      "rotulo": "1 milh\u00e3o",
+      "ssim_busca_s": 635.4778492000769,
+      "sift_busca_s": 0.043171233120655794,
+      "clip_busca_s": 0.2183138500131463,
+      "ssim_acuracia": 23.386400089954634,
+      "clip_acuracia": 52.02782195340926,
+      "ssim_memoria_gb": 61.03515625,
+      "sift_memoria_gb": 207.0779800415039,
+      "clip_memoria_gb": 1.9073486328125
+    },
+    {
+      "n": 52068913,
+      "rotulo": "Est\u00e9tico EN (52 mi)",
+      "ssim_busca_s": 33088.64084342592,
+      "sift_busca_s": 0.047819731638725965,
+      "clip_busca_s": 8.578550253371594,
+      "ssim_acuracia": 17.367821624660024,
+      "clip_acuracia": 1.7790612717003347,
+      "ssim_memoria_gb": 3178.0342407226562,
+      "sift_memoria_gb": 10782.325326996803,
+      "clip_memoria_gb": 99.31357002258301
+    },
+    {
+      "n": 5850000000,
+      "rotulo": "LAION-5B (5,85 bi)",
+      "ssim_busca_s": 3717545.4178204495,
+      "sift_busca_s": 0.05337269978526105,
+      "clip_busca_s": 957.7288589294349,
+      "ssim_acuracia": 10.952012485996288,
+      "clip_acuracia": 1.822192687885271e-17,
+      "ssim_memoria_gb": 357055.6640625,
+      "sift_memoria_gb": 1211406.1832427979,
+      "clip_memoria_gb": 11157.989501953125
+    }
+  ]
+}

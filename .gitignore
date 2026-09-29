@@ -47,10 +47,13 @@ credentials.json
 data/*
 !data/raw/
 !data/processed/
+!data/adulterated/
 data/raw/*
 data/processed/*
+data/adulterated/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+!data/adulterated/.gitkeep
 
 # ---------------------------------------------------------------------------
 # Logs e artefatos de execução

@@ -1,8 +1,14 @@
-# Dependências do pipeline de coleta (Amostra de Controle do TCC)
-requests==2.32.3
-beautifulsoup4==4.12.3
-python-dotenv==1.0.1
-tqdm==4.66.5
+# Download do subset estético do LAION (Amostra de Controle do TCC)
+datasets>=3.0.0
+requests>=2.32.0
+pillow>=10.4.0
+tqdm>=4.66.0
 
-# Parser XML utilizado pelo BeautifulSoup na leitura dos feeds RSS
-lxml==5.3.0
+# Prova de conceito: adulteração e busca reversa
+opencv-python>=4.10.0
+scikit-image>=0.24.0
+torch>=2.2.0
+transformers>=4.44.0
+streamlit>=1.40.0
+pandas>=2.2.0
+plotly>=5.24.0
