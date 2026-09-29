@@ -14,7 +14,7 @@ Documento factual para redigir o TCC. Use somente os números e os limites desta
 - **Data das medições:** 28 de setembro de 2026
 - **Máquina:** Windows 11, Python 3.13.4, CPU AMD64 (Family 25, Model 33), sem GPU. PyTorch 2.14.0+cpu (`cuda = False`)
 
-Pacotes da prova de conceito: OpenCV 5.0.0, scikit-image 0.26.0, Transformers 5.17.0, Pillow 12.3.0, NumPy 2.5.3. O painel usa Streamlit 1.64.0, Pandas 3.0.6 e Plotly 7.1.0.
+Pacotes da prova de conceito: OpenCV 5.0.0, scikit-image 0.26.0, Transformers 5.17.0, Pillow 12.3.0, NumPy 2.5.3. A página pública é React no GitHub Pages (https://pedrogribas.github.io/art-scraping-detector/). Streamlit em `app.py` é rascunho antigo.
 
 ---
 
@@ -201,7 +201,9 @@ Indexar o CLIP do zero, nesta CPU, a 0,0546 s por imagem: cerca de **33 dias** p
 3. **Tempo de busca por consulta**, eixo y logarítmico, três curvas. Anotar na curva do SIFT: “pressupõe o índice em RAM; inviável a partir de centenas de gigabytes de descritores.”
 4. **Par visual** original × adulterado (por exemplo `laion_050.jpg`), com a legenda dos quatro parâmetros (escala 80%, corte 5%, σ = 8, JPEG 35).
 
-O painel Streamlit (`app.py`) já mostra as figuras 1 a 3 nas abas “Análise do Experimento” e “Escala no LAION”. Os PNG não foram exportados; se o Overleaf precisar de arquivo, gerar a partir desta tabela.
+A página pública da prova é https://pedrogribas.github.io/art-scraping-detector/ (React, GitHub Pages). Os exemplos da busca usam o CLIP medido neste briefing; o recorte “a imagem não está” é regra calibrada nas 500, não entra na tabela oficial. O `app.py` em Streamlit ficou como rascunho: não citar como interface do trabalho.
+
+Os PNG das figuras 1 a 3 não foram exportados pelo painel antigo; se o Overleaf precisar de arquivo, gerar a partir desta tabela.
 
 ---
 
