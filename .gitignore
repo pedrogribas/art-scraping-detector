@@ -75,6 +75,7 @@ htmlcov/
 # ---------------------------------------------------------------------------
 web/node_modules/
 web/dist/
+web/public/imagens/raw/
 
 .idea/
 .vscode/

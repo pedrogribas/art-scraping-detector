@@ -1,4 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import {
+  ajustarResposta,
+  buscarImagem,
+  carregarIndice,
+  exemploPronto,
+  urlPublica,
+} from "./buscaClip.js";
 
 const METODOS = [
   {
@@ -271,16 +278,17 @@ function Conta({ valor, casas = 0, sufixo = "" }) {
 
 export default function App() {
   const exemplosFixos = [
-    { arquivo: "laion_001.jpg", legenda: "Xícara", ausente: false, url: "/imagens/exemplos/laion_001.jpg" },
-    { arquivo: "laion_050.jpg", legenda: "Ícones", ausente: false, url: "/imagens/exemplos/laion_050.jpg" },
-    { arquivo: "laion_080.jpg", legenda: "Banquete", ausente: false, url: "/imagens/exemplos/laion_080.jpg" },
-    { arquivo: "laion_160.jpg", legenda: "Bordado", ausente: false, url: "/imagens/exemplos/laion_160.jpg" },
-    { arquivo: "laion_330.jpg", legenda: "Pôr do sol", ausente: false, url: "/imagens/exemplos/laion_330.jpg" },
-    { arquivo: "laion_400.jpg", legenda: "Cama", ausente: false, url: "/imagens/exemplos/laion_400.jpg" },
-    { arquivo: "fora.jpg", legenda: "Não está", ausente: true, url: "/imagens/exemplos/fora.jpg" },
+    { arquivo: "laion_001.jpg", legenda: "Xícara", ausente: false, url: urlPublica("imagens/exemplos/laion_001.jpg") },
+    { arquivo: "laion_050.jpg", legenda: "Ícones", ausente: false, url: urlPublica("imagens/exemplos/laion_050.jpg") },
+    { arquivo: "laion_080.jpg", legenda: "Banquete", ausente: false, url: urlPublica("imagens/exemplos/laion_080.jpg") },
+    { arquivo: "laion_160.jpg", legenda: "Bordado", ausente: false, url: urlPublica("imagens/exemplos/laion_160.jpg") },
+    { arquivo: "laion_330.jpg", legenda: "Pôr do sol", ausente: false, url: urlPublica("imagens/exemplos/laion_330.jpg") },
+    { arquivo: "laion_400.jpg", legenda: "Cama", ausente: false, url: urlPublica("imagens/exemplos/laion_400.jpg") },
+    { arquivo: "fora.jpg", legenda: "Não está", ausente: true, url: urlPublica("imagens/exemplos/fora.jpg") },
   ];
   const [pronto, setPronto] = useState(false);
   const [total, setTotal] = useState(500);
+  const [modo, setModo] = useState("carregando");
   const [exemplos, setExemplos] = useState(exemplosFixos);
   const [sobre, setSobre] = useState(false);
   const [buscando, setBuscando] = useState(false);
@@ -291,14 +299,20 @@ export default function App() {
   const [fio, setFio] = useState(0);
   const arquivoRef = useRef(null);
   const trilhaRef = useRef(null);
+  const apiRef = useRef(false);
 
   useEffect(() => {
     let ativo = true;
-    async function esperar() {
-      while (ativo) {
+    async function iniciar() {
+      const soPagina =
+        window.location.hostname.endsWith("github.io") ||
+        new URLSearchParams(window.location.search).has("estatico");
+      if (!soPagina) {
         try {
           const status = await fetch("/api/status").then((r) => r.json());
-          if (status.pronto) {
+          if (status.pronto && ativo) {
+            apiRef.current = true;
+            setModo("api");
             setPronto(true);
             setTotal(status.total);
             const lista = await fetch("/api/exemplos").then((r) => r.json());
@@ -306,12 +320,24 @@ export default function App() {
             return;
           }
         } catch {
-          /* a API ainda está subindo o modelo */
+          /* sem API local, cai no índice estático */
         }
-        await new Promise((resolve) => setTimeout(resolve, 1200));
+      }
+      try {
+        const indice = await carregarIndice();
+        if (!ativo) return;
+        setModo("navegador");
+        setPronto(true);
+        setTotal(indice.nomes.length);
+        setExemplos(exemplosFixos);
+      } catch (falha) {
+        if (ativo) {
+          setModo("offline");
+          setErro(falha.message);
+        }
       }
     }
-    esperar();
+    iniciar();
     const aoRolar = () => {
       const altura = document.documentElement.scrollHeight - window.innerHeight;
       setProgresso(altura > 0 ? window.scrollY / altura : 0);
@@ -333,12 +359,18 @@ export default function App() {
     setErro("");
     setBuscando(true);
     setPreview(URL.createObjectURL(arquivo));
-    const corpo = new FormData();
-    corpo.append("arquivo", arquivo);
     try {
-      const r = await fetch("/api/buscar", { method: "POST", body: corpo });
-      const json = await r.json();
-      if (!r.ok) throw new Error(json.detail || "Não foi possível ler a imagem");
+      if (apiRef.current) {
+        const corpo = new FormData();
+        corpo.append("arquivo", arquivo);
+        const r = await fetch("/api/buscar", { method: "POST", body: corpo });
+        const json = await r.json();
+        if (!r.ok) throw new Error(json.detail || "Não foi possível ler a imagem");
+        setResposta(json);
+        return;
+      }
+      const json = await buscarImagem(arquivo, arquivo.name, (texto) => setErro(texto));
+      setErro("");
       setResposta(json);
     } catch (falha) {
       setResposta(null);
@@ -353,10 +385,21 @@ export default function App() {
     setBuscando(true);
     setPreview(item.url);
     try {
-      const r = await fetch(`/api/exemplo/${item.arquivo}`, { method: "POST" });
-      const json = await r.json();
-      if (!r.ok) throw new Error(json.detail || "Exemplo indisponível");
-      setResposta(json);
+      if (apiRef.current) {
+        const r = await fetch(`/api/exemplo/${item.arquivo}`, { method: "POST" });
+        const json = await r.json();
+        if (!r.ok) throw new Error(json.detail || "Exemplo indisponível");
+        setResposta(json);
+        return;
+      }
+      const prontoLocal = exemploPronto(item.arquivo);
+      if (prontoLocal) {
+        setResposta(prontoLocal);
+        return;
+      }
+      const json = await buscarImagem(item.url, item.arquivo, (texto) => setErro(texto));
+      setErro("");
+      setResposta(ajustarResposta({ ...json, nome: item.arquivo }));
     } catch (falha) {
       setResposta(null);
       setErro(falha.message);
@@ -390,8 +433,8 @@ export default function App() {
         <Surge ordem={1}>
           <p className="lead">
             {pronto
-              ? `A busca olha ${total} imagens reais. Role para ver de onde elas vieram.`
-              : "A busca CLIP precisa do computador (apresentar.ps1). A história e as imagens da amostra estão abaixo."}
+              ? `A busca olha ${total} imagens reais${modo === "navegador" ? " aqui no navegador" : ""}. Role para ver de onde elas vieram.`
+              : "A busca está carregando o índice das 500."}
           </p>
         </Surge>
 
@@ -415,9 +458,13 @@ export default function App() {
                 ? buscando
                   ? "Procurando…"
                   : "Escolher imagem"
-                : "A busca CLIP roda no computador. Abaixo está a história."}
+                : "Carregando a busca…"}
             </button>
-            <span className="dica">ou solte um JPG aqui</span>
+            <span className="dica">
+              {modo === "navegador"
+                ? "os exemplos já consultam as 500; um arquivo seu baixa o CLIP uma vez"
+                : "ou solte um JPG aqui"}
+            </span>
           </div>
           <input
             ref={arquivoRef}

@@ -1,0 +1,205 @@
+{
+  "laion_001.jpg": {
+    "nome": "laion_001.jpg",
+    "presente": true,
+    "limiar": 0.82,
+    "folga": 0.162,
+    "ranking": [
+      {
+        "posicao": 1,
+        "arquivo": "laion_001.jpg",
+        "score": 0.989,
+        "url": "/imagens/raw/laion_001.jpg",
+        "mesmo_arquivo": true
+      },
+      {
+        "posicao": 2,
+        "arquivo": "laion_251.jpg",
+        "score": 0.827,
+        "url": "/imagens/raw/laion_251.jpg",
+        "mesmo_arquivo": false
+      },
+      {
+        "posicao": 3,
+        "arquivo": "laion_053.jpg",
+        "score": 0.813,
+        "url": "/imagens/raw/laion_053.jpg",
+        "mesmo_arquivo": false
+      }
+    ]
+  },
+  "laion_050.jpg": {
+    "nome": "laion_050.jpg",
+    "presente": true,
+    "limiar": 0.82,
+    "folga": 0.256,
+    "ranking": [
+      {
+        "posicao": 1,
+        "arquivo": "laion_050.jpg",
+        "score": 0.951,
+        "url": "/imagens/raw/laion_050.jpg",
+        "mesmo_arquivo": true
+      },
+      {
+        "posicao": 2,
+        "arquivo": "laion_006.jpg",
+        "score": 0.695,
+        "url": "/imagens/raw/laion_006.jpg",
+        "mesmo_arquivo": false
+      },
+      {
+        "posicao": 3,
+        "arquivo": "laion_402.jpg",
+        "score": 0.694,
+        "url": "/imagens/raw/laion_402.jpg",
+        "mesmo_arquivo": false
+      }
+    ]
+  },
+  "laion_080.jpg": {
+    "nome": "laion_080.jpg",
+    "presente": true,
+    "limiar": 0.82,
+    "folga": 0.16,
+    "ranking": [
+      {
+        "posicao": 1,
+        "arquivo": "laion_080.jpg",
+        "score": 0.927,
+        "url": "/imagens/raw/laion_080.jpg",
+        "mesmo_arquivo": true
+      },
+      {
+        "posicao": 2,
+        "arquivo": "laion_324.jpg",
+        "score": 0.767,
+        "url": "/imagens/raw/laion_324.jpg",
+        "mesmo_arquivo": false
+      },
+      {
+        "posicao": 3,
+        "arquivo": "laion_100.jpg",
+        "score": 0.734,
+        "url": "/imagens/raw/laion_100.jpg",
+        "mesmo_arquivo": false
+      }
+    ]
+  },
+  "laion_160.jpg": {
+    "nome": "laion_160.jpg",
+    "presente": true,
+    "limiar": 0.82,
+    "folga": 0.142,
+    "ranking": [
+      {
+        "posicao": 1,
+        "arquivo": "laion_160.jpg",
+        "score": 0.852,
+        "url": "/imagens/raw/laion_160.jpg",
+        "mesmo_arquivo": true
+      },
+      {
+        "posicao": 2,
+        "arquivo": "laion_227.jpg",
+        "score": 0.71,
+        "url": "/imagens/raw/laion_227.jpg",
+        "mesmo_arquivo": false
+      },
+      {
+        "posicao": 3,
+        "arquivo": "laion_337.jpg",
+        "score": 0.71,
+        "url": "/imagens/raw/laion_337.jpg",
+        "mesmo_arquivo": false
+      }
+    ]
+  },
+  "laion_330.jpg": {
+    "nome": "laion_330.jpg",
+    "presente": true,
+    "limiar": 0.82,
+    "folga": 0.069,
+    "ranking": [
+      {
+        "posicao": 1,
+        "arquivo": "laion_330.jpg",
+        "score": 0.906,
+        "url": "/imagens/raw/laion_330.jpg",
+        "mesmo_arquivo": true
+      },
+      {
+        "posicao": 2,
+        "arquivo": "laion_469.jpg",
+        "score": 0.837,
+        "url": "/imagens/raw/laion_469.jpg",
+        "mesmo_arquivo": false
+      },
+      {
+        "posicao": 3,
+        "arquivo": "laion_208.jpg",
+        "score": 0.753,
+        "url": "/imagens/raw/laion_208.jpg",
+        "mesmo_arquivo": false
+      }
+    ]
+  },
+  "laion_400.jpg": {
+    "nome": "laion_400.jpg",
+    "presente": true,
+    "limiar": 0.82,
+    "folga": 0.184,
+    "ranking": [
+      {
+        "posicao": 1,
+        "arquivo": "laion_400.jpg",
+        "score": 0.853,
+        "url": "/imagens/raw/laion_400.jpg",
+        "mesmo_arquivo": true
+      },
+      {
+        "posicao": 2,
+        "arquivo": "laion_486.jpg",
+        "score": 0.669,
+        "url": "/imagens/raw/laion_486.jpg",
+        "mesmo_arquivo": false
+      },
+      {
+        "posicao": 3,
+        "arquivo": "laion_462.jpg",
+        "score": 0.655,
+        "url": "/imagens/raw/laion_462.jpg",
+        "mesmo_arquivo": false
+      }
+    ]
+  },
+  "fora.jpg": {
+    "nome": "fora.jpg",
+    "presente": false,
+    "limiar": 0.82,
+    "folga": 0.014,
+    "ranking": [
+      {
+        "posicao": 1,
+        "arquivo": "laion_006.jpg",
+        "score": 0.773,
+        "url": "/imagens/raw/laion_006.jpg",
+        "mesmo_arquivo": false
+      },
+      {
+        "posicao": 2,
+        "arquivo": "laion_391.jpg",
+        "score": 0.759,
+        "url": "/imagens/raw/laion_391.jpg",
+        "mesmo_arquivo": false
+      },
+      {
+        "posicao": 3,
+        "arquivo": "laion_206.jpg",
+        "score": 0.759,
+        "url": "/imagens/raw/laion_206.jpg",
+        "mesmo_arquivo": false
+      }
+    ]
+  }
+}

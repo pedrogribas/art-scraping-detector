@@ -18,7 +18,7 @@ Para apresentar, com as 500 imagens já em `data/raw/`:
 
 O script sobe a API CLIP em http://127.0.0.1:8000 e a página em http://localhost:5173. Na primeira vez a API leva cerca de um minuto para indexar as 500.
 
-A história, com as imagens da amostra, está no ar em https://pedrogribas.github.io/art-scraping-detector/. A busca CLIP precisa do computador: o GitHub Pages não roda o modelo.
+A página funcional está no ar em https://pedrogribas.github.io/art-scraping-detector/. A busca compara com as 500 no próprio navegador: os exemplos já vêm ranqueados; um arquivo seu baixa o CLIP uma vez (cerca de 150 MB) e consulta o índice. O GitHub Pages não sobe Python. O Hugging Face cobrou plano pago para Docker.
 
 As 500 JPEG entram no repositório **só para fins acadêmicos** desta prova (TCC de Pedro Garcia Ribas, IFMG Campus Sabará). São obras de terceiros. Não republicar, não vender, não usar para treinar modelo. A lista oficial do LAION saiu do ar em dezembro de 2023; estes arquivos já tinham sido baixados. Veja `data/LEIA-ME.txt`.
 

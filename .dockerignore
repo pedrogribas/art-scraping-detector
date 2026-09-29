@@ -1,0 +1,12 @@
+.venv
+web/node_modules
+.git
+**/__pycache__
+canvases
+*.md
+!data/LEIA-ME.txt
+docs
+space
+app.py
+.streamlit
+briefing-tcc-overleaf.md
