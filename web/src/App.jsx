@@ -519,13 +519,11 @@ export default function App() {
                   : "A imagem está no banco. O primeiro lugar passou do corte."
                 : "A imagem não está no banco."}
             </p>
-            {!resposta.presente && (
-              <p className="nota">
-                O mais próximo fez {principal.score.toFixed(3).replace(".", ",")}, abaixo do corte de{" "}
-                {Number(resposta.limiar).toFixed(2).replace(".", ",")}, e a vantagem sobre o segundo
-                lugar foi {Number(resposta.folga).toFixed(3).replace(".", ",")}. Pouco para ser a mesma obra.
-              </p>
-            )}
+            <p className="nota">
+              {resposta.presente
+                ? `A proximidade é o cosseno CLIP: cada foto vira 512 números; o produto (já normalizado) é este ${principal.score.toFixed(3).replace(".", ",")}. 1 seria a mesma direção. Nas 500 cópias degradadas, a mediana do par verdadeiro foi 0,915.`
+                : `O corte saiu desta amostra, não de um manual. Par verdadeiro, mediana 0,915. Esta figura fez ${principal.score.toFixed(3).replace(".", ",")} e só ${Number(resposta.folga).toFixed(3).replace(".", ",")} acima da segunda. Presente se passa de 0,82, ou se passa de 0,75 e abre 0,10. Aqui falhou os dois.`}
+            </p>
             {outros.length > 0 && (
               <div className="outros">
                 {outros.map((item) => (

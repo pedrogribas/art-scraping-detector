@@ -296,7 +296,7 @@ cite {
   color: var(--verde-escuro);
 }
 .numero span { display: block; margin-top: 0.45rem; }
-.nota { margin-top: 1.2rem !important; }
+.resultado .nota { margin-top: 0.55rem !important; max-width: 62ch; }
 
 .rolagem {
   margin: 1.6rem 0 0;
