@@ -8,19 +8,22 @@ Instituto Federal de Minas Gerais (IFMG), Campus Sabará
 **Autor:** Pedro Garcia Ribas  
 **Repositório:** https://github.com/pedrogribas/art-scraping-detector
 
-A página do projeto é uma carta de entrada. No alto fica o campo para inserir uma imagem. Ao rolar, o texto conta o problema, o experimento e o que os 99,6% deixam de significar quando a galeria cresce até o LAION.
+A página pública, com as 500 imagens e a busca no ar, é  
+https://pedrogribas.github.io/art-scraping-detector/
 
-Para apresentar, com as 500 imagens já em `data/raw/`:
+No alto: campo para um JPG e sete exemplos (seis adulterados que **estão** no banco e um `fora.jpg` que **não está**). Ao rolar: origem do LAION, as cópias das pesquisas, a prova nas 500 e o que os 99,6% deixam de significar no banco grande.
+
+A busca no GitHub Pages roda no navegador. Os exemplos já vêm ranqueados com o CLIP oficial desta prova. Um arquivo seu baixa o modelo uma vez (cerca de 150 MB) e consulta o índice das 500. Não há cota paga. O Hugging Face cobrou plano PRO para Space Docker; essa via não foi usada. O site é Pages, de graça.
+
+Para apresentar no computador, com a API Python (o mesmo CLIP da tabela oficial):
 
 ```powershell
 .\apresentar.ps1
 ```
 
-O script sobe a API CLIP em http://127.0.0.1:8000 e a página em http://localhost:5173. Na primeira vez a API leva cerca de um minuto para indexar as 500.
+Sobe `src/api_server.py` em http://127.0.0.1:8000 e o Vite em http://localhost:5173. Na primeira vez a API leva cerca de um minuto para indexar.
 
-A página funcional está no ar em https://pedrogribas.github.io/art-scraping-detector/. A busca compara com as 500 no próprio navegador: os exemplos já vêm ranqueados; um arquivo seu baixa o CLIP uma vez (cerca de 150 MB) e consulta o índice. O GitHub Pages não sobe Python. O Hugging Face cobrou plano pago para Docker.
-
-As 500 JPEG entram no repositório **só para fins acadêmicos** desta prova (TCC de Pedro Garcia Ribas, IFMG Campus Sabará). São obras de terceiros. Não republicar, não vender, não usar para treinar modelo. A lista oficial do LAION saiu do ar em dezembro de 2023; estes arquivos já tinham sido baixados. Veja `data/LEIA-ME.txt`.
+As 500 JPEG já estão em `data/raw/` (**só para fins acadêmicos** deste TCC). São obras de terceiros. Não republicar, não vender, não usar para treinar modelo. A lista oficial do LAION saiu do ar em dezembro de 2023; estes arquivos já tinham sido baixados. Veja `data/LEIA-ME.txt`.
 
 ---
 
@@ -79,11 +82,11 @@ O briefing usado na redação da monografia está em [`briefing-tcc-overleaf.md`
 
 A página viva é o React em `web/`, nas cores do Manual de Identidade Visual da marca Instituto Federal: verde `#2f9e41` e vermelho `#cd191e`. A API está em `src/api_server.py`.
 
-1. No topo, o campo para inserir um JPG ou PNG e os exemplos (incluindo um que **não está** no banco).
-2. O resultado aparece na hora, com o cosseno do CLIP. Abaixo de 0,82, e sem folga sobre o segundo lugar, a resposta é que a imagem não está.
-3. Ao rolar: origem do LAION, as cópias publicadas, a prova nas 500 e o limite no banco grande, com gráficos de barra e de linha.
+1. No topo, o campo para inserir um JPG ou PNG e os sete exemplos (incluindo `fora.jpg`).
+2. Conta como presente se o primeiro cosseno passa de **0,82**, ou se fica acima de **0,75** e abre pelo menos **0,10** sobre o segundo. Nas 500, a mediana do par verdadeiro foi 0,915; `fora.jpg` fez 0,773 com folga 0,014 e foi recusada. Essa regra vale para esta gaveta, não para o LAION inteiro.
+3. Ao rolar: origem do LAION, as figuras de Somepalli e Carlini, a prova nas 500 e o limite no banco grande, com gráficos de barra e de linha.
 
-O Streamlit em `app.py` ficou como rascunho antigo. Para a apresentação use `.\apresentar.ps1`.
+O build estático mora em `docs/` (GitHub Pages). O índice CLIP da página (`web/public/indice/`) sai de `python -m src.exportar_indice`. O Streamlit em `app.py` é rascunho antigo.
 
 ## Como reproduzir
 
@@ -95,19 +98,9 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-O dataset no Hugging Face é restrito. Aceite os termos em  
-https://huggingface.co/datasets/laion/laion2B-en-aesthetic  
-e autentique:
+O clone já traz `data/raw/` (500), `data/adulterated/`, `data/exemplos/` (os sete da página) e o índice estático. Não precisa baixar de novo para ver a prova.
 
 ```bash
-hf auth login
-```
-
-Opcionalmente, exporte `HF_TOKEN` (veja `.env.example`). Não commite o token.
-
-```bash
-python -m src.scraper.laion_downloader   # tenta gravar 500 JPEG em data/raw/ (muitos links ja falham)
-python -m src.adulterator                # copias degradadas em data/adulterated/
 python -m src.main_eval                   # acuracia e tempo dos tres metodos
 python -m src.estimate_scale              # projecao; grava results/estimativa_laion.json
 cd web
@@ -116,22 +109,29 @@ cd ..
 .\apresentar.ps1
 ```
 
-O downloader para ao chegar a 500 imagens válidas e retoma a numeração se for interrompido. Timeout de 3 s, corpo máximo de 20 MB. HTTP 404, timeout e arquivo ilegível são ignorados. Os JPEG de `data/raw/` são regravados com qualidade 90.
+A lista oficial do LAION não está mais no ar. `python -m src.scraper.laion_downloader` só faria sentido se os links ainda respondessem (muitos já falham). Quem for repetir a coleta: aceite os termos em https://huggingface.co/datasets/laion/laion2B-en-aesthetic, rode `hf auth login` e, se quiser, exporte `HF_TOKEN` (veja `.env.example`). Não commite o token. O downloader para em 500 JPEG válidos, timeout de 3 s, corpo máximo de 20 MB.
 
-Para repetir a demonstração sem caçar arquivo, copie seis imagens de `data/adulterated/` para `data/exemplos/` com o mesmo nome (`laion_001.jpg`, `laion_050.jpg`, `laion_080.jpg`, `laion_160.jpg`, `laion_330.jpg`, `laion_400.jpg`).
+Para regenerar as cópias degradadas ou o índice da página:
+
+```bash
+python -m src.adulterator
+python -m src.exportar_indice
+```
 
 ## Estrutura
 
 ```
 art-scraping-detector/
-├── apresentar.ps1                  # sobe API + pagina (http://localhost:5173)
+├── apresentar.ps1                  # API :8000 + pagina :5173
 ├── app.py                          # rascunho Streamlit antigo
-├── briefing-tcc-overleaf.md
+├── briefing-tcc-overleaf.md        # limites para a monografia
+├── docs/                           # build do GitHub Pages
 ├── requirements.txt
-├── web/                            # pagina React
-├── src/api_server.py               # busca CLIP e corte "nao esta"
+├── web/                            # React; indice em public/indice/
+├── src/api_server.py               # busca CLIP local e corte "nao esta"
+├── src/exportar_indice.py          # gera o indice da pagina estatica
 ├── results/estimativa_laion.json
-└── data/                           # 500 JPEG, so para fins academicos
+└── data/                           # raw, adulterated, exemplos; so academico
 ```
 
 As 500 JPEG entram no Git **só para fins acadêmicos**. São obras de terceiros. Não republicar, não vender, não usar para treinar modelo.

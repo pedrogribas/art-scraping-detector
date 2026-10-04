@@ -1,6 +1,6 @@
 # Briefing para a monografia (Overleaf)
 
-Documento factual para redigir o TCC. Use somente os números e os limites desta nota. Não invente métricas, tabelas, gráficos nem citações que não estejam aqui. O `README.md` do repositório está desatualizado: hashing perceptual, ROC/AUC, F1 e a pasta `data/processed/` **não** fazem parte do experimento realizado.
+Documento factual para redigir o TCC. Use somente os números e os limites desta nota. Não invente métricas, tabelas, gráficos nem citações que não estejam aqui. Hashing perceptual, ROC/AUC, F1 e a pasta `data/processed/` **não** fazem parte do experimento realizado.
 
 ---
 

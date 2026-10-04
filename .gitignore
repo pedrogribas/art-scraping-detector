@@ -53,6 +53,7 @@ data/processed/*
 logs/
 *.log
 manifest.json
+indices/
 
 # ---------------------------------------------------------------------------
 # Testes e cobertura
