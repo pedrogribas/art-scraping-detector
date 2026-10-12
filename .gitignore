@@ -47,6 +47,19 @@ credentials.json
 data/processed/*
 !data/processed/.gitkeep
 
+# Artefatos locais do PAVD; não versionar conteúdo de terceiros
+data/gallery/images/*
+!data/gallery/images/.gitkeep
+data/queries/degraded/*
+!data/queries/degraded/.gitkeep
+data/embeddings/*
+!data/embeddings/.gitkeep
+data/reports/visualizations/*
+data/reports/per_query/*
+data/reports/summary/*
+data/cache/*
+!data/cache/.gitkeep
+
 # ---------------------------------------------------------------------------
 # Logs e artefatos de execução
 # ---------------------------------------------------------------------------

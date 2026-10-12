@@ -1,0 +1,1501 @@
+method,query_id,expected_filename,predicted_filename,correct,score,search_seconds,category
+SSIM,laion_001,laion_001.jpg,laion_001.jpg,True,0.43548276814247866,0.39278550000017276,logo
+SSIM,laion_002,laion_002.jpg,laion_002.jpg,True,0.25910759259358374,0.3371182000009867,photograph
+SSIM,laion_003,laion_003.jpg,laion_003.jpg,True,0.6528004451575715,0.3323330999992322,vector art
+SSIM,laion_004,laion_004.jpg,laion_004.jpg,True,0.23672853164215674,0.33045169999968493,vector art
+SSIM,laion_005,laion_005.jpg,laion_005.jpg,True,0.35088928270631725,0.33926659999997355,digital painting
+SSIM,laion_006,laion_006.jpg,laion_006.jpg,True,0.6145932254675949,0.3321238999997149,vector art
+SSIM,laion_007,laion_007.jpg,laion_007.jpg,True,0.22709164473666557,0.3291012999980012,digital painting
+SSIM,laion_008,laion_008.jpg,laion_008.jpg,True,0.5407901671151277,0.3357390999990457,photograph
+SSIM,laion_009,laion_009.jpg,laion_009.jpg,True,0.19747622867937545,0.33361770000192337,photograph
+SSIM,laion_010,laion_010.jpg,laion_010.jpg,True,0.4401980000115956,0.374991399999999,logo
+SSIM,laion_011,laion_011.jpg,laion_011.jpg,True,0.39810207667626074,0.3309874000005948,ambiguous or mixed
+SSIM,laion_012,laion_012.jpg,laion_012.jpg,True,0.17066360446002823,0.3293049999992945,vector art
+SSIM,laion_013,laion_013.jpg,laion_013.jpg,True,0.661553699504019,0.3314222000008158,ambiguous or mixed
+SSIM,laion_014,laion_014.jpg,laion_014.jpg,True,0.23702752588281212,0.33177490000161924,ambiguous or mixed
+SSIM,laion_015,laion_015.jpg,laion_015.jpg,True,0.22175621818534422,0.33166999999957625,vector art
+SSIM,laion_016,laion_016.jpg,laion_016.jpg,True,0.24995778313974504,0.33540540000103647,ambiguous or mixed
+SSIM,laion_017,laion_017.jpg,laion_017.jpg,True,0.21389600019364127,0.332552099996974,vector art
+SSIM,laion_018,laion_018.jpg,laion_018.jpg,True,0.2552088729290064,0.33481620000020484,photograph
+SSIM,laion_019,laion_019.jpg,laion_019.jpg,True,0.36213469840447476,0.33859830000074,photograph
+SSIM,laion_020,laion_020.jpg,laion_020.jpg,True,0.1822399046125539,0.33520190000126604,ambiguous or mixed
+SSIM,laion_021,laion_021.jpg,laion_021.jpg,True,0.47306881505531945,0.33033789999899454,logo
+SSIM,laion_022,laion_022.jpg,laion_022.jpg,True,0.5187995543078999,0.3362336000027426,ambiguous or mixed
+SSIM,laion_023,laion_023.jpg,laion_023.jpg,True,0.2881619888812712,0.3327705999981845,logo
+SSIM,laion_024,laion_024.jpg,laion_225.jpg,False,0.32882076763115825,0.33431539999946835,logo
+SSIM,laion_025,laion_025.jpg,laion_025.jpg,True,0.18382522653853633,0.34719200000108685,logo
+SSIM,laion_026,laion_026.jpg,laion_026.jpg,True,0.16472660039933149,0.36869149999984074,photograph
+SSIM,laion_027,laion_027.jpg,laion_027.jpg,True,0.1438422619609166,0.358703300000343,photograph
+SSIM,laion_028,laion_028.jpg,laion_028.jpg,True,0.5674355296143222,0.3743901999987429,ambiguous or mixed
+SSIM,laion_029,laion_029.jpg,laion_029.jpg,True,0.5810422079405688,0.3341742000011436,photograph
+SSIM,laion_030,laion_030.jpg,laion_030.jpg,True,0.22476397188700223,0.33704130000114674,collage
+SSIM,laion_031,laion_031.jpg,laion_031.jpg,True,0.5141457538273486,0.3634751999998116,logo
+SSIM,laion_032,laion_032.jpg,laion_032.jpg,True,0.32877072226988724,0.3449061999999685,photograph
+SSIM,laion_033,laion_033.jpg,laion_033.jpg,True,0.13658625426320603,0.3334571000013966,collage
+SSIM,laion_034,laion_034.jpg,laion_034.jpg,True,0.5649168403464658,0.3403708999976516,photograph
+SSIM,laion_035,laion_035.jpg,laion_035.jpg,True,0.6730757990516523,0.33805650000067544,ambiguous or mixed
+SSIM,laion_036,laion_036.jpg,laion_036.jpg,True,0.19924913111338477,0.3387963999994099,photograph
+SSIM,laion_037,laion_037.jpg,laion_037.jpg,True,0.26228289294922075,0.3487538000008499,vector art
+SSIM,laion_038,laion_038.jpg,laion_038.jpg,True,0.23553270334127913,0.336984499997925,vector art
+SSIM,laion_039,laion_039.jpg,laion_039.jpg,True,0.22315657863927002,0.3337128000021039,photograph
+SSIM,laion_040,laion_040.jpg,laion_040.jpg,True,0.28129611155199863,0.33102169999983744,ambiguous or mixed
+SSIM,laion_041,laion_041.jpg,laion_041.jpg,True,0.23432165200917401,0.3326524000003701,photograph
+SSIM,laion_042,laion_042.jpg,laion_042.jpg,True,0.34933306984184725,0.330103299998882,photograph
+SSIM,laion_043,laion_043.jpg,laion_043.jpg,True,0.15834851749367265,0.33241370000177994,digital painting
+SSIM,laion_044,laion_044.jpg,laion_044.jpg,True,0.1568332905105184,0.33627940000224044,photograph
+SSIM,laion_045,laion_045.jpg,laion_458.jpg,False,0.3912465072069885,0.33352000000013504,digital painting
+SSIM,laion_046,laion_046.jpg,laion_046.jpg,True,0.3269252085846017,0.3333086999991792,vector art
+SSIM,laion_047,laion_047.jpg,laion_047.jpg,True,0.36484367622211894,0.3295751999976346,photograph
+SSIM,laion_048,laion_048.jpg,laion_048.jpg,True,0.5176374378026906,0.33514239999931306,ambiguous or mixed
+SSIM,laion_049,laion_049.jpg,laion_049.jpg,True,0.4152617871928489,0.3412615999986883,vector art
+SSIM,laion_050,laion_050.jpg,laion_034.jpg,False,0.08856708217849757,0.3264857000031043,logo
+SSIM,laion_051,laion_051.jpg,laion_051.jpg,True,0.11446380263399589,0.3328977999990457,ambiguous or mixed
+SSIM,laion_052,laion_052.jpg,laion_052.jpg,True,0.35148840155555744,0.32346099999995204,ambiguous or mixed
+SSIM,laion_053,laion_053.jpg,laion_053.jpg,True,0.389596541099593,0.3285190999995393,photograph
+SSIM,laion_054,laion_054.jpg,laion_054.jpg,True,0.24889324726488038,0.33290320000014617,ambiguous or mixed
+SSIM,laion_055,laion_055.jpg,laion_055.jpg,True,0.35004738268012214,0.3268969999990077,photograph
+SSIM,laion_056,laion_056.jpg,laion_056.jpg,True,0.4426171014426339,0.33288850000099046,ambiguous or mixed
+SSIM,laion_057,laion_057.jpg,laion_057.jpg,True,0.37218094662542756,0.3267639000005147,digital painting
+SSIM,laion_058,laion_058.jpg,laion_058.jpg,True,0.31927911073333787,0.32780600000114646,photograph
+SSIM,laion_059,laion_059.jpg,laion_059.jpg,True,0.19423985046563594,0.3289500999999291,collage
+SSIM,laion_060,laion_060.jpg,laion_060.jpg,True,0.5680151311235409,0.3278260000006412,logo
+SSIM,laion_061,laion_061.jpg,laion_061.jpg,True,0.46423727426845895,0.326041800002713,ambiguous or mixed
+SSIM,laion_062,laion_062.jpg,laion_459.jpg,False,0.19900030670819172,0.32421919999978854,vector art
+SSIM,laion_063,laion_063.jpg,laion_063.jpg,True,0.3667156799540067,0.32786510000005364,photograph
+SSIM,laion_064,laion_064.jpg,laion_064.jpg,True,0.45847175972614135,0.339974099999381,ambiguous or mixed
+SSIM,laion_065,laion_065.jpg,laion_065.jpg,True,0.23609595232120228,0.3433041999996931,ambiguous or mixed
+SSIM,laion_066,laion_066.jpg,laion_066.jpg,True,0.19387095157732182,0.34258409999893047,digital painting
+SSIM,laion_067,laion_067.jpg,laion_134.jpg,False,0.20232282693158812,0.34149840000100085,photograph
+SSIM,laion_068,laion_068.jpg,laion_068.jpg,True,0.520891397752841,0.3422814000005019,photograph
+SSIM,laion_069,laion_069.jpg,laion_069.jpg,True,0.1775283370536374,0.3301145000004908,ambiguous or mixed
+SSIM,laion_070,laion_070.jpg,laion_118.jpg,False,0.11233578222001503,0.32558140000037383,photograph
+SSIM,laion_071,laion_071.jpg,laion_071.jpg,True,0.3687787808160802,0.32635540000046603,photograph
+SSIM,laion_072,laion_072.jpg,laion_319.jpg,False,0.1466874849986625,0.32576789999802713,digital painting
+SSIM,laion_073,laion_073.jpg,laion_073.jpg,True,0.37132356532402244,0.32693339999968885,digital painting
+SSIM,laion_074,laion_074.jpg,laion_074.jpg,True,0.4550319094745772,0.3228949000003922,photograph
+SSIM,laion_075,laion_075.jpg,laion_075.jpg,True,0.6854431276346179,0.3255392999999458,ambiguous or mixed
+SSIM,laion_076,laion_076.jpg,laion_076.jpg,True,0.23364098877168726,0.3289781000021321,logo
+SSIM,laion_077,laion_077.jpg,laion_077.jpg,True,0.4162024876633335,0.3267645000014454,vector art
+SSIM,laion_078,laion_078.jpg,laion_078.jpg,True,0.21373932060570028,0.3312852999988536,photograph
+SSIM,laion_079,laion_079.jpg,laion_079.jpg,True,0.20150556312494822,0.3336496000010811,photograph
+SSIM,laion_080,laion_080.jpg,laion_080.jpg,True,0.15750340856109604,0.3307142000012391,photograph
+SSIM,laion_081,laion_081.jpg,laion_081.jpg,True,0.14134186483757433,0.33445690000007744,ambiguous or mixed
+SSIM,laion_082,laion_082.jpg,laion_082.jpg,True,0.317130128716703,0.3356820000008156,photograph
+SSIM,laion_083,laion_083.jpg,laion_083.jpg,True,0.2142924785151756,0.3360143000027165,photograph
+SSIM,laion_084,laion_084.jpg,laion_158.jpg,False,0.10143441429715903,0.3350204999987909,ambiguous or mixed
+SSIM,laion_085,laion_085.jpg,laion_085.jpg,True,0.27723000329181,0.34795909999957075,logo
+SSIM,laion_086,laion_086.jpg,laion_086.jpg,True,0.3176106087433278,0.35859849999906146,vector art
+SSIM,laion_087,laion_087.jpg,laion_087.jpg,True,0.29998969302541506,0.3458443999988958,photograph
+SSIM,laion_088,laion_088.jpg,laion_088.jpg,True,0.46651911933416396,0.33125059999656514,logo
+SSIM,laion_089,laion_089.jpg,laion_089.jpg,True,0.11177026591097412,0.3363554999996268,photograph
+SSIM,laion_090,laion_090.jpg,laion_090.jpg,True,0.3837131550431257,0.33125640000071144,logo
+SSIM,laion_091,laion_091.jpg,laion_091.jpg,True,0.25469076037928645,0.3362360000028275,photograph
+SSIM,laion_092,laion_092.jpg,laion_092.jpg,True,0.5956564407805707,0.3352902000005997,ambiguous or mixed
+SSIM,laion_093,laion_093.jpg,laion_093.jpg,True,0.46754298063584027,0.3340607000027376,photograph
+SSIM,laion_094,laion_094.jpg,laion_094.jpg,True,0.22150666575060893,0.33085639999990235,ambiguous or mixed
+SSIM,laion_095,laion_095.jpg,laion_469.jpg,False,0.11119119739715735,0.3364120999976876,ambiguous or mixed
+SSIM,laion_096,laion_096.jpg,laion_096.jpg,True,0.33665879712879676,0.3301508000004105,ambiguous or mixed
+SSIM,laion_097,laion_097.jpg,laion_097.jpg,True,0.21003333111327363,0.3316119000010076,photograph
+SSIM,laion_098,laion_098.jpg,laion_098.jpg,True,0.4339520255641324,0.326171600001544,photograph
+SSIM,laion_099,laion_099.jpg,laion_099.jpg,True,0.4134213892186171,0.33506430000124965,ambiguous or mixed
+SSIM,laion_100,laion_100.jpg,laion_100.jpg,True,0.2708809732927432,0.3341356999990239,photograph
+SSIM,laion_101,laion_101.jpg,laion_101.jpg,True,0.5623603255486119,0.3369816999984323,photograph
+SSIM,laion_102,laion_102.jpg,laion_102.jpg,True,0.16073620071407788,0.3444065999974555,photograph
+SSIM,laion_103,laion_103.jpg,laion_103.jpg,True,0.3233923460873222,0.33142530000259285,photograph
+SSIM,laion_104,laion_104.jpg,laion_104.jpg,True,0.19068773683886167,0.3282779000001028,photograph
+SSIM,laion_105,laion_105.jpg,laion_105.jpg,True,0.4552368096558238,0.3283445999986725,photograph
+SSIM,laion_106,laion_106.jpg,laion_106.jpg,True,0.3867917413334908,0.32803250000142725,digital painting
+SSIM,laion_107,laion_107.jpg,laion_225.jpg,False,0.2963699095497972,0.32983649999732734,photograph
+SSIM,laion_108,laion_108.jpg,laion_108.jpg,True,0.6608104375896592,0.3312253000003693,ambiguous or mixed
+SSIM,laion_109,laion_109.jpg,laion_109.jpg,True,0.2726943844238572,0.3372601000010036,photograph
+SSIM,laion_110,laion_110.jpg,laion_169.jpg,False,0.10132746322992396,0.3395103000002564,photograph
+SSIM,laion_111,laion_111.jpg,laion_111.jpg,True,0.36343926751805683,0.34286929999871063,photograph
+SSIM,laion_112,laion_112.jpg,laion_112.jpg,True,0.22521877120183376,0.3412444999994477,photograph
+SSIM,laion_113,laion_113.jpg,laion_394.jpg,False,0.1474298922809411,0.3404850999977498,digital painting
+SSIM,laion_114,laion_114.jpg,laion_114.jpg,True,0.5794396768457507,0.33787910000319243,vector art
+SSIM,laion_115,laion_115.jpg,laion_115.jpg,True,0.2268382014474359,0.3351578999972844,photograph
+SSIM,laion_116,laion_116.jpg,laion_116.jpg,True,0.1545485533366603,0.34204639999734354,photograph
+SSIM,laion_117,laion_117.jpg,laion_117.jpg,True,0.29213265863468885,0.3410033000000112,photograph
+SSIM,laion_118,laion_118.jpg,laion_118.jpg,True,0.7214207282272938,0.34185319999960484,ambiguous or mixed
+SSIM,laion_119,laion_119.jpg,laion_119.jpg,True,0.4507779463687737,0.33579029999964405,photograph
+SSIM,laion_120,laion_120.jpg,laion_120.jpg,True,0.4136697267141196,0.3378426999988733,photograph
+SSIM,laion_121,laion_121.jpg,laion_458.jpg,False,0.11387367548459752,0.35248259999934817,photograph
+SSIM,laion_122,laion_122.jpg,laion_122.jpg,True,0.12320885003723019,0.34519820000059553,logo
+SSIM,laion_123,laion_123.jpg,laion_123.jpg,True,0.516513952647879,0.33708239999759826,ambiguous or mixed
+SSIM,laion_124,laion_124.jpg,laion_124.jpg,True,0.3098133766235488,0.3424161000002641,ambiguous or mixed
+SSIM,laion_125,laion_125.jpg,laion_125.jpg,True,0.3218870161734784,0.3373926999993273,ambiguous or mixed
+SSIM,laion_126,laion_126.jpg,laion_126.jpg,True,0.23811278132800007,0.3361144000009517,logo
+SSIM,laion_127,laion_127.jpg,laion_127.jpg,True,0.3540588988419759,0.3401172999983828,ambiguous or mixed
+SSIM,laion_128,laion_128.jpg,laion_128.jpg,True,0.6934278712440246,0.34112870000171824,photograph
+SSIM,laion_129,laion_129.jpg,laion_129.jpg,True,0.322995456387992,0.33572779999667546,digital painting
+SSIM,laion_130,laion_130.jpg,laion_130.jpg,True,0.5021561281225664,0.3381604000023799,photograph
+SSIM,laion_131,laion_131.jpg,laion_131.jpg,True,0.37799508786861286,0.34028500000204076,ambiguous or mixed
+SSIM,laion_132,laion_132.jpg,laion_132.jpg,True,0.29366158681815324,0.3377010000003793,photograph
+SSIM,laion_133,laion_133.jpg,laion_133.jpg,True,0.21295751195648474,0.3423473999973794,ambiguous or mixed
+SSIM,laion_134,laion_134.jpg,laion_134.jpg,True,0.6629084278888222,0.3391604999997071,photograph
+SSIM,laion_135,laion_135.jpg,laion_135.jpg,True,0.20389445603698603,0.3350146000011591,digital painting
+SSIM,laion_136,laion_136.jpg,laion_136.jpg,True,0.2486832112995341,0.3397205000001122,logo
+SSIM,laion_137,laion_137.jpg,laion_137.jpg,True,0.19345961153034774,0.3363333999986935,photograph
+SSIM,laion_138,laion_138.jpg,laion_138.jpg,True,0.15056469849773263,0.3414487000009103,photograph
+SSIM,laion_139,laion_139.jpg,laion_139.jpg,True,0.34005845316921735,0.35046439999860013,digital painting
+SSIM,laion_140,laion_140.jpg,laion_140.jpg,True,0.3503420320597675,0.34133680000013555,vector art
+SSIM,laion_141,laion_141.jpg,laion_141.jpg,True,0.20220481190004586,0.339321800001926,photograph
+SSIM,laion_142,laion_142.jpg,laion_142.jpg,True,0.7172165832432956,0.34115550000205985,logo
+SSIM,laion_143,laion_143.jpg,laion_143.jpg,True,0.7460521011803417,0.33910240000113845,photograph
+SSIM,laion_144,laion_144.jpg,laion_144.jpg,True,0.15155552160776387,0.35245969999959925,vector art
+SSIM,laion_145,laion_145.jpg,laion_307.jpg,False,0.14643141981500257,0.3618986000001314,ambiguous or mixed
+SSIM,laion_146,laion_146.jpg,laion_146.jpg,True,0.28290462012454964,0.3413080999998783,photograph
+SSIM,laion_147,laion_147.jpg,laion_147.jpg,True,0.19041706544216325,0.33090029999948456,ambiguous or mixed
+SSIM,laion_148,laion_148.jpg,laion_148.jpg,True,0.6255789130743408,0.33402270000078715,photograph
+SSIM,laion_149,laion_149.jpg,laion_149.jpg,True,0.23447659278251187,0.32857700000022305,photograph
+SSIM,laion_150,laion_150.jpg,laion_128.jpg,False,0.46040486145254533,0.35231150000254274,logo
+SSIM,laion_151,laion_151.jpg,laion_151.jpg,True,0.2317056358595386,0.36215900000024703,photograph
+SSIM,laion_152,laion_152.jpg,laion_152.jpg,True,0.4158998022720924,0.3346718000029796,vector art
+SSIM,laion_153,laion_153.jpg,laion_153.jpg,True,0.2655300665843417,0.3311976999975741,collage
+SSIM,laion_154,laion_154.jpg,laion_154.jpg,True,0.4279699666123699,0.33596029999898747,ambiguous or mixed
+SSIM,laion_155,laion_155.jpg,laion_155.jpg,True,0.13735364625188354,0.34498409999650903,ambiguous or mixed
+SSIM,laion_156,laion_156.jpg,laion_156.jpg,True,0.21460957200267963,0.3639495000024908,photograph
+SSIM,laion_157,laion_157.jpg,laion_157.jpg,True,0.20050452172353447,0.3431479000028048,logo
+SSIM,laion_158,laion_158.jpg,laion_158.jpg,True,0.5407809279169455,0.33651860000099987,digital painting
+SSIM,laion_159,laion_159.jpg,laion_159.jpg,True,0.22554361031853912,0.3315670999982103,photograph
+SSIM,laion_160,laion_160.jpg,laion_160.jpg,True,0.4593000429160838,0.3324906000016199,ambiguous or mixed
+SSIM,laion_161,laion_161.jpg,laion_161.jpg,True,0.5576887698259202,0.3332057999978133,photograph
+SSIM,laion_162,laion_162.jpg,laion_162.jpg,True,0.36682086737293484,0.33294720000048983,photograph
+SSIM,laion_163,laion_163.jpg,laion_163.jpg,True,0.20750500627769008,0.3279995000011695,photograph
+SSIM,laion_164,laion_164.jpg,laion_164.jpg,True,0.5839576299994924,0.3229092000001401,ambiguous or mixed
+SSIM,laion_165,laion_165.jpg,laion_212.jpg,False,0.24597118777702776,0.32598780000262195,vector art
+SSIM,laion_166,laion_166.jpg,laion_166.jpg,True,0.21796774526229024,0.3242288000001281,photograph
+SSIM,laion_167,laion_167.jpg,laion_167.jpg,True,0.30205318579466295,0.32554659999732394,photograph
+SSIM,laion_168,laion_168.jpg,laion_168.jpg,True,0.3085605754574567,0.3324160000011034,photograph
+SSIM,laion_169,laion_169.jpg,laion_169.jpg,True,0.43387293648448594,0.33325949999925797,vector art
+SSIM,laion_170,laion_170.jpg,laion_142.jpg,False,0.2376394081475502,0.33535159999883035,photograph
+SSIM,laion_171,laion_171.jpg,laion_171.jpg,True,0.17689092506126558,0.33605159999933676,logo
+SSIM,laion_172,laion_172.jpg,laion_172.jpg,True,0.31659123127493555,0.33625300000130665,ambiguous or mixed
+SSIM,laion_173,laion_173.jpg,laion_173.jpg,True,0.41407336053767924,0.33934880000015255,ambiguous or mixed
+SSIM,laion_174,laion_174.jpg,laion_150.jpg,False,0.10332397465297695,0.3476507000013953,collage
+SSIM,laion_175,laion_175.jpg,laion_175.jpg,True,0.4358837920745551,0.35076529999787454,ambiguous or mixed
+SSIM,laion_176,laion_176.jpg,laion_176.jpg,True,0.5368134470315821,0.33744579999984126,ambiguous or mixed
+SSIM,laion_177,laion_177.jpg,laion_177.jpg,True,0.32660352336114046,0.32619460000205436,photograph
+SSIM,laion_178,laion_178.jpg,laion_178.jpg,True,0.46446055895761673,0.32392970000000787,photograph
+SSIM,laion_179,laion_179.jpg,laion_179.jpg,True,0.3729091039214808,0.32672610000008717,ambiguous or mixed
+SSIM,laion_180,laion_180.jpg,laion_143.jpg,False,0.17053112584720745,0.3384752000019944,ambiguous or mixed
+SSIM,laion_181,laion_181.jpg,laion_181.jpg,True,0.43161272594421135,0.3265054000003147,vector art
+SSIM,laion_182,laion_182.jpg,laion_182.jpg,True,0.25988133839566524,0.32682239999849116,photograph
+SSIM,laion_183,laion_183.jpg,laion_183.jpg,True,0.29746755934299,0.32812899999771616,photograph
+SSIM,laion_184,laion_184.jpg,laion_184.jpg,True,0.35558344955855636,0.3283274000023084,logo
+SSIM,laion_185,laion_185.jpg,laion_185.jpg,True,0.238824175150033,0.32416229999944335,photograph
+SSIM,laion_186,laion_186.jpg,laion_186.jpg,True,0.6346036127328407,0.32794210000065505,digital painting
+SSIM,laion_187,laion_187.jpg,laion_187.jpg,True,0.2404279011374805,0.33136000000013155,ambiguous or mixed
+SSIM,laion_188,laion_188.jpg,laion_397.jpg,False,0.1600282656882612,0.32748200000060024,photograph
+SSIM,laion_189,laion_189.jpg,laion_189.jpg,True,0.7345478548153582,0.33387969999967027,digital painting
+SSIM,laion_190,laion_190.jpg,laion_190.jpg,True,0.321165021266142,0.324122999998508,ambiguous or mixed
+SSIM,laion_191,laion_191.jpg,laion_191.jpg,True,0.28572331435744186,0.326759999999922,digital painting
+SSIM,laion_192,laion_192.jpg,laion_142.jpg,False,0.26824082817641104,0.32750259999738773,logo
+SSIM,laion_193,laion_193.jpg,laion_397.jpg,False,0.20674014245944242,0.3372875999993994,photograph
+SSIM,laion_194,laion_194.jpg,laion_194.jpg,True,0.1647850952744366,0.32853460000114865,ambiguous or mixed
+SSIM,laion_195,laion_195.jpg,laion_195.jpg,True,0.4677751153648011,0.329057399998419,photograph
+SSIM,laion_196,laion_196.jpg,laion_196.jpg,True,0.42905856551221977,0.3259556999983033,ambiguous or mixed
+SSIM,laion_197,laion_197.jpg,laion_142.jpg,False,0.36114404715546844,0.3272387999968487,ambiguous or mixed
+SSIM,laion_198,laion_198.jpg,laion_198.jpg,True,0.2105837813881159,0.3317373999998381,logo
+SSIM,laion_199,laion_199.jpg,laion_199.jpg,True,0.18502588612235327,0.32952429999932065,photograph
+SSIM,laion_200,laion_200.jpg,laion_200.jpg,True,0.4845598063803927,0.33258650000061607,digital painting
+SSIM,laion_201,laion_201.jpg,laion_201.jpg,True,0.22526132431619258,0.3293253999981971,photograph
+SSIM,laion_202,laion_202.jpg,laion_206.jpg,False,0.31784192109040116,0.3290618999999424,photograph
+SSIM,laion_203,laion_203.jpg,laion_203.jpg,True,0.49765773700616583,0.3234551999994437,photograph
+SSIM,laion_204,laion_204.jpg,laion_469.jpg,False,0.16041426346610968,0.3431613000029756,photograph
+SSIM,laion_205,laion_205.jpg,laion_205.jpg,True,0.3094343595679636,0.3504988999993657,ambiguous or mixed
+SSIM,laion_206,laion_206.jpg,laion_206.jpg,True,0.49164135557822314,0.3390354000002844,vector art
+SSIM,laion_207,laion_207.jpg,laion_207.jpg,True,0.23043169060515964,0.333442200000718,photograph
+SSIM,laion_208,laion_208.jpg,laion_208.jpg,True,0.23750972415395297,0.33128470000156085,photograph
+SSIM,laion_209,laion_209.jpg,laion_209.jpg,True,0.28213792873874866,0.336751999999251,ambiguous or mixed
+SSIM,laion_210,laion_210.jpg,laion_210.jpg,True,0.4768648918287596,0.3555292000019108,photograph
+SSIM,laion_211,laion_211.jpg,laion_211.jpg,True,0.16015183208636535,0.3309761000018625,photograph
+SSIM,laion_212,laion_212.jpg,laion_212.jpg,True,0.7415292777398035,0.33453410000220174,vector art
+SSIM,laion_213,laion_213.jpg,laion_213.jpg,True,0.7099679452929694,0.3466766000019561,photograph
+SSIM,laion_214,laion_214.jpg,laion_214.jpg,True,0.29930326408537616,0.3263848999995389,photograph
+SSIM,laion_215,laion_215.jpg,laion_215.jpg,True,0.20302860493909503,0.32670950000101584,photograph
+SSIM,laion_216,laion_216.jpg,laion_216.jpg,True,0.1633040947942533,0.3344488000002457,photograph
+SSIM,laion_217,laion_217.jpg,laion_217.jpg,True,0.4660606524562788,0.3254636000019673,vector art
+SSIM,laion_218,laion_218.jpg,laion_218.jpg,True,0.2893901518890184,0.3270545999985188,photograph
+SSIM,laion_219,laion_219.jpg,laion_219.jpg,True,0.461046588573826,0.3306081000009726,vector art
+SSIM,laion_220,laion_220.jpg,laion_220.jpg,True,0.2988591804014779,0.32534039999882225,digital painting
+SSIM,laion_221,laion_221.jpg,laion_221.jpg,True,0.08439172809681188,0.32501829999819165,ambiguous or mixed
+SSIM,laion_222,laion_222.jpg,laion_222.jpg,True,0.34440103711313297,0.3233022999993409,photograph
+SSIM,laion_223,laion_223.jpg,laion_223.jpg,True,0.16872945154624505,0.3243173000009847,ambiguous or mixed
+SSIM,laion_224,laion_224.jpg,laion_224.jpg,True,0.5411397369121224,0.3240880000012112,ambiguous or mixed
+SSIM,laion_225,laion_225.jpg,laion_225.jpg,True,0.6992488046494433,0.32661039999948116,vector art
+SSIM,laion_226,laion_226.jpg,laion_226.jpg,True,0.13643736396116088,0.3247553000001062,logo
+SSIM,laion_227,laion_227.jpg,laion_227.jpg,True,0.6339381788156979,0.3239495000016177,ambiguous or mixed
+SSIM,laion_228,laion_228.jpg,laion_397.jpg,False,0.18931573418102407,0.3314676999980293,ambiguous or mixed
+SSIM,laion_229,laion_229.jpg,laion_229.jpg,True,0.5993591147664691,0.3341989000000467,vector art
+SSIM,laion_230,laion_230.jpg,laion_279.jpg,False,0.09348566962030651,0.33851619999768445,photograph
+SSIM,laion_231,laion_231.jpg,laion_231.jpg,True,0.17736799685663915,0.32830269999976736,ambiguous or mixed
+SSIM,laion_232,laion_232.jpg,laion_232.jpg,True,0.27950762407632507,0.32659849999981816,photograph
+SSIM,laion_233,laion_233.jpg,laion_233.jpg,True,0.14081545947501456,0.3271611000018311,photograph
+SSIM,laion_234,laion_234.jpg,laion_234.jpg,True,0.38948346903692593,0.34392539999680594,photograph
+SSIM,laion_235,laion_235.jpg,laion_235.jpg,True,0.08782394621639344,0.3420174999992014,photograph
+SSIM,laion_236,laion_236.jpg,laion_160.jpg,False,0.13905727433226303,0.3367754999999306,collage
+SSIM,laion_237,laion_237.jpg,laion_237.jpg,True,0.5010393901148205,0.3397189999996044,ambiguous or mixed
+SSIM,laion_238,laion_238.jpg,laion_238.jpg,True,0.1959714752708579,0.3410765000007814,photograph
+SSIM,laion_239,laion_239.jpg,laion_239.jpg,True,0.2069682237435438,0.33447630000227946,vector art
+SSIM,laion_240,laion_240.jpg,laion_240.jpg,True,0.1392302964235338,0.34872579999864683,ambiguous or mixed
+SSIM,laion_241,laion_241.jpg,laion_397.jpg,False,0.18926979656638807,0.3459599999987404,vector art
+SSIM,laion_242,laion_242.jpg,laion_242.jpg,True,0.3564657253146489,0.33751850000044215,ambiguous or mixed
+SSIM,laion_243,laion_243.jpg,laion_243.jpg,True,0.16651312248236325,0.35002929999973276,ambiguous or mixed
+SSIM,laion_244,laion_244.jpg,laion_225.jpg,False,0.5735119800353964,0.35158079999746406,logo
+SSIM,laion_245,laion_245.jpg,laion_245.jpg,True,0.27266328845196175,0.34966910000002827,ambiguous or mixed
+SSIM,laion_246,laion_246.jpg,laion_246.jpg,True,0.24052602696663197,0.3523504000004323,logo
+SSIM,laion_247,laion_247.jpg,laion_298.jpg,False,0.2742187287057523,0.3427638000030129,vector art
+SSIM,laion_248,laion_248.jpg,laion_248.jpg,True,0.19391193091913975,0.3389625000017986,photograph
+SSIM,laion_249,laion_249.jpg,laion_249.jpg,True,0.265893238320599,0.3419644999994489,photograph
+SSIM,laion_250,laion_250.jpg,laion_250.jpg,True,0.4185746249580472,0.3430699000018649,digital painting
+SSIM,laion_251,laion_251.jpg,laion_251.jpg,True,0.6238575087010299,0.339905999997427,photograph
+SSIM,laion_252,laion_252.jpg,laion_252.jpg,True,0.4284458641475648,0.3403610999994271,logo
+SSIM,laion_253,laion_253.jpg,laion_253.jpg,True,0.24771262816459452,0.33489929999996093,photograph
+SSIM,laion_254,laion_254.jpg,laion_254.jpg,True,0.5622086668239928,0.34489340000072843,ambiguous or mixed
+SSIM,laion_255,laion_255.jpg,laion_255.jpg,True,0.32471477257286746,0.34148840000125347,photograph
+SSIM,laion_256,laion_256.jpg,laion_256.jpg,True,0.23513315767941045,0.34275830000115093,photograph
+SSIM,laion_257,laion_257.jpg,laion_397.jpg,False,0.22680922947191842,0.3386484999973618,photograph
+SSIM,laion_258,laion_258.jpg,laion_258.jpg,True,0.5245247450330653,0.34091279999847757,digital painting
+SSIM,laion_259,laion_259.jpg,laion_259.jpg,True,0.3764262544739379,0.3504204999990179,photograph
+SSIM,laion_260,laion_260.jpg,laion_260.jpg,True,0.33091290526439404,0.3405939000003855,ambiguous or mixed
+SSIM,laion_261,laion_261.jpg,laion_261.jpg,True,0.16170616166613674,0.3430164999990666,photograph
+SSIM,laion_262,laion_262.jpg,laion_262.jpg,True,0.21291918997193654,0.33522369999991497,ambiguous or mixed
+SSIM,laion_263,laion_263.jpg,laion_263.jpg,True,0.24516656894501332,0.3474695000004431,photograph
+SSIM,laion_264,laion_264.jpg,laion_264.jpg,True,0.1382648310861689,0.36913300000014715,photograph
+SSIM,laion_265,laion_265.jpg,laion_189.jpg,False,0.15583965785576845,0.364106000000902,vector art
+SSIM,laion_266,laion_266.jpg,laion_266.jpg,True,0.31511313867480845,0.3481188000005204,photograph
+SSIM,laion_267,laion_267.jpg,laion_267.jpg,True,0.19023257229587112,0.34350310000081663,ambiguous or mixed
+SSIM,laion_268,laion_268.jpg,laion_268.jpg,True,0.28585529689560407,0.33700900000258116,photograph
+SSIM,laion_269,laion_269.jpg,laion_269.jpg,True,0.5068005525357783,0.36677849999978207,logo
+SSIM,laion_270,laion_270.jpg,laion_270.jpg,True,0.4654597923513626,0.33970729999782634,photograph
+SSIM,laion_271,laion_271.jpg,laion_271.jpg,True,0.4527971778909644,0.34346589999768184,vector art
+SSIM,laion_272,laion_272.jpg,laion_272.jpg,True,0.2680575297949294,0.3496268999988388,photograph
+SSIM,laion_273,laion_273.jpg,laion_273.jpg,True,0.30421984054177653,0.3429007000013371,ambiguous or mixed
+SSIM,laion_274,laion_274.jpg,laion_274.jpg,True,0.3632319066360097,0.34356990000014775,digital painting
+SSIM,laion_275,laion_275.jpg,laion_275.jpg,True,0.23526764645688375,0.35781049999786774,photograph
+SSIM,laion_276,laion_276.jpg,laion_276.jpg,True,0.42614378339925146,0.33979360000012093,digital painting
+SSIM,laion_277,laion_277.jpg,laion_184.jpg,False,0.2974448260794915,0.34127059999809717,logo
+SSIM,laion_278,laion_278.jpg,laion_278.jpg,True,0.6587879417607966,0.3385521999989578,digital painting
+SSIM,laion_279,laion_279.jpg,laion_279.jpg,True,0.5198243353615118,0.34201820000089356,vector art
+SSIM,laion_280,laion_280.jpg,laion_280.jpg,True,0.2820423206537848,0.34142879999853903,photograph
+SSIM,laion_281,laion_281.jpg,laion_281.jpg,True,0.6023319135548894,0.3359124000016891,photograph
+SSIM,laion_282,laion_282.jpg,laion_282.jpg,True,0.23160681389943508,0.33414930000071763,photograph
+SSIM,laion_283,laion_283.jpg,laion_283.jpg,True,0.23379805313104254,0.3325814000017999,ambiguous or mixed
+SSIM,laion_284,laion_284.jpg,laion_284.jpg,True,0.30794296467770266,0.34139929999946617,photograph
+SSIM,laion_285,laion_285.jpg,laion_285.jpg,True,0.31013283505850026,0.33142320000115433,photograph
+SSIM,laion_286,laion_286.jpg,laion_286.jpg,True,0.5367739887460998,0.3367131999984849,logo
+SSIM,laion_287,laion_287.jpg,laion_287.jpg,True,0.15330374493622936,0.34391429999959655,ambiguous or mixed
+SSIM,laion_288,laion_288.jpg,laion_212.jpg,False,0.1766344265473985,0.3379293999969377,vector art
+SSIM,laion_289,laion_289.jpg,laion_289.jpg,True,0.19515557429170755,0.3321834000016679,ambiguous or mixed
+SSIM,laion_290,laion_290.jpg,laion_290.jpg,True,0.30163738416086866,0.34795849999864004,photograph
+SSIM,laion_291,laion_291.jpg,laion_291.jpg,True,0.1538139194777968,0.33983900000021094,collage
+SSIM,laion_292,laion_292.jpg,laion_397.jpg,False,0.18730682967965623,0.3397095000000263,photograph
+SSIM,laion_293,laion_293.jpg,laion_293.jpg,True,0.20346965355184388,0.3439840999999433,photograph
+SSIM,laion_294,laion_294.jpg,laion_294.jpg,True,0.3029804956846699,0.33665449999898556,photograph
+SSIM,laion_295,laion_295.jpg,laion_295.jpg,True,0.16897584391695433,0.333773199999996,photograph
+SSIM,laion_296,laion_296.jpg,laion_296.jpg,True,0.670396896781207,0.33509810000032303,digital painting
+SSIM,laion_297,laion_297.jpg,laion_297.jpg,True,0.18612096314762758,0.33808440000211704,photograph
+SSIM,laion_298,laion_298.jpg,laion_298.jpg,True,0.5665355062751813,0.33595880000211764,vector art
+SSIM,laion_299,laion_299.jpg,laion_299.jpg,True,0.43442084767500655,0.3350404000011622,digital painting
+SSIM,laion_300,laion_300.jpg,laion_453.jpg,False,0.09220746345888559,0.3384498000013991,ambiguous or mixed
+SSIM,laion_301,laion_301.jpg,laion_142.jpg,False,0.2555442736115466,0.33803460000126506,digital painting
+SSIM,laion_302,laion_302.jpg,laion_302.jpg,True,0.30954094702877544,0.3397446000017226,photograph
+SSIM,laion_303,laion_303.jpg,laion_142.jpg,False,0.3059971370427293,0.33969019999858574,ambiguous or mixed
+SSIM,laion_304,laion_304.jpg,laion_469.jpg,False,0.25229226162197926,0.3324525999996695,photograph
+SSIM,laion_305,laion_305.jpg,laion_305.jpg,True,0.3642100851548766,0.3435267999993812,ambiguous or mixed
+SSIM,laion_306,laion_306.jpg,laion_306.jpg,True,0.45590385903930636,0.338351700000203,digital painting
+SSIM,laion_307,laion_307.jpg,laion_307.jpg,True,0.5128854211398435,0.33803749999788124,photograph
+SSIM,laion_308,laion_308.jpg,laion_308.jpg,True,0.2848777942915599,0.3445080000019516,photograph
+SSIM,laion_309,laion_309.jpg,laion_309.jpg,True,0.15503248896960484,0.34068910000132746,ambiguous or mixed
+SSIM,laion_310,laion_310.jpg,laion_128.jpg,False,0.2965931405158724,0.3420045000020764,ambiguous or mixed
+SSIM,laion_311,laion_311.jpg,laion_311.jpg,True,0.11078753281876776,0.34734880000178237,photograph
+SSIM,laion_312,laion_312.jpg,laion_312.jpg,True,0.2897835980858571,0.33732940000118106,ambiguous or mixed
+SSIM,laion_313,laion_313.jpg,laion_313.jpg,True,0.5428818227328774,0.3346008000007714,logo
+SSIM,laion_314,laion_314.jpg,laion_469.jpg,False,0.1525743369585891,0.33639749999929336,photograph
+SSIM,laion_315,laion_315.jpg,laion_315.jpg,True,0.5318367854071164,0.33567630000106874,vector art
+SSIM,laion_316,laion_316.jpg,laion_316.jpg,True,0.1764514119561065,0.3372233999980381,photograph
+SSIM,laion_317,laion_317.jpg,laion_317.jpg,True,0.21878310005337012,0.334958600000391,photograph
+SSIM,laion_318,laion_318.jpg,laion_318.jpg,True,0.4431426405255134,0.3379805000004126,photograph
+SSIM,laion_319,laion_319.jpg,laion_319.jpg,True,0.6722606049004348,0.34212549999938346,digital painting
+SSIM,laion_320,laion_320.jpg,laion_320.jpg,True,0.5529494111619073,0.34265980000054697,ambiguous or mixed
+SSIM,laion_321,laion_321.jpg,laion_321.jpg,True,0.28639892685916185,0.3389657999978226,photograph
+SSIM,laion_322,laion_322.jpg,laion_322.jpg,True,0.3236238809373712,0.34333159999732743,photograph
+SSIM,laion_323,laion_323.jpg,laion_323.jpg,True,0.5062694121639388,0.3528528999995615,ambiguous or mixed
+SSIM,laion_324,laion_324.jpg,laion_324.jpg,True,0.471916082751272,0.34017970000058995,photograph
+SSIM,laion_325,laion_325.jpg,laion_325.jpg,True,0.393333914544695,0.33375859999796376,photograph
+SSIM,laion_326,laion_326.jpg,laion_326.jpg,True,0.26075955344184637,0.3390548999996099,photograph
+SSIM,laion_327,laion_327.jpg,laion_327.jpg,True,0.27163774736197466,0.3367593000002671,photograph
+SSIM,laion_328,laion_328.jpg,laion_328.jpg,True,0.17248715606474307,0.3575931000013952,digital painting
+SSIM,laion_329,laion_329.jpg,laion_329.jpg,True,0.4286822411157637,0.3319010999985039,ambiguous or mixed
+SSIM,laion_330,laion_330.jpg,laion_330.jpg,True,0.6684313853966819,0.3262964000023203,photograph
+SSIM,laion_331,laion_331.jpg,laion_331.jpg,True,0.22450960831767083,0.3295566000015242,photograph
+SSIM,laion_332,laion_332.jpg,laion_332.jpg,True,0.383497869629947,0.3430402000012691,photograph
+SSIM,laion_333,laion_333.jpg,laion_333.jpg,True,0.427068955259129,0.35540599999876576,logo
+SSIM,laion_334,laion_334.jpg,laion_334.jpg,True,0.2878952086951321,0.34729019999940647,photograph
+SSIM,laion_335,laion_335.jpg,laion_469.jpg,False,0.13286043933757968,0.34748450000188313,ambiguous or mixed
+SSIM,laion_336,laion_336.jpg,laion_336.jpg,True,0.5940173370357709,0.3444959000007657,photograph
+SSIM,laion_337,laion_337.jpg,laion_337.jpg,True,0.5562937172401643,0.33802360000117915,logo
+SSIM,laion_338,laion_338.jpg,laion_458.jpg,False,0.14796248800168763,0.3364393999981985,photograph
+SSIM,laion_339,laion_339.jpg,laion_339.jpg,True,0.27903117031182234,0.342773299998953,logo
+SSIM,laion_340,laion_340.jpg,laion_340.jpg,True,0.41864028891751454,0.3360400000019581,photograph
+SSIM,laion_341,laion_341.jpg,laion_341.jpg,True,0.19785184546756873,0.33590539999931934,photograph
+SSIM,laion_342,laion_342.jpg,laion_342.jpg,True,0.37480149830066806,0.3409542000008514,photograph
+SSIM,laion_343,laion_343.jpg,laion_343.jpg,True,0.14774284450363862,0.3258888000018487,photograph
+SSIM,laion_344,laion_344.jpg,laion_344.jpg,True,0.18744943646080475,0.32164900000134367,photograph
+SSIM,laion_345,laion_345.jpg,laion_143.jpg,False,0.12946666131164217,0.3265238000021782,photograph
+SSIM,laion_346,laion_346.jpg,laion_346.jpg,True,0.44987863379619814,0.3277611999983492,photograph
+SSIM,laion_347,laion_347.jpg,laion_347.jpg,True,0.502766735348285,0.3234790000024077,photograph
+SSIM,laion_348,laion_348.jpg,laion_348.jpg,True,0.4991397960263319,0.3239733999980672,ambiguous or mixed
+SSIM,laion_349,laion_349.jpg,laion_349.jpg,True,0.533455925060839,0.32644600000276114,photograph
+SSIM,laion_350,laion_350.jpg,laion_350.jpg,True,0.6241444009461146,0.33196010000028764,ambiguous or mixed
+SSIM,laion_351,laion_351.jpg,laion_351.jpg,True,0.5161696383463352,0.3323223999977927,digital painting
+SSIM,laion_352,laion_352.jpg,laion_352.jpg,True,0.32317293736470254,0.33150580000074115,photograph
+SSIM,laion_353,laion_353.jpg,laion_353.jpg,True,0.6851621978774829,0.32774050000080024,logo
+SSIM,laion_354,laion_354.jpg,laion_354.jpg,True,0.21885708808351345,0.3244406000012532,photograph
+SSIM,laion_355,laion_355.jpg,laion_355.jpg,True,0.22988630658418646,0.3270838999997068,collage
+SSIM,laion_356,laion_356.jpg,laion_356.jpg,True,0.25717810260021823,0.32667899999796646,ambiguous or mixed
+SSIM,laion_357,laion_357.jpg,laion_357.jpg,True,0.2336593376636972,0.3299779999979364,photograph
+SSIM,laion_358,laion_358.jpg,laion_358.jpg,True,0.14394877623450592,0.3271337999976822,photograph
+SSIM,laion_359,laion_359.jpg,laion_359.jpg,True,0.24139792998722118,0.3287605999976222,photograph
+SSIM,laion_360,laion_360.jpg,laion_360.jpg,True,0.44215295160336315,0.324287400002504,collage
+SSIM,laion_361,laion_361.jpg,laion_361.jpg,True,0.44435315754233173,0.33322469999984605,ambiguous or mixed
+SSIM,laion_362,laion_362.jpg,laion_362.jpg,True,0.5102156024653715,0.33019070000227657,digital painting
+SSIM,laion_363,laion_363.jpg,laion_363.jpg,True,0.35101755341431495,0.3283350999990944,digital painting
+SSIM,laion_364,laion_364.jpg,laion_364.jpg,True,0.29962659203057457,0.331151399997907,photograph
+SSIM,laion_365,laion_365.jpg,laion_365.jpg,True,0.4002120076117194,0.3295564000000013,photograph
+SSIM,laion_366,laion_366.jpg,laion_366.jpg,True,0.36837602888370086,0.3283123000001069,ambiguous or mixed
+SSIM,laion_367,laion_367.jpg,laion_367.jpg,True,0.23697088415708228,0.3319612000013876,photograph
+SSIM,laion_368,laion_368.jpg,laion_368.jpg,True,0.3155366127478555,0.33655679999719723,ambiguous or mixed
+SSIM,laion_369,laion_369.jpg,laion_369.jpg,True,0.4333661800810909,0.3373424999990675,digital painting
+SSIM,laion_370,laion_370.jpg,laion_370.jpg,True,0.17845224644199256,0.3380557000018598,ambiguous or mixed
+SSIM,laion_371,laion_371.jpg,laion_371.jpg,True,0.5494768796804411,0.33398640000086743,vector art
+SSIM,laion_372,laion_372.jpg,laion_372.jpg,True,0.19906323466317605,0.32793709999896237,photograph
+SSIM,laion_373,laion_373.jpg,laion_373.jpg,True,0.1549866301224547,0.3249264000005496,digital painting
+SSIM,laion_374,laion_374.jpg,laion_397.jpg,False,0.18211898926583486,0.3319460999991861,logo
+SSIM,laion_375,laion_375.jpg,laion_375.jpg,True,0.5036632021850415,0.32815649999974994,ambiguous or mixed
+SSIM,laion_376,laion_376.jpg,laion_376.jpg,True,0.1526623010966374,0.33527200000025914,photograph
+SSIM,laion_377,laion_377.jpg,laion_377.jpg,True,0.16669280948728402,0.3312642999990203,collage
+SSIM,laion_378,laion_378.jpg,laion_378.jpg,True,0.24547651996197803,0.33963439999934053,photograph
+SSIM,laion_379,laion_379.jpg,laion_379.jpg,True,0.10662004871046277,0.3343272000020079,ambiguous or mixed
+SSIM,laion_380,laion_380.jpg,laion_380.jpg,True,0.20472119674619627,0.3393266000020958,ambiguous or mixed
+SSIM,laion_381,laion_381.jpg,laion_381.jpg,True,0.5950363426387567,0.3316512000019429,photograph
+SSIM,laion_382,laion_382.jpg,laion_382.jpg,True,0.2832773274442038,0.34716049999769893,photograph
+SSIM,laion_383,laion_383.jpg,laion_075.jpg,False,0.20347833261111725,0.35483839999869815,ambiguous or mixed
+SSIM,laion_384,laion_384.jpg,laion_384.jpg,True,0.22382876549229708,0.3399301999997988,ambiguous or mixed
+SSIM,laion_385,laion_385.jpg,laion_385.jpg,True,0.35512111558102977,0.3296587000004365,ambiguous or mixed
+SSIM,laion_386,laion_386.jpg,laion_386.jpg,True,0.2666619492151246,0.33027080000101705,photograph
+SSIM,laion_387,laion_387.jpg,laion_387.jpg,True,0.39145945689309625,0.3332513999994262,photograph
+SSIM,laion_388,laion_388.jpg,laion_388.jpg,True,0.18275255345240868,0.3376578999996127,photograph
+SSIM,laion_389,laion_389.jpg,laion_389.jpg,True,0.5656925671983836,0.3399601999990409,ambiguous or mixed
+SSIM,laion_390,laion_390.jpg,laion_413.jpg,False,0.13251674774582575,0.3332283000017924,ambiguous or mixed
+SSIM,laion_391,laion_391.jpg,laion_206.jpg,False,0.4800535579717114,0.3376538000011351,vector art
+SSIM,laion_392,laion_392.jpg,laion_392.jpg,True,0.3458189187930465,0.3295237999991514,photograph
+SSIM,laion_393,laion_393.jpg,laion_393.jpg,True,0.20767258147051998,0.32631969999783905,photograph
+SSIM,laion_394,laion_394.jpg,laion_394.jpg,True,0.7672859396830428,0.3326121999998577,photograph
+SSIM,laion_395,laion_395.jpg,laion_395.jpg,True,0.24596303012652346,0.3331006000007619,ambiguous or mixed
+SSIM,laion_396,laion_396.jpg,laion_396.jpg,True,0.587341155876022,0.33039089999874705,photograph
+SSIM,laion_397,laion_397.jpg,laion_397.jpg,True,0.701353414284313,0.3314024999999674,logo
+SSIM,laion_398,laion_398.jpg,laion_398.jpg,True,0.2731980994252454,0.3399477000020852,digital painting
+SSIM,laion_399,laion_399.jpg,laion_399.jpg,True,0.1855140349610877,0.3367290000023786,ambiguous or mixed
+SSIM,laion_400,laion_400.jpg,laion_400.jpg,True,0.16833830002990216,0.3348380999996152,photograph
+SSIM,laion_401,laion_401.jpg,laion_401.jpg,True,0.716733182917113,0.3367767999989155,ambiguous or mixed
+SSIM,laion_402,laion_402.jpg,laion_213.jpg,False,0.09074718183394812,0.33528579999983776,ambiguous or mixed
+SSIM,laion_403,laion_403.jpg,laion_403.jpg,True,0.34288522369873564,0.33429229999819654,digital painting
+SSIM,laion_404,laion_404.jpg,laion_143.jpg,False,0.10807324286095905,0.3278638999981922,digital painting
+SSIM,laion_405,laion_405.jpg,laion_469.jpg,False,0.15705295410983494,0.3266905999989831,logo
+SSIM,laion_406,laion_406.jpg,laion_406.jpg,True,0.5013850048281867,0.3354116000009526,logo
+SSIM,laion_407,laion_407.jpg,laion_407.jpg,True,0.26655064453362753,0.329488900002616,photograph
+SSIM,laion_408,laion_408.jpg,laion_408.jpg,True,0.3255166091727221,0.32520129999829805,logo
+SSIM,laion_409,laion_409.jpg,laion_409.jpg,True,0.3396676820629172,0.33241309999721125,ambiguous or mixed
+SSIM,laion_410,laion_410.jpg,laion_410.jpg,True,0.3571384553895935,0.32615569999688887,photograph
+SSIM,laion_411,laion_411.jpg,laion_458.jpg,False,0.21391365314977248,0.3381756000017049,digital painting
+SSIM,laion_412,laion_412.jpg,laion_412.jpg,True,0.23720322690872267,0.33098700000118697,ambiguous or mixed
+SSIM,laion_413,laion_413.jpg,laion_413.jpg,True,0.4996515762380186,0.3260478999982297,ambiguous or mixed
+SSIM,laion_414,laion_414.jpg,laion_414.jpg,True,0.5288117257607677,0.32732599999872036,logo
+SSIM,laion_415,laion_415.jpg,laion_415.jpg,True,0.12722974694595912,0.3307280000008177,photograph
+SSIM,laion_416,laion_416.jpg,laion_416.jpg,True,0.19872352597906867,0.3329669000013382,ambiguous or mixed
+SSIM,laion_417,laion_417.jpg,laion_417.jpg,True,0.21855421912402495,0.33246069999950123,photograph
+SSIM,laion_418,laion_418.jpg,laion_418.jpg,True,0.6523453124277419,0.34230050000041956,photograph
+SSIM,laion_419,laion_419.jpg,laion_419.jpg,True,0.44024794892029034,0.33797169999888865,photograph
+SSIM,laion_420,laion_420.jpg,laion_420.jpg,True,0.2514004346384173,0.3324544999995851,photograph
+SSIM,laion_421,laion_421.jpg,laion_421.jpg,True,0.43402346889305704,0.33516899999813177,ambiguous or mixed
+SSIM,laion_422,laion_422.jpg,laion_422.jpg,True,0.27240560952039206,0.35027400000035414,ambiguous or mixed
+SSIM,laion_423,laion_423.jpg,laion_423.jpg,True,0.45302127715576257,0.3405905999970855,ambiguous or mixed
+SSIM,laion_424,laion_424.jpg,laion_118.jpg,False,0.2517182410459942,0.3443535000005795,photograph
+SSIM,laion_425,laion_425.jpg,laion_425.jpg,True,0.328807121258843,0.3315316000007442,photograph
+SSIM,laion_426,laion_426.jpg,laion_426.jpg,True,0.23664528142307165,0.3357541000004858,ambiguous or mixed
+SSIM,laion_427,laion_427.jpg,laion_427.jpg,True,0.262364540118117,0.3331867000015336,photograph
+SSIM,laion_428,laion_428.jpg,laion_428.jpg,True,0.5882461014814799,0.3349376000005577,photograph
+SSIM,laion_429,laion_429.jpg,laion_429.jpg,True,0.5654587654876837,0.3431927000019641,photograph
+SSIM,laion_430,laion_430.jpg,laion_430.jpg,True,0.16198239340214457,0.3438730999987456,logo
+SSIM,laion_431,laion_431.jpg,laion_431.jpg,True,0.4115259791528471,0.32937099999981,photograph
+SSIM,laion_432,laion_432.jpg,laion_432.jpg,True,0.524561585954835,0.3293271000002278,logo
+SSIM,laion_433,laion_433.jpg,laion_433.jpg,True,0.2699504920483271,0.33340429999952903,photograph
+SSIM,laion_434,laion_434.jpg,laion_418.jpg,False,0.28387431935194113,0.3286630000002333,logo
+SSIM,laion_435,laion_435.jpg,laion_435.jpg,True,0.6715663426742273,0.3279636999977811,ambiguous or mixed
+SSIM,laion_436,laion_436.jpg,laion_436.jpg,True,0.5445050619155946,0.33449299999847426,photograph
+SSIM,laion_437,laion_437.jpg,laion_437.jpg,True,0.36818369390814926,0.3428639000012481,photograph
+SSIM,laion_438,laion_438.jpg,laion_438.jpg,True,0.22541943531792238,0.3332415000004403,ambiguous or mixed
+SSIM,laion_439,laion_439.jpg,laion_439.jpg,True,0.2161771380600428,0.33036010000068927,logo
+SSIM,laion_440,laion_440.jpg,laion_440.jpg,True,0.23593027908117303,0.33295319999888306,digital painting
+SSIM,laion_441,laion_441.jpg,laion_441.jpg,True,0.36697760970093585,0.3323839000004227,ambiguous or mixed
+SSIM,laion_442,laion_442.jpg,laion_442.jpg,True,0.6297232749593218,0.3636554000004253,photograph
+SSIM,laion_443,laion_443.jpg,laion_443.jpg,True,0.4145026820609881,0.35256400000071153,photograph
+SSIM,laion_444,laion_444.jpg,laion_444.jpg,True,0.19236229348315714,0.34481550000054995,photograph
+SSIM,laion_445,laion_445.jpg,laion_445.jpg,True,0.1944999602481846,0.33471539999663946,ambiguous or mixed
+SSIM,laion_446,laion_446.jpg,laion_446.jpg,True,0.22858868840004226,0.34029029999874183,photograph
+SSIM,laion_447,laion_447.jpg,laion_447.jpg,True,0.5109024236370908,0.3361736999977438,ambiguous or mixed
+SSIM,laion_448,laion_448.jpg,laion_448.jpg,True,0.2490769566922676,0.34048989999791957,photograph
+SSIM,laion_449,laion_449.jpg,laion_449.jpg,True,0.28988742285198127,0.32896210000035353,ambiguous or mixed
+SSIM,laion_450,laion_450.jpg,laion_450.jpg,True,0.5283369131645973,0.3342592000008153,logo
+SSIM,laion_451,laion_451.jpg,laion_451.jpg,True,0.24606836629714993,0.3379553000013402,photograph
+SSIM,laion_452,laion_452.jpg,laion_452.jpg,True,0.19440932086867962,0.33640139999988605,photograph
+SSIM,laion_453,laion_453.jpg,laion_453.jpg,True,0.7002824753004313,0.3397888999970746,digital painting
+SSIM,laion_454,laion_454.jpg,laion_454.jpg,True,0.5200088372646897,0.337405199999921,photograph
+SSIM,laion_455,laion_455.jpg,laion_455.jpg,True,0.16915317843605923,0.332314100000076,collage
+SSIM,laion_456,laion_456.jpg,laion_456.jpg,True,0.6094551442190034,0.3341803000002983,ambiguous or mixed
+SSIM,laion_457,laion_457.jpg,laion_457.jpg,True,0.2799389716175028,0.33182030000170926,ambiguous or mixed
+SSIM,laion_458,laion_458.jpg,laion_458.jpg,True,0.7160090007338584,0.3295456000014383,logo
+SSIM,laion_459,laion_459.jpg,laion_459.jpg,True,0.663263202819484,0.3336827999992238,vector art
+SSIM,laion_460,laion_460.jpg,laion_460.jpg,True,0.2954313527219125,0.3422190000019327,ambiguous or mixed
+SSIM,laion_461,laion_461.jpg,laion_461.jpg,True,0.2538709083585074,0.3418114999985846,ambiguous or mixed
+SSIM,laion_462,laion_462.jpg,laion_462.jpg,True,0.2912100306157573,0.3295036000017717,photograph
+SSIM,laion_463,laion_463.jpg,laion_463.jpg,True,0.3909710288645096,0.331592600003205,photograph
+SSIM,laion_464,laion_464.jpg,laion_464.jpg,True,0.3101731057177082,0.33031320000009146,ambiguous or mixed
+SSIM,laion_465,laion_465.jpg,laion_465.jpg,True,0.2742363119556573,0.3275942000000214,ambiguous or mixed
+SSIM,laion_466,laion_466.jpg,laion_466.jpg,True,0.30000198250745724,0.3380795999983093,photograph
+SSIM,laion_467,laion_467.jpg,laion_467.jpg,True,0.24801109438847918,0.3286593000011635,logo
+SSIM,laion_468,laion_468.jpg,laion_468.jpg,True,0.3354520876570931,0.32409269999698154,photograph
+SSIM,laion_469,laion_469.jpg,laion_469.jpg,True,0.806249812042964,0.33219409999946947,photograph
+SSIM,laion_470,laion_470.jpg,laion_470.jpg,True,0.3959804520643104,0.3416122999988147,digital painting
+SSIM,laion_471,laion_471.jpg,laion_471.jpg,True,0.1479461301999126,0.3319067999982508,digital painting
+SSIM,laion_472,laion_472.jpg,laion_472.jpg,True,0.24384928244998175,0.3330142999984673,logo
+SSIM,laion_473,laion_473.jpg,laion_473.jpg,True,0.31540301452759684,0.33127670000249054,ambiguous or mixed
+SSIM,laion_474,laion_474.jpg,laion_474.jpg,True,0.2673874430902129,0.3250246999996307,ambiguous or mixed
+SSIM,laion_475,laion_475.jpg,laion_475.jpg,True,0.33973261295592505,0.3388517999992473,ambiguous or mixed
+SSIM,laion_476,laion_476.jpg,laion_476.jpg,True,0.5414617271916675,0.3276122999996005,photograph
+SSIM,laion_477,laion_477.jpg,laion_477.jpg,True,0.3099743779651985,0.32928200000242214,photograph
+SSIM,laion_478,laion_478.jpg,laion_478.jpg,True,0.235759049479517,0.33152309999786667,ambiguous or mixed
+SSIM,laion_479,laion_479.jpg,laion_336.jpg,False,0.21693350424482205,0.3344594000009238,photograph
+SSIM,laion_480,laion_480.jpg,laion_480.jpg,True,0.3310826155238237,0.33417419999750564,photograph
+SSIM,laion_481,laion_481.jpg,laion_481.jpg,True,0.14090776472287703,0.3379607999995642,photograph
+SSIM,laion_482,laion_482.jpg,laion_482.jpg,True,0.3345597318183228,0.33577169999989565,vector art
+SSIM,laion_483,laion_483.jpg,laion_483.jpg,True,0.44507026894793,0.3300407999995514,digital painting
+SSIM,laion_484,laion_484.jpg,laion_484.jpg,True,0.3378079031723749,0.3338852000015322,photograph
+SSIM,laion_485,laion_485.jpg,laion_485.jpg,True,0.16516691766590616,0.3316856999990705,photograph
+SSIM,laion_486,laion_486.jpg,laion_486.jpg,True,0.3352257128168348,0.3296270999999251,photograph
+SSIM,laion_487,laion_487.jpg,laion_487.jpg,True,0.17594043249184443,0.33874289999948815,photograph
+SSIM,laion_488,laion_488.jpg,laion_488.jpg,True,0.2848589782214658,0.3380068000005849,photograph
+SSIM,laion_489,laion_489.jpg,laion_489.jpg,True,0.2564244643591537,0.33409929999834276,photograph
+SSIM,laion_490,laion_490.jpg,laion_490.jpg,True,0.7015939667951117,0.33265430000028573,photograph
+SSIM,laion_491,laion_491.jpg,laion_491.jpg,True,0.16383594696607834,0.33994439999878523,ambiguous or mixed
+SSIM,laion_492,laion_492.jpg,laion_492.jpg,True,0.4088945506347761,0.3393718000006629,photograph
+SSIM,laion_493,laion_493.jpg,laion_493.jpg,True,0.12050449940990438,0.3375949999972363,collage
+SSIM,laion_494,laion_494.jpg,laion_494.jpg,True,0.3963667607332002,0.32903540000188514,ambiguous or mixed
+SSIM,laion_495,laion_495.jpg,laion_495.jpg,True,0.45894155923394764,0.33323290000043926,photograph
+SSIM,laion_496,laion_496.jpg,laion_496.jpg,True,0.3405819934307872,0.33310160000110045,photograph
+SSIM,laion_497,laion_497.jpg,laion_497.jpg,True,0.3405125113065777,0.33266250000087894,vector art
+SSIM,laion_498,laion_498.jpg,laion_118.jpg,False,0.3389429400437223,0.33145820000208914,photograph
+SSIM,laion_499,laion_499.jpg,laion_499.jpg,True,0.44328938658874945,0.33226420000210055,photograph
+SSIM,laion_500,laion_500.jpg,laion_500.jpg,True,0.3425367652354963,0.3341591000025801,ambiguous or mixed
+SIFT,laion_001,laion_001.jpg,laion_001.jpg,True,145.0,0.9892905999986397,logo
+SIFT,laion_002,laion_002.jpg,laion_002.jpg,True,165.0,0.030848900001728907,photograph
+SIFT,laion_003,laion_003.jpg,laion_003.jpg,True,61.0,0.028118599999288563,vector art
+SIFT,laion_004,laion_004.jpg,laion_004.jpg,True,211.0,0.03500990000247839,vector art
+SIFT,laion_005,laion_005.jpg,laion_005.jpg,True,81.0,0.02187480000065989,digital painting
+SIFT,laion_006,laion_006.jpg,laion_006.jpg,True,62.0,0.02280099999916274,vector art
+SIFT,laion_007,laion_007.jpg,laion_007.jpg,True,150.0,0.03637929999968037,digital painting
+SIFT,laion_008,laion_008.jpg,laion_008.jpg,True,38.0,0.010854000000108499,photograph
+SIFT,laion_009,laion_009.jpg,laion_009.jpg,True,180.0,0.1459900000008929,photograph
+SIFT,laion_010,laion_010.jpg,laion_010.jpg,True,60.0,0.012282899999263464,logo
+SIFT,laion_011,laion_011.jpg,laion_011.jpg,True,150.0,0.0368650999989768,ambiguous or mixed
+SIFT,laion_012,laion_012.jpg,laion_012.jpg,True,184.0,0.054288399998768,vector art
+SIFT,laion_013,laion_013.jpg,laion_013.jpg,True,52.0,0.027304700000968296,ambiguous or mixed
+SIFT,laion_014,laion_014.jpg,laion_014.jpg,True,211.0,0.04253460000109044,ambiguous or mixed
+SIFT,laion_015,laion_015.jpg,laion_015.jpg,True,149.0,0.02379590000055032,vector art
+SIFT,laion_016,laion_016.jpg,laion_016.jpg,True,135.0,0.03603749999820138,ambiguous or mixed
+SIFT,laion_017,laion_017.jpg,laion_017.jpg,True,164.0,0.03172009999980219,vector art
+SIFT,laion_018,laion_018.jpg,laion_018.jpg,True,186.0,0.021737699997174786,photograph
+SIFT,laion_019,laion_019.jpg,laion_019.jpg,True,191.0,0.033298000002105255,photograph
+SIFT,laion_020,laion_020.jpg,laion_020.jpg,True,111.0,0.033722599997418,ambiguous or mixed
+SIFT,laion_021,laion_021.jpg,laion_021.jpg,True,172.0,0.044819600003393134,logo
+SIFT,laion_022,laion_022.jpg,laion_022.jpg,True,305.0,0.07093330000134301,ambiguous or mixed
+SIFT,laion_023,laion_023.jpg,laion_023.jpg,True,69.0,0.01170780000029481,logo
+SIFT,laion_024,laion_024.jpg,laion_024.jpg,True,90.0,0.06291539999801898,logo
+SIFT,laion_025,laion_025.jpg,laion_025.jpg,True,279.0,0.06588399999964167,logo
+SIFT,laion_026,laion_026.jpg,laion_026.jpg,True,214.0,0.042871699999523116,photograph
+SIFT,laion_027,laion_027.jpg,laion_027.jpg,True,152.0,0.04231939999954193,photograph
+SIFT,laion_028,laion_028.jpg,laion_028.jpg,True,157.0,0.060449299999163486,ambiguous or mixed
+SIFT,laion_029,laion_029.jpg,laion_029.jpg,True,14.0,0.0065463000028103124,photograph
+SIFT,laion_030,laion_030.jpg,laion_030.jpg,True,245.0,0.0345556000029319,collage
+SIFT,laion_031,laion_031.jpg,laion_031.jpg,True,252.0,0.052177499997924315,logo
+SIFT,laion_032,laion_032.jpg,laion_032.jpg,True,132.0,0.07411580000189133,photograph
+SIFT,laion_033,laion_033.jpg,laion_033.jpg,True,188.0,0.03191019999940181,collage
+SIFT,laion_034,laion_034.jpg,laion_034.jpg,True,69.0,0.1323746999987634,photograph
+SIFT,laion_035,laion_035.jpg,laion_035.jpg,True,45.0,0.010666300000593765,ambiguous or mixed
+SIFT,laion_036,laion_036.jpg,laion_036.jpg,True,250.0,0.0530828000009933,photograph
+SIFT,laion_037,laion_037.jpg,laion_037.jpg,True,290.0,0.176568099999713,vector art
+SIFT,laion_038,laion_038.jpg,laion_038.jpg,True,120.0,0.026124300002265954,vector art
+SIFT,laion_039,laion_039.jpg,laion_039.jpg,True,207.0,0.05651430000216351,photograph
+SIFT,laion_040,laion_040.jpg,laion_040.jpg,True,217.0,0.0305049999988114,ambiguous or mixed
+SIFT,laion_041,laion_041.jpg,laion_041.jpg,True,152.0,0.026109299997187918,photograph
+SIFT,laion_042,laion_042.jpg,laion_042.jpg,True,202.0,0.030079899999691406,photograph
+SIFT,laion_043,laion_043.jpg,laion_043.jpg,True,232.0,0.04089100000055623,digital painting
+SIFT,laion_044,laion_044.jpg,laion_044.jpg,True,131.0,0.040375200002017664,photograph
+SIFT,laion_045,laion_045.jpg,laion_045.jpg,True,106.0,0.047016900000016904,digital painting
+SIFT,laion_046,laion_046.jpg,laion_046.jpg,True,299.0,0.10544059999665478,vector art
+SIFT,laion_047,laion_047.jpg,laion_047.jpg,True,182.0,0.04931560000113677,photograph
+SIFT,laion_048,laion_048.jpg,laion_048.jpg,True,239.0,0.052010799998242874,ambiguous or mixed
+SIFT,laion_049,laion_049.jpg,laion_049.jpg,True,158.0,0.03445619999911287,vector art
+SIFT,laion_050,laion_050.jpg,laion_050.jpg,True,237.0,0.03195649999906891,logo
+SIFT,laion_051,laion_051.jpg,laion_051.jpg,True,195.0,0.08345139999801177,ambiguous or mixed
+SIFT,laion_052,laion_052.jpg,laion_052.jpg,True,108.0,0.025644699999247678,ambiguous or mixed
+SIFT,laion_053,laion_053.jpg,laion_053.jpg,True,231.0,0.042441000001417706,photograph
+SIFT,laion_054,laion_054.jpg,laion_054.jpg,True,256.0,0.043089899998449255,ambiguous or mixed
+SIFT,laion_055,laion_055.jpg,laion_055.jpg,True,158.0,0.030387199996766867,photograph
+SIFT,laion_056,laion_056.jpg,laion_056.jpg,True,161.0,0.05034219999652123,ambiguous or mixed
+SIFT,laion_057,laion_057.jpg,laion_057.jpg,True,168.0,0.03809620000174618,digital painting
+SIFT,laion_058,laion_058.jpg,laion_058.jpg,True,165.0,0.030984600001829676,photograph
+SIFT,laion_059,laion_059.jpg,laion_059.jpg,True,253.0,0.04686209999999846,collage
+SIFT,laion_060,laion_060.jpg,laion_060.jpg,True,40.0,0.009618000000045868,logo
+SIFT,laion_061,laion_061.jpg,laion_061.jpg,True,197.0,0.030382000000827247,ambiguous or mixed
+SIFT,laion_062,laion_062.jpg,laion_062.jpg,True,8.0,0.027870599999005208,vector art
+SIFT,laion_063,laion_063.jpg,laion_063.jpg,True,197.0,0.029745600000751438,photograph
+SIFT,laion_064,laion_064.jpg,laion_064.jpg,True,168.0,0.03141210000103456,ambiguous or mixed
+SIFT,laion_065,laion_065.jpg,laion_065.jpg,True,137.0,0.024231600000348408,ambiguous or mixed
+SIFT,laion_066,laion_066.jpg,laion_066.jpg,True,157.0,0.025965000000724103,digital painting
+SIFT,laion_067,laion_067.jpg,laion_009.jpg,False,1.0,0.14266409999981988,photograph
+SIFT,laion_068,laion_068.jpg,laion_068.jpg,True,133.0,0.029187100000854116,photograph
+SIFT,laion_069,laion_069.jpg,laion_069.jpg,True,267.0,0.03914950000034878,ambiguous or mixed
+SIFT,laion_070,laion_070.jpg,laion_070.jpg,True,256.0,0.09254569999757223,photograph
+SIFT,laion_071,laion_071.jpg,laion_071.jpg,True,86.0,0.014121699998213444,photograph
+SIFT,laion_072,laion_072.jpg,laion_072.jpg,True,185.0,0.025152300000627292,digital painting
+SIFT,laion_073,laion_073.jpg,laion_073.jpg,True,180.0,0.0427151000003505,digital painting
+SIFT,laion_074,laion_074.jpg,laion_074.jpg,True,98.0,0.025909799998771632,photograph
+SIFT,laion_075,laion_075.jpg,laion_075.jpg,True,113.0,0.04322810000303434,ambiguous or mixed
+SIFT,laion_076,laion_076.jpg,laion_076.jpg,True,171.0,0.024435999999695923,logo
+SIFT,laion_077,laion_077.jpg,laion_077.jpg,True,140.0,0.024447899999358924,vector art
+SIFT,laion_078,laion_078.jpg,laion_078.jpg,True,132.0,0.024686900000233436,photograph
+SIFT,laion_079,laion_079.jpg,laion_079.jpg,True,177.0,0.03284489999714424,photograph
+SIFT,laion_080,laion_080.jpg,laion_080.jpg,True,235.0,0.06366730000081589,photograph
+SIFT,laion_081,laion_081.jpg,laion_081.jpg,True,208.0,0.03168600000208244,ambiguous or mixed
+SIFT,laion_082,laion_082.jpg,laion_082.jpg,True,87.0,0.01641640000161715,photograph
+SIFT,laion_083,laion_083.jpg,laion_083.jpg,True,183.0,0.030421899999055313,photograph
+SIFT,laion_084,laion_084.jpg,laion_084.jpg,True,170.0,0.03652230000079726,ambiguous or mixed
+SIFT,laion_085,laion_085.jpg,laion_085.jpg,True,163.0,0.0286539000007906,logo
+SIFT,laion_086,laion_086.jpg,laion_086.jpg,True,200.0,0.03933350000079372,vector art
+SIFT,laion_087,laion_087.jpg,laion_087.jpg,True,162.0,0.0398602999994182,photograph
+SIFT,laion_088,laion_088.jpg,laion_088.jpg,True,112.0,0.016533400001208065,logo
+SIFT,laion_089,laion_089.jpg,laion_089.jpg,True,164.0,0.02707880000161822,photograph
+SIFT,laion_090,laion_090.jpg,laion_090.jpg,True,125.0,0.04412690000026487,logo
+SIFT,laion_091,laion_091.jpg,laion_091.jpg,True,114.0,0.03920110000035493,photograph
+SIFT,laion_092,laion_092.jpg,laion_092.jpg,True,120.0,0.021706799998355564,ambiguous or mixed
+SIFT,laion_093,laion_093.jpg,laion_093.jpg,True,177.0,0.045402499999909196,photograph
+SIFT,laion_094,laion_094.jpg,laion_094.jpg,True,167.0,0.025858199998765485,ambiguous or mixed
+SIFT,laion_095,laion_095.jpg,laion_095.jpg,True,169.0,0.024699899997358443,ambiguous or mixed
+SIFT,laion_096,laion_096.jpg,laion_096.jpg,True,77.0,0.012875200001872145,ambiguous or mixed
+SIFT,laion_097,laion_097.jpg,laion_097.jpg,True,205.0,0.09687779999876511,photograph
+SIFT,laion_098,laion_098.jpg,laion_098.jpg,True,86.0,0.022168700001202524,photograph
+SIFT,laion_099,laion_099.jpg,laion_099.jpg,True,107.0,0.023305500002607005,ambiguous or mixed
+SIFT,laion_100,laion_100.jpg,laion_100.jpg,True,183.0,0.02507070000137901,photograph
+SIFT,laion_101,laion_101.jpg,laion_101.jpg,True,123.0,0.029339699998672586,photograph
+SIFT,laion_102,laion_102.jpg,laion_102.jpg,True,255.0,0.03740699999980279,photograph
+SIFT,laion_103,laion_103.jpg,laion_103.jpg,True,121.0,0.01870770000095945,photograph
+SIFT,laion_104,laion_104.jpg,laion_104.jpg,True,201.0,0.050435699999070494,photograph
+SIFT,laion_105,laion_105.jpg,laion_105.jpg,True,26.0,0.006811000002926448,photograph
+SIFT,laion_106,laion_106.jpg,laion_106.jpg,True,78.0,0.010638799998559989,digital painting
+SIFT,laion_107,laion_107.jpg,laion_107.jpg,True,58.0,0.11611650000122609,photograph
+SIFT,laion_108,laion_108.jpg,laion_108.jpg,True,90.0,0.03146709999782615,ambiguous or mixed
+SIFT,laion_109,laion_109.jpg,laion_109.jpg,True,193.0,0.04874569999810774,photograph
+SIFT,laion_110,laion_110.jpg,laion_110.jpg,True,223.0,0.04397869999957038,photograph
+SIFT,laion_111,laion_111.jpg,laion_111.jpg,True,155.0,0.05259249999653548,photograph
+SIFT,laion_112,laion_112.jpg,laion_112.jpg,True,244.0,0.04742890000125044,photograph
+SIFT,laion_113,laion_113.jpg,laion_113.jpg,True,148.0,0.04201939999984461,digital painting
+SIFT,laion_114,laion_114.jpg,laion_114.jpg,True,70.0,0.01982769999813172,vector art
+SIFT,laion_115,laion_115.jpg,laion_115.jpg,True,137.0,0.023905400001240196,photograph
+SIFT,laion_116,laion_116.jpg,laion_116.jpg,True,177.0,0.06110690000059549,photograph
+SIFT,laion_117,laion_117.jpg,laion_117.jpg,True,194.0,0.02869700000155717,photograph
+SIFT,laion_118,laion_118.jpg,laion_118.jpg,True,209.0,0.0389617000000726,ambiguous or mixed
+SIFT,laion_119,laion_119.jpg,laion_119.jpg,True,157.0,0.046675000001414446,photograph
+SIFT,laion_120,laion_120.jpg,laion_120.jpg,True,145.0,0.03954889999658917,photograph
+SIFT,laion_121,laion_121.jpg,laion_121.jpg,True,161.0,0.02322210000056657,photograph
+SIFT,laion_122,laion_122.jpg,laion_122.jpg,True,159.0,0.05754220000017085,logo
+SIFT,laion_123,laion_123.jpg,laion_123.jpg,True,66.0,0.008268500001577195,ambiguous or mixed
+SIFT,laion_124,laion_124.jpg,laion_124.jpg,True,147.0,0.03971260000253096,ambiguous or mixed
+SIFT,laion_125,laion_125.jpg,laion_125.jpg,True,194.0,0.02088210000147228,ambiguous or mixed
+SIFT,laion_126,laion_126.jpg,laion_126.jpg,True,250.0,0.051429799998004455,logo
+SIFT,laion_127,laion_127.jpg,laion_127.jpg,True,225.0,0.03343300000051386,ambiguous or mixed
+SIFT,laion_128,laion_128.jpg,laion_128.jpg,True,13.0,0.010300699999788776,photograph
+SIFT,laion_129,laion_129.jpg,laion_129.jpg,True,103.0,0.02013280000028317,digital painting
+SIFT,laion_130,laion_130.jpg,laion_130.jpg,True,214.0,0.03630110000085551,photograph
+SIFT,laion_131,laion_131.jpg,laion_131.jpg,True,183.0,0.05143830000088201,ambiguous or mixed
+SIFT,laion_132,laion_132.jpg,laion_132.jpg,True,215.0,0.028995600001508137,photograph
+SIFT,laion_133,laion_133.jpg,laion_133.jpg,True,202.0,0.03080029999910039,ambiguous or mixed
+SIFT,laion_134,laion_134.jpg,laion_134.jpg,True,111.0,0.021297700001014164,photograph
+SIFT,laion_135,laion_135.jpg,laion_135.jpg,True,172.0,0.045490199998312164,digital painting
+SIFT,laion_136,laion_136.jpg,laion_136.jpg,True,161.0,0.04545219999999972,logo
+SIFT,laion_137,laion_137.jpg,laion_137.jpg,True,173.0,0.028441599999496248,photograph
+SIFT,laion_138,laion_138.jpg,laion_138.jpg,True,153.0,0.06382420000227285,photograph
+SIFT,laion_139,laion_139.jpg,laion_139.jpg,True,157.0,0.04417739999917103,digital painting
+SIFT,laion_140,laion_140.jpg,laion_140.jpg,True,100.0,0.021977100001095096,vector art
+SIFT,laion_141,laion_141.jpg,laion_141.jpg,True,159.0,0.03123539999796776,photograph
+SIFT,laion_142,laion_142.jpg,laion_142.jpg,True,41.0,0.013393199998972705,logo
+SIFT,laion_143,laion_143.jpg,laion_143.jpg,True,26.0,0.009955699999409262,photograph
+SIFT,laion_144,laion_144.jpg,laion_144.jpg,True,221.0,0.03785599999901024,vector art
+SIFT,laion_145,laion_145.jpg,laion_145.jpg,True,191.0,0.023536299999250332,ambiguous or mixed
+SIFT,laion_146,laion_146.jpg,laion_146.jpg,True,195.0,0.07589240000015707,photograph
+SIFT,laion_147,laion_147.jpg,laion_147.jpg,True,178.0,0.02863720000095782,ambiguous or mixed
+SIFT,laion_148,laion_148.jpg,laion_148.jpg,True,243.0,0.22538279999935185,photograph
+SIFT,laion_149,laion_149.jpg,laion_149.jpg,True,173.0,0.030385000001842855,photograph
+SIFT,laion_150,laion_150.jpg,laion_150.jpg,True,39.0,0.010983700001816032,logo
+SIFT,laion_151,laion_151.jpg,laion_151.jpg,True,179.0,0.031957300001522526,photograph
+SIFT,laion_152,laion_152.jpg,laion_152.jpg,True,17.0,0.004349999999249121,vector art
+SIFT,laion_153,laion_153.jpg,laion_153.jpg,True,182.0,0.03524140000081388,collage
+SIFT,laion_154,laion_154.jpg,laion_154.jpg,True,173.0,0.04027710000082152,ambiguous or mixed
+SIFT,laion_155,laion_155.jpg,laion_155.jpg,True,209.0,0.062128699999448145,ambiguous or mixed
+SIFT,laion_156,laion_156.jpg,laion_156.jpg,True,149.0,0.023029199997836258,photograph
+SIFT,laion_157,laion_157.jpg,laion_157.jpg,True,267.0,0.06914450000112993,logo
+SIFT,laion_158,laion_158.jpg,laion_158.jpg,True,89.0,0.02142900000035297,digital painting
+SIFT,laion_159,laion_159.jpg,laion_159.jpg,True,210.0,0.04534330000024056,photograph
+SIFT,laion_160,laion_160.jpg,laion_160.jpg,True,94.0,0.014848299997538561,ambiguous or mixed
+SIFT,laion_161,laion_161.jpg,laion_161.jpg,True,137.0,0.02352439999958733,photograph
+SIFT,laion_162,laion_162.jpg,laion_162.jpg,True,177.0,0.02642789999663364,photograph
+SIFT,laion_163,laion_163.jpg,laion_163.jpg,True,240.0,0.08219539999845438,photograph
+SIFT,laion_164,laion_164.jpg,laion_164.jpg,True,188.0,0.028392000000167172,ambiguous or mixed
+SIFT,laion_165,laion_165.jpg,laion_165.jpg,True,75.0,0.02238230000148178,vector art
+SIFT,laion_166,laion_166.jpg,laion_166.jpg,True,138.0,0.031899300000077346,photograph
+SIFT,laion_167,laion_167.jpg,laion_167.jpg,True,133.0,0.05315519999930984,photograph
+SIFT,laion_168,laion_168.jpg,laion_168.jpg,True,153.0,0.024247000001196284,photograph
+SIFT,laion_169,laion_169.jpg,laion_169.jpg,True,151.0,0.025961800001823576,vector art
+SIFT,laion_170,laion_170.jpg,laion_170.jpg,True,225.0,0.08678329999747803,photograph
+SIFT,laion_171,laion_171.jpg,laion_171.jpg,True,123.0,0.018379600001935614,logo
+SIFT,laion_172,laion_172.jpg,laion_172.jpg,True,112.0,0.0245744999992894,ambiguous or mixed
+SIFT,laion_173,laion_173.jpg,laion_173.jpg,True,154.0,0.029274500000610715,ambiguous or mixed
+SIFT,laion_174,laion_174.jpg,laion_174.jpg,True,281.0,0.058349399998405715,collage
+SIFT,laion_175,laion_175.jpg,laion_175.jpg,True,170.0,0.13413610000134213,ambiguous or mixed
+SIFT,laion_176,laion_176.jpg,laion_176.jpg,True,196.0,0.02666270000190707,ambiguous or mixed
+SIFT,laion_177,laion_177.jpg,laion_177.jpg,True,181.0,0.06923579999784124,photograph
+SIFT,laion_178,laion_178.jpg,laion_178.jpg,True,114.0,0.04118469999957597,photograph
+SIFT,laion_179,laion_179.jpg,laion_179.jpg,True,143.0,0.0148750000007567,ambiguous or mixed
+SIFT,laion_180,laion_180.jpg,laion_180.jpg,True,249.0,0.2382456999985152,ambiguous or mixed
+SIFT,laion_181,laion_181.jpg,laion_181.jpg,True,113.0,0.02320770000005723,vector art
+SIFT,laion_182,laion_182.jpg,laion_182.jpg,True,152.0,0.018559599997388432,photograph
+SIFT,laion_183,laion_183.jpg,laion_183.jpg,True,173.0,0.025305700000899378,photograph
+SIFT,laion_184,laion_184.jpg,laion_184.jpg,True,171.0,0.03233840000029886,logo
+SIFT,laion_185,laion_185.jpg,laion_185.jpg,True,178.0,0.025280799996835412,photograph
+SIFT,laion_186,laion_186.jpg,laion_186.jpg,True,99.0,0.020351299997855676,digital painting
+SIFT,laion_187,laion_187.jpg,laion_187.jpg,True,220.0,0.028772900001058588,ambiguous or mixed
+SIFT,laion_188,laion_188.jpg,laion_188.jpg,True,165.0,0.06523139999990235,photograph
+SIFT,laion_189,laion_189.jpg,laion_189.jpg,True,181.0,0.029783099998894613,digital painting
+SIFT,laion_190,laion_190.jpg,laion_190.jpg,True,95.0,0.016606199998932425,ambiguous or mixed
+SIFT,laion_191,laion_191.jpg,laion_191.jpg,True,132.0,0.02356359999976121,digital painting
+SIFT,laion_192,laion_192.jpg,laion_192.jpg,True,183.0,0.050246800001332304,logo
+SIFT,laion_193,laion_193.jpg,laion_193.jpg,True,71.0,0.022574400001758477,photograph
+SIFT,laion_194,laion_194.jpg,laion_194.jpg,True,134.0,0.02945700000054785,ambiguous or mixed
+SIFT,laion_195,laion_195.jpg,laion_195.jpg,True,168.0,0.020116200001211837,photograph
+SIFT,laion_196,laion_196.jpg,laion_196.jpg,True,73.0,0.018923600000562146,ambiguous or mixed
+SIFT,laion_197,laion_197.jpg,laion_197.jpg,True,91.0,0.017042200001014862,ambiguous or mixed
+SIFT,laion_198,laion_198.jpg,laion_198.jpg,True,189.0,0.039346400000795256,logo
+SIFT,laion_199,laion_199.jpg,laion_199.jpg,True,168.0,0.03480979999949341,photograph
+SIFT,laion_200,laion_200.jpg,laion_200.jpg,True,98.0,0.02130129999932251,digital painting
+SIFT,laion_201,laion_201.jpg,laion_201.jpg,True,118.0,0.016347500000847504,photograph
+SIFT,laion_202,laion_202.jpg,laion_202.jpg,True,59.0,0.013282199997775024,photograph
+SIFT,laion_203,laion_203.jpg,laion_203.jpg,True,119.0,0.025937499998690328,photograph
+SIFT,laion_204,laion_204.jpg,laion_204.jpg,True,128.0,0.022443599998950958,photograph
+SIFT,laion_205,laion_205.jpg,laion_205.jpg,True,150.0,0.02286660000027041,ambiguous or mixed
+SIFT,laion_206,laion_206.jpg,laion_001.jpg,False,0.0,0.0025257000015699305,vector art
+SIFT,laion_207,laion_207.jpg,laion_207.jpg,True,39.0,0.006740200002241181,photograph
+SIFT,laion_208,laion_208.jpg,laion_208.jpg,True,194.0,0.028286500000831438,photograph
+SIFT,laion_209,laion_209.jpg,laion_209.jpg,True,223.0,0.042249900001479546,ambiguous or mixed
+SIFT,laion_210,laion_210.jpg,laion_210.jpg,True,135.0,0.025156899999274174,photograph
+SIFT,laion_211,laion_211.jpg,laion_211.jpg,True,215.0,0.04888290000235429,photograph
+SIFT,laion_212,laion_212.jpg,laion_212.jpg,True,83.0,0.0465598000009777,vector art
+SIFT,laion_213,laion_213.jpg,laion_213.jpg,True,89.0,0.12469749999945634,photograph
+SIFT,laion_214,laion_214.jpg,laion_214.jpg,True,182.0,0.02498860000196146,photograph
+SIFT,laion_215,laion_215.jpg,laion_215.jpg,True,111.0,0.016318499998305924,photograph
+SIFT,laion_216,laion_216.jpg,laion_216.jpg,True,278.0,0.04159100000106264,photograph
+SIFT,laion_217,laion_217.jpg,laion_217.jpg,True,158.0,0.028705299999273848,vector art
+SIFT,laion_218,laion_218.jpg,laion_218.jpg,True,172.0,0.021075699998618802,photograph
+SIFT,laion_219,laion_219.jpg,laion_219.jpg,True,124.0,0.03004499999951804,vector art
+SIFT,laion_220,laion_220.jpg,laion_220.jpg,True,231.0,0.052569100000255276,digital painting
+SIFT,laion_221,laion_221.jpg,laion_221.jpg,True,115.0,0.04173149999769521,ambiguous or mixed
+SIFT,laion_222,laion_222.jpg,laion_222.jpg,True,185.0,0.03587180000249646,photograph
+SIFT,laion_223,laion_223.jpg,laion_223.jpg,True,227.0,0.031595199998264434,ambiguous or mixed
+SIFT,laion_224,laion_224.jpg,laion_224.jpg,True,9.0,0.006034500001987908,ambiguous or mixed
+SIFT,laion_225,laion_225.jpg,laion_225.jpg,True,9.0,0.00528900000063004,vector art
+SIFT,laion_226,laion_226.jpg,laion_226.jpg,True,247.0,0.034130200001527555,logo
+SIFT,laion_227,laion_227.jpg,laion_227.jpg,True,27.0,0.009648300001572352,ambiguous or mixed
+SIFT,laion_228,laion_228.jpg,laion_228.jpg,True,226.0,0.03873530000055325,ambiguous or mixed
+SIFT,laion_229,laion_229.jpg,laion_229.jpg,True,96.0,0.024824200001603458,vector art
+SIFT,laion_230,laion_230.jpg,laion_230.jpg,True,107.0,0.02517190000071423,photograph
+SIFT,laion_231,laion_231.jpg,laion_231.jpg,True,163.0,0.031014400003186893,ambiguous or mixed
+SIFT,laion_232,laion_232.jpg,laion_232.jpg,True,156.0,0.04370030000063707,photograph
+SIFT,laion_233,laion_233.jpg,laion_233.jpg,True,252.0,0.061139100002037594,photograph
+SIFT,laion_234,laion_234.jpg,laion_234.jpg,True,269.0,0.0725334999988263,photograph
+SIFT,laion_235,laion_235.jpg,laion_235.jpg,True,148.0,0.02023439999902621,photograph
+SIFT,laion_236,laion_236.jpg,laion_236.jpg,True,191.0,0.029992699997819727,collage
+SIFT,laion_237,laion_237.jpg,laion_237.jpg,True,70.0,0.01217700000051991,ambiguous or mixed
+SIFT,laion_238,laion_238.jpg,laion_238.jpg,True,158.0,0.01831500000116648,photograph
+SIFT,laion_239,laion_239.jpg,laion_239.jpg,True,216.0,0.030788699998083757,vector art
+SIFT,laion_240,laion_240.jpg,laion_240.jpg,True,190.0,0.05606899999838788,ambiguous or mixed
+SIFT,laion_241,laion_241.jpg,laion_241.jpg,True,181.0,0.03032590000293567,vector art
+SIFT,laion_242,laion_242.jpg,laion_242.jpg,True,75.0,0.010490399999980582,ambiguous or mixed
+SIFT,laion_243,laion_243.jpg,laion_243.jpg,True,151.0,0.020416299998032628,ambiguous or mixed
+SIFT,laion_244,laion_244.jpg,laion_001.jpg,False,0.0,0.00040639999861014076,logo
+SIFT,laion_245,laion_245.jpg,laion_245.jpg,True,142.0,0.02186019999862765,ambiguous or mixed
+SIFT,laion_246,laion_246.jpg,laion_246.jpg,True,79.0,0.010956799997074995,logo
+SIFT,laion_247,laion_247.jpg,laion_247.jpg,True,196.0,0.031660100001317915,vector art
+SIFT,laion_248,laion_248.jpg,laion_248.jpg,True,111.0,0.022250999998504994,photograph
+SIFT,laion_249,laion_249.jpg,laion_249.jpg,True,210.0,0.05014419999861275,photograph
+SIFT,laion_250,laion_250.jpg,laion_250.jpg,True,267.0,0.04534079999939422,digital painting
+SIFT,laion_251,laion_251.jpg,laion_251.jpg,True,69.0,0.017353600000205915,photograph
+SIFT,laion_252,laion_252.jpg,laion_252.jpg,True,206.0,0.03577049999876181,logo
+SIFT,laion_253,laion_253.jpg,laion_253.jpg,True,140.0,0.023198999999294756,photograph
+SIFT,laion_254,laion_254.jpg,laion_254.jpg,True,73.0,0.015522999998211162,ambiguous or mixed
+SIFT,laion_255,laion_255.jpg,laion_255.jpg,True,191.0,0.02789409999968484,photograph
+SIFT,laion_256,laion_256.jpg,laion_256.jpg,True,169.0,0.024421499998425134,photograph
+SIFT,laion_257,laion_257.jpg,laion_257.jpg,True,232.0,0.03709149999849615,photograph
+SIFT,laion_258,laion_258.jpg,laion_258.jpg,True,89.0,0.014099400003033224,digital painting
+SIFT,laion_259,laion_259.jpg,laion_259.jpg,True,96.0,0.022335999998176703,photograph
+SIFT,laion_260,laion_260.jpg,laion_260.jpg,True,44.0,0.013940799999545561,ambiguous or mixed
+SIFT,laion_261,laion_261.jpg,laion_261.jpg,True,143.0,0.024169299998902716,photograph
+SIFT,laion_262,laion_262.jpg,laion_262.jpg,True,141.0,0.028059699998266296,ambiguous or mixed
+SIFT,laion_263,laion_263.jpg,laion_263.jpg,True,146.0,0.04559210000297753,photograph
+SIFT,laion_264,laion_264.jpg,laion_264.jpg,True,210.0,0.036216299999068724,photograph
+SIFT,laion_265,laion_265.jpg,laion_265.jpg,True,153.0,0.027650200001517078,vector art
+SIFT,laion_266,laion_266.jpg,laion_266.jpg,True,123.0,0.03427350000129081,photograph
+SIFT,laion_267,laion_267.jpg,laion_267.jpg,True,169.0,0.03831970000101137,ambiguous or mixed
+SIFT,laion_268,laion_268.jpg,laion_268.jpg,True,182.0,0.024120800000673626,photograph
+SIFT,laion_269,laion_269.jpg,laion_269.jpg,True,112.0,0.01745669999945676,logo
+SIFT,laion_270,laion_270.jpg,laion_270.jpg,True,205.0,0.022901999996975064,photograph
+SIFT,laion_271,laion_271.jpg,laion_271.jpg,True,83.0,0.021834899998793844,vector art
+SIFT,laion_272,laion_272.jpg,laion_272.jpg,True,141.0,0.017337099998258054,photograph
+SIFT,laion_273,laion_273.jpg,laion_273.jpg,True,93.0,0.11101719999714987,ambiguous or mixed
+SIFT,laion_274,laion_274.jpg,laion_274.jpg,True,184.0,0.028385900001012487,digital painting
+SIFT,laion_275,laion_275.jpg,laion_275.jpg,True,149.0,0.023236100001668092,photograph
+SIFT,laion_276,laion_276.jpg,laion_276.jpg,True,140.0,0.018720600000960985,digital painting
+SIFT,laion_277,laion_277.jpg,laion_277.jpg,True,225.0,0.039346999998087995,logo
+SIFT,laion_278,laion_278.jpg,laion_278.jpg,True,21.0,0.003920200000720797,digital painting
+SIFT,laion_279,laion_279.jpg,laion_279.jpg,True,156.0,0.14319350000005215,vector art
+SIFT,laion_280,laion_280.jpg,laion_280.jpg,True,246.0,0.05968100000245613,photograph
+SIFT,laion_281,laion_281.jpg,laion_281.jpg,True,163.0,0.024815799999487353,photograph
+SIFT,laion_282,laion_282.jpg,laion_282.jpg,True,126.0,0.021045900000899564,photograph
+SIFT,laion_283,laion_283.jpg,laion_283.jpg,True,111.0,0.04226360000029672,ambiguous or mixed
+SIFT,laion_284,laion_284.jpg,laion_284.jpg,True,177.0,0.038833599999634316,photograph
+SIFT,laion_285,laion_285.jpg,laion_285.jpg,True,188.0,0.03457870000056573,photograph
+SIFT,laion_286,laion_286.jpg,laion_286.jpg,True,104.0,0.024212600001192186,logo
+SIFT,laion_287,laion_287.jpg,laion_287.jpg,True,149.0,0.0434105999993335,ambiguous or mixed
+SIFT,laion_288,laion_288.jpg,laion_288.jpg,True,182.0,0.025425599997106474,vector art
+SIFT,laion_289,laion_289.jpg,laion_289.jpg,True,164.0,0.02522329999919748,ambiguous or mixed
+SIFT,laion_290,laion_290.jpg,laion_290.jpg,True,115.0,0.031645499999285676,photograph
+SIFT,laion_291,laion_291.jpg,laion_291.jpg,True,67.0,0.026151300000492483,collage
+SIFT,laion_292,laion_292.jpg,laion_292.jpg,True,164.0,0.033276300000579795,photograph
+SIFT,laion_293,laion_293.jpg,laion_293.jpg,True,163.0,0.023839999998017447,photograph
+SIFT,laion_294,laion_294.jpg,laion_294.jpg,True,167.0,0.033084400001826,photograph
+SIFT,laion_295,laion_295.jpg,laion_295.jpg,True,205.0,0.028822799999034032,photograph
+SIFT,laion_296,laion_296.jpg,laion_296.jpg,True,146.0,0.037638499998138286,digital painting
+SIFT,laion_297,laion_297.jpg,laion_297.jpg,True,183.0,0.024802899999485817,photograph
+SIFT,laion_298,laion_298.jpg,laion_298.jpg,True,21.0,0.008009900000615744,vector art
+SIFT,laion_299,laion_299.jpg,laion_299.jpg,True,121.0,0.01442720000341069,digital painting
+SIFT,laion_300,laion_300.jpg,laion_300.jpg,True,196.0,0.04207279999900493,ambiguous or mixed
+SIFT,laion_301,laion_301.jpg,laion_301.jpg,True,133.0,0.029937800001789583,digital painting
+SIFT,laion_302,laion_302.jpg,laion_302.jpg,True,216.0,0.03503210000053514,photograph
+SIFT,laion_303,laion_303.jpg,laion_303.jpg,True,30.0,0.011031599999114405,ambiguous or mixed
+SIFT,laion_304,laion_304.jpg,laion_304.jpg,True,114.0,0.023523199997725897,photograph
+SIFT,laion_305,laion_305.jpg,laion_305.jpg,True,141.0,0.031912099999317434,ambiguous or mixed
+SIFT,laion_306,laion_306.jpg,laion_306.jpg,True,97.0,0.014290300001448486,digital painting
+SIFT,laion_307,laion_307.jpg,laion_307.jpg,True,71.0,0.01140769999983604,photograph
+SIFT,laion_308,laion_308.jpg,laion_308.jpg,True,114.0,0.015932899998006178,photograph
+SIFT,laion_309,laion_309.jpg,laion_309.jpg,True,315.0,0.06438669999988633,ambiguous or mixed
+SIFT,laion_310,laion_310.jpg,laion_310.jpg,True,247.0,0.04138959999909275,ambiguous or mixed
+SIFT,laion_311,laion_311.jpg,laion_311.jpg,True,272.0,0.05507419999776175,photograph
+SIFT,laion_312,laion_312.jpg,laion_312.jpg,True,77.0,0.01418809999813675,ambiguous or mixed
+SIFT,laion_313,laion_313.jpg,laion_313.jpg,True,43.0,0.011113200002000667,logo
+SIFT,laion_314,laion_314.jpg,laion_314.jpg,True,185.0,0.05252700000346522,photograph
+SIFT,laion_315,laion_315.jpg,laion_315.jpg,True,145.0,0.029681699998036493,vector art
+SIFT,laion_316,laion_316.jpg,laion_316.jpg,True,246.0,0.041691799997352064,photograph
+SIFT,laion_317,laion_317.jpg,laion_317.jpg,True,164.0,0.027810700001282385,photograph
+SIFT,laion_318,laion_318.jpg,laion_318.jpg,True,118.0,0.023334299999987707,photograph
+SIFT,laion_319,laion_319.jpg,laion_319.jpg,True,247.0,0.04772400000001653,digital painting
+SIFT,laion_320,laion_320.jpg,laion_320.jpg,True,196.0,0.042131799997150665,ambiguous or mixed
+SIFT,laion_321,laion_321.jpg,laion_321.jpg,True,184.0,0.02557900000101654,photograph
+SIFT,laion_322,laion_322.jpg,laion_322.jpg,True,106.0,0.06636029999936,photograph
+SIFT,laion_323,laion_323.jpg,laion_323.jpg,True,43.0,0.00816060000215657,ambiguous or mixed
+SIFT,laion_324,laion_324.jpg,laion_324.jpg,True,82.0,0.02546740000252612,photograph
+SIFT,laion_325,laion_325.jpg,laion_325.jpg,True,53.0,0.008756499999435619,photograph
+SIFT,laion_326,laion_326.jpg,laion_326.jpg,True,238.0,0.20301760000074864,photograph
+SIFT,laion_327,laion_327.jpg,laion_327.jpg,True,248.0,0.03639649999968242,photograph
+SIFT,laion_328,laion_328.jpg,laion_328.jpg,True,269.0,0.1336273999986588,digital painting
+SIFT,laion_329,laion_329.jpg,laion_329.jpg,True,133.0,0.0369767000011052,ambiguous or mixed
+SIFT,laion_330,laion_330.jpg,laion_330.jpg,True,21.0,0.013465200001519406,photograph
+SIFT,laion_331,laion_331.jpg,laion_331.jpg,True,117.0,0.017931700000190176,photograph
+SIFT,laion_332,laion_332.jpg,laion_332.jpg,True,252.0,0.0772225000000617,photograph
+SIFT,laion_333,laion_333.jpg,laion_333.jpg,True,201.0,0.041078800000832416,logo
+SIFT,laion_334,laion_334.jpg,laion_334.jpg,True,158.0,0.044890000001032604,photograph
+SIFT,laion_335,laion_335.jpg,laion_335.jpg,True,152.0,0.053403900001285365,ambiguous or mixed
+SIFT,laion_336,laion_336.jpg,laion_336.jpg,True,18.0,0.007243299998663133,photograph
+SIFT,laion_337,laion_337.jpg,laion_337.jpg,True,70.0,0.014552700002241181,logo
+SIFT,laion_338,laion_338.jpg,laion_338.jpg,True,122.0,0.027461500001663808,photograph
+SIFT,laion_339,laion_339.jpg,laion_339.jpg,True,142.0,0.04459970000243629,logo
+SIFT,laion_340,laion_340.jpg,laion_340.jpg,True,81.0,0.02236789999733446,photograph
+SIFT,laion_341,laion_341.jpg,laion_341.jpg,True,101.0,0.020709200001874706,photograph
+SIFT,laion_342,laion_342.jpg,laion_342.jpg,True,244.0,0.10326269999859505,photograph
+SIFT,laion_343,laion_343.jpg,laion_343.jpg,True,159.0,0.026107800000318093,photograph
+SIFT,laion_344,laion_344.jpg,laion_344.jpg,True,153.0,0.025899600001139333,photograph
+SIFT,laion_345,laion_345.jpg,laion_345.jpg,True,210.0,0.028483399997639935,photograph
+SIFT,laion_346,laion_346.jpg,laion_346.jpg,True,120.0,0.030851500003336696,photograph
+SIFT,laion_347,laion_347.jpg,laion_347.jpg,True,115.0,0.034866199999669334,photograph
+SIFT,laion_348,laion_348.jpg,laion_348.jpg,True,180.0,0.038911100000404986,ambiguous or mixed
+SIFT,laion_349,laion_349.jpg,laion_349.jpg,True,66.0,0.026574899999104673,photograph
+SIFT,laion_350,laion_350.jpg,laion_350.jpg,True,89.0,0.023068899998179404,ambiguous or mixed
+SIFT,laion_351,laion_351.jpg,laion_351.jpg,True,34.0,0.006307399999059271,digital painting
+SIFT,laion_352,laion_352.jpg,laion_352.jpg,True,105.0,0.019613100001151906,photograph
+SIFT,laion_353,laion_353.jpg,laion_353.jpg,True,45.0,0.008264399999461602,logo
+SIFT,laion_354,laion_354.jpg,laion_354.jpg,True,199.0,0.04595800000242889,photograph
+SIFT,laion_355,laion_355.jpg,laion_355.jpg,True,231.0,0.04987709999841172,collage
+SIFT,laion_356,laion_356.jpg,laion_356.jpg,True,309.0,0.0607601000010618,ambiguous or mixed
+SIFT,laion_357,laion_357.jpg,laion_357.jpg,True,234.0,0.04376590000174474,photograph
+SIFT,laion_358,laion_358.jpg,laion_358.jpg,True,192.0,0.035981200002424885,photograph
+SIFT,laion_359,laion_359.jpg,laion_359.jpg,True,174.0,0.033672999998088926,photograph
+SIFT,laion_360,laion_360.jpg,laion_360.jpg,True,149.0,0.04758919999949285,collage
+SIFT,laion_361,laion_361.jpg,laion_361.jpg,True,123.0,0.024298599997564452,ambiguous or mixed
+SIFT,laion_362,laion_362.jpg,laion_362.jpg,True,145.0,0.03390679999938584,digital painting
+SIFT,laion_363,laion_363.jpg,laion_363.jpg,True,143.0,0.016013700002076803,digital painting
+SIFT,laion_364,laion_364.jpg,laion_364.jpg,True,154.0,0.01724340000146185,photograph
+SIFT,laion_365,laion_365.jpg,laion_365.jpg,True,335.0,0.07992709999962244,photograph
+SIFT,laion_366,laion_366.jpg,laion_366.jpg,True,159.0,0.029632100002345396,ambiguous or mixed
+SIFT,laion_367,laion_367.jpg,laion_367.jpg,True,218.0,0.05356880000181263,photograph
+SIFT,laion_368,laion_368.jpg,laion_368.jpg,True,158.0,0.026414800002385164,ambiguous or mixed
+SIFT,laion_369,laion_369.jpg,laion_369.jpg,True,62.0,0.15968570000040927,digital painting
+SIFT,laion_370,laion_370.jpg,laion_370.jpg,True,173.0,0.051166199998988304,ambiguous or mixed
+SIFT,laion_371,laion_371.jpg,laion_371.jpg,True,131.0,0.02473230000032345,vector art
+SIFT,laion_372,laion_372.jpg,laion_372.jpg,True,104.0,0.0479763000003004,photograph
+SIFT,laion_373,laion_373.jpg,laion_373.jpg,True,173.0,0.02127430000109598,digital painting
+SIFT,laion_374,laion_374.jpg,laion_374.jpg,True,93.0,0.02136400000017602,logo
+SIFT,laion_375,laion_375.jpg,laion_375.jpg,True,74.0,0.016829399999551242,ambiguous or mixed
+SIFT,laion_376,laion_376.jpg,laion_376.jpg,True,151.0,0.030496600000333274,photograph
+SIFT,laion_377,laion_377.jpg,laion_377.jpg,True,193.0,0.04434739999851445,collage
+SIFT,laion_378,laion_378.jpg,laion_378.jpg,True,138.0,0.01537580000149319,photograph
+SIFT,laion_379,laion_379.jpg,laion_379.jpg,True,223.0,0.036411900000530295,ambiguous or mixed
+SIFT,laion_380,laion_380.jpg,laion_380.jpg,True,229.0,0.04950230000031297,ambiguous or mixed
+SIFT,laion_381,laion_381.jpg,laion_381.jpg,True,18.0,0.005696299998817267,photograph
+SIFT,laion_382,laion_382.jpg,laion_382.jpg,True,194.0,0.03145710000171675,photograph
+SIFT,laion_383,laion_383.jpg,laion_383.jpg,True,148.0,0.027450800000224262,ambiguous or mixed
+SIFT,laion_384,laion_384.jpg,laion_384.jpg,True,173.0,0.023318100000324193,ambiguous or mixed
+SIFT,laion_385,laion_385.jpg,laion_385.jpg,True,177.0,0.03169100000013714,ambiguous or mixed
+SIFT,laion_386,laion_386.jpg,laion_386.jpg,True,230.0,0.038516700002219295,photograph
+SIFT,laion_387,laion_387.jpg,laion_387.jpg,True,43.0,0.006163399997603847,photograph
+SIFT,laion_388,laion_388.jpg,laion_388.jpg,True,156.0,0.03435470000113128,photograph
+SIFT,laion_389,laion_389.jpg,laion_389.jpg,True,181.0,0.03890250000040396,ambiguous or mixed
+SIFT,laion_390,laion_390.jpg,laion_390.jpg,True,174.0,0.028274699998291908,ambiguous or mixed
+SIFT,laion_391,laion_391.jpg,laion_001.jpg,False,0.0,0.0020489999988058116,vector art
+SIFT,laion_392,laion_392.jpg,laion_392.jpg,True,107.0,0.023220899998705136,photograph
+SIFT,laion_393,laion_393.jpg,laion_393.jpg,True,136.0,0.020033700002386468,photograph
+SIFT,laion_394,laion_394.jpg,laion_394.jpg,True,99.0,0.052777400000195485,photograph
+SIFT,laion_395,laion_395.jpg,laion_395.jpg,True,251.0,0.04423959999985527,ambiguous or mixed
+SIFT,laion_396,laion_396.jpg,laion_396.jpg,True,118.0,0.01739810000071884,photograph
+SIFT,laion_397,laion_397.jpg,laion_397.jpg,True,90.0,0.028125599998020334,logo
+SIFT,laion_398,laion_398.jpg,laion_398.jpg,True,150.0,0.023051899999700254,digital painting
+SIFT,laion_399,laion_399.jpg,laion_399.jpg,True,107.0,0.017190099999425,ambiguous or mixed
+SIFT,laion_400,laion_400.jpg,laion_400.jpg,True,208.0,0.041277299998910166,photograph
+SIFT,laion_401,laion_401.jpg,laion_401.jpg,True,14.0,0.00983510000151,ambiguous or mixed
+SIFT,laion_402,laion_402.jpg,laion_402.jpg,True,139.0,0.021295499998814194,ambiguous or mixed
+SIFT,laion_403,laion_403.jpg,laion_403.jpg,True,123.0,0.03875709999920218,digital painting
+SIFT,laion_404,laion_404.jpg,laion_404.jpg,True,199.0,0.023990300000150455,digital painting
+SIFT,laion_405,laion_405.jpg,laion_405.jpg,True,111.0,0.029739499997958774,logo
+SIFT,laion_406,laion_406.jpg,laion_406.jpg,True,23.0,0.006066500001907116,logo
+SIFT,laion_407,laion_407.jpg,laion_407.jpg,True,94.0,0.014111799999227514,photograph
+SIFT,laion_408,laion_408.jpg,laion_408.jpg,True,151.0,0.029081299999234034,logo
+SIFT,laion_409,laion_409.jpg,laion_409.jpg,True,193.0,0.04168559999743593,ambiguous or mixed
+SIFT,laion_410,laion_410.jpg,laion_410.jpg,True,160.0,0.020722199998999713,photograph
+SIFT,laion_411,laion_411.jpg,laion_411.jpg,True,135.0,0.019361799997568596,digital painting
+SIFT,laion_412,laion_412.jpg,laion_412.jpg,True,146.0,0.022964700001466554,ambiguous or mixed
+SIFT,laion_413,laion_413.jpg,laion_413.jpg,True,118.0,0.032213800001045456,ambiguous or mixed
+SIFT,laion_414,laion_414.jpg,laion_414.jpg,True,215.0,0.03210870000111754,logo
+SIFT,laion_415,laion_415.jpg,laion_415.jpg,True,175.0,0.05363740000029793,photograph
+SIFT,laion_416,laion_416.jpg,laion_416.jpg,True,157.0,0.03692599999703816,ambiguous or mixed
+SIFT,laion_417,laion_417.jpg,laion_417.jpg,True,135.0,0.02692150000075344,photograph
+SIFT,laion_418,laion_418.jpg,laion_418.jpg,True,63.0,0.020072600000275997,photograph
+SIFT,laion_419,laion_419.jpg,laion_419.jpg,True,180.0,0.02674490000208607,photograph
+SIFT,laion_420,laion_420.jpg,laion_420.jpg,True,221.0,0.03390749999744003,photograph
+SIFT,laion_421,laion_421.jpg,laion_421.jpg,True,77.0,0.02231039999969653,ambiguous or mixed
+SIFT,laion_422,laion_422.jpg,laion_422.jpg,True,90.0,0.025579100001777988,ambiguous or mixed
+SIFT,laion_423,laion_423.jpg,laion_423.jpg,True,109.0,0.017699299998639617,ambiguous or mixed
+SIFT,laion_424,laion_424.jpg,laion_424.jpg,True,171.0,0.03723019999961252,photograph
+SIFT,laion_425,laion_425.jpg,laion_425.jpg,True,152.0,0.03333320000092499,photograph
+SIFT,laion_426,laion_426.jpg,laion_426.jpg,True,171.0,0.023377700003038626,ambiguous or mixed
+SIFT,laion_427,laion_427.jpg,laion_427.jpg,True,204.0,0.024290999997901963,photograph
+SIFT,laion_428,laion_428.jpg,laion_428.jpg,True,38.0,0.006601299999601906,photograph
+SIFT,laion_429,laion_429.jpg,laion_429.jpg,True,100.0,0.031123600001592422,photograph
+SIFT,laion_430,laion_430.jpg,laion_430.jpg,True,182.0,0.04485489999933634,logo
+SIFT,laion_431,laion_431.jpg,laion_431.jpg,True,143.0,0.02678590000141412,photograph
+SIFT,laion_432,laion_432.jpg,laion_432.jpg,True,54.0,0.01894749999701162,logo
+SIFT,laion_433,laion_433.jpg,laion_433.jpg,True,169.0,0.11015640000186977,photograph
+SIFT,laion_434,laion_434.jpg,laion_434.jpg,True,77.0,0.014745899999979883,logo
+SIFT,laion_435,laion_435.jpg,laion_435.jpg,True,35.0,0.006768400002329145,ambiguous or mixed
+SIFT,laion_436,laion_436.jpg,laion_436.jpg,True,168.0,0.052392599998711376,photograph
+SIFT,laion_437,laion_437.jpg,laion_437.jpg,True,196.0,0.028461499998229556,photograph
+SIFT,laion_438,laion_438.jpg,laion_438.jpg,True,193.0,0.03755509999973583,ambiguous or mixed
+SIFT,laion_439,laion_439.jpg,laion_439.jpg,True,169.0,0.02261479999651783,logo
+SIFT,laion_440,laion_440.jpg,laion_440.jpg,True,187.0,0.027984500000457047,digital painting
+SIFT,laion_441,laion_441.jpg,laion_441.jpg,True,157.0,0.025515299999824492,ambiguous or mixed
+SIFT,laion_442,laion_442.jpg,laion_442.jpg,True,97.0,0.014965599999413826,photograph
+SIFT,laion_443,laion_443.jpg,laion_443.jpg,True,185.0,0.04693270000279881,photograph
+SIFT,laion_444,laion_444.jpg,laion_444.jpg,True,192.0,0.022079599999415223,photograph
+SIFT,laion_445,laion_445.jpg,laion_445.jpg,True,209.0,0.056977299998834496,ambiguous or mixed
+SIFT,laion_446,laion_446.jpg,laion_446.jpg,True,45.0,0.008827999998175073,photograph
+SIFT,laion_447,laion_447.jpg,laion_447.jpg,True,159.0,0.023839800000132527,ambiguous or mixed
+SIFT,laion_448,laion_448.jpg,laion_448.jpg,True,218.0,0.04476529999737977,photograph
+SIFT,laion_449,laion_449.jpg,laion_449.jpg,True,166.0,0.022726700000930578,ambiguous or mixed
+SIFT,laion_450,laion_450.jpg,laion_450.jpg,True,77.0,0.012872299997980008,logo
+SIFT,laion_451,laion_451.jpg,laion_451.jpg,True,188.0,0.024480800002493197,photograph
+SIFT,laion_452,laion_452.jpg,laion_452.jpg,True,188.0,0.031575600001815474,photograph
+SIFT,laion_453,laion_453.jpg,laion_453.jpg,True,37.0,0.014306900000519818,digital painting
+SIFT,laion_454,laion_454.jpg,laion_454.jpg,True,60.0,0.01133049999771174,photograph
+SIFT,laion_455,laion_455.jpg,laion_455.jpg,True,188.0,0.040038300001469906,collage
+SIFT,laion_456,laion_456.jpg,laion_456.jpg,True,187.0,0.02650780000112718,ambiguous or mixed
+SIFT,laion_457,laion_457.jpg,laion_457.jpg,True,194.0,0.04322139999931096,ambiguous or mixed
+SIFT,laion_458,laion_458.jpg,laion_458.jpg,True,39.0,0.017790099998819642,logo
+SIFT,laion_459,laion_459.jpg,laion_459.jpg,True,49.0,0.008931399999710266,vector art
+SIFT,laion_460,laion_460.jpg,laion_460.jpg,True,123.0,0.018090900000970578,ambiguous or mixed
+SIFT,laion_461,laion_461.jpg,laion_461.jpg,True,127.0,0.015021799998066854,ambiguous or mixed
+SIFT,laion_462,laion_462.jpg,laion_462.jpg,True,114.0,0.06688890000077663,photograph
+SIFT,laion_463,laion_463.jpg,laion_463.jpg,True,122.0,0.021334599998226622,photograph
+SIFT,laion_464,laion_464.jpg,laion_464.jpg,True,142.0,0.019816800002445234,ambiguous or mixed
+SIFT,laion_465,laion_465.jpg,laion_465.jpg,True,213.0,0.024142400001437636,ambiguous or mixed
+SIFT,laion_466,laion_466.jpg,laion_466.jpg,True,156.0,0.027614700000412995,photograph
+SIFT,laion_467,laion_467.jpg,laion_467.jpg,True,202.0,0.0303697999988799,logo
+SIFT,laion_468,laion_468.jpg,laion_468.jpg,True,160.0,0.024832399998558685,photograph
+SIFT,laion_469,laion_469.jpg,laion_469.jpg,True,17.0,0.010937199996988056,photograph
+SIFT,laion_470,laion_470.jpg,laion_470.jpg,True,62.0,0.010040000001026783,digital painting
+SIFT,laion_471,laion_471.jpg,laion_471.jpg,True,228.0,0.03189059999931487,digital painting
+SIFT,laion_472,laion_472.jpg,laion_472.jpg,True,198.0,0.04296059999978752,logo
+SIFT,laion_473,laion_473.jpg,laion_473.jpg,True,183.0,0.06519729999854462,ambiguous or mixed
+SIFT,laion_474,laion_474.jpg,laion_474.jpg,True,218.0,0.03672709999955259,ambiguous or mixed
+SIFT,laion_475,laion_475.jpg,laion_475.jpg,True,107.0,0.01351280000017141,ambiguous or mixed
+SIFT,laion_476,laion_476.jpg,laion_476.jpg,True,133.0,0.02838060000067344,photograph
+SIFT,laion_477,laion_477.jpg,laion_477.jpg,True,198.0,0.04240090000166674,photograph
+SIFT,laion_478,laion_478.jpg,laion_478.jpg,True,262.0,0.02573119999942719,ambiguous or mixed
+SIFT,laion_479,laion_479.jpg,laion_479.jpg,True,102.0,0.027628800002275966,photograph
+SIFT,laion_480,laion_480.jpg,laion_480.jpg,True,172.0,0.050773800001479685,photograph
+SIFT,laion_481,laion_481.jpg,laion_481.jpg,True,187.0,0.02935079999951995,photograph
+SIFT,laion_482,laion_482.jpg,laion_482.jpg,True,182.0,0.026591099998768186,vector art
+SIFT,laion_483,laion_483.jpg,laion_483.jpg,True,140.0,0.05352839999977732,digital painting
+SIFT,laion_484,laion_484.jpg,laion_484.jpg,True,152.0,0.02454580000267015,photograph
+SIFT,laion_485,laion_485.jpg,laion_485.jpg,True,309.0,0.06838209999841638,photograph
+SIFT,laion_486,laion_486.jpg,laion_486.jpg,True,128.0,0.028526599999167956,photograph
+SIFT,laion_487,laion_487.jpg,laion_487.jpg,True,120.0,0.06544239999857382,photograph
+SIFT,laion_488,laion_488.jpg,laion_488.jpg,True,198.0,0.02609659999870928,photograph
+SIFT,laion_489,laion_489.jpg,laion_489.jpg,True,154.0,0.03081460000248626,photograph
+SIFT,laion_490,laion_490.jpg,laion_490.jpg,True,93.0,0.024162899997463683,photograph
+SIFT,laion_491,laion_491.jpg,laion_491.jpg,True,248.0,0.03297940000265953,ambiguous or mixed
+SIFT,laion_492,laion_492.jpg,laion_492.jpg,True,136.0,0.021838600001501618,photograph
+SIFT,laion_493,laion_493.jpg,laion_493.jpg,True,301.0,0.050069799999619136,collage
+SIFT,laion_494,laion_494.jpg,laion_494.jpg,True,91.0,0.015263299999787705,ambiguous or mixed
+SIFT,laion_495,laion_495.jpg,laion_495.jpg,True,58.0,0.009981300001527416,photograph
+SIFT,laion_496,laion_496.jpg,laion_496.jpg,True,106.0,0.012999300000956282,photograph
+SIFT,laion_497,laion_497.jpg,laion_497.jpg,True,71.0,0.012202700003399514,vector art
+SIFT,laion_498,laion_498.jpg,laion_498.jpg,True,144.0,0.030772500002058223,photograph
+SIFT,laion_499,laion_499.jpg,laion_499.jpg,True,184.0,0.030970699997851625,photograph
+SIFT,laion_500,laion_500.jpg,laion_500.jpg,True,167.0,0.030613299997639842,ambiguous or mixed
+CLIP,laion_001,laion_001.jpg,laion_001.jpg,True,0.9887135624885559,0.17415519999849494,logo
+CLIP,laion_002,laion_002.jpg,laion_002.jpg,True,0.9082950353622437,0.0536911000017426,photograph
+CLIP,laion_003,laion_003.jpg,laion_003.jpg,True,0.9411650896072388,0.05518110000048182,vector art
+CLIP,laion_004,laion_004.jpg,laion_004.jpg,True,0.9525845050811768,0.050307199999224395,vector art
+CLIP,laion_005,laion_005.jpg,laion_005.jpg,True,0.9277217388153076,0.05315669999981765,digital painting
+CLIP,laion_006,laion_006.jpg,laion_006.jpg,True,0.9690784215927124,0.05715490000147838,vector art
+CLIP,laion_007,laion_007.jpg,laion_007.jpg,True,0.9243344068527222,0.05536439999923459,digital painting
+CLIP,laion_008,laion_008.jpg,laion_008.jpg,True,0.847822368144989,0.056469000002834946,photograph
+CLIP,laion_009,laion_009.jpg,laion_009.jpg,True,0.937484085559845,0.06280139999944367,photograph
+CLIP,laion_010,laion_010.jpg,laion_010.jpg,True,0.8871375322341919,0.05296519999683369,logo
+CLIP,laion_011,laion_011.jpg,laion_011.jpg,True,0.9043401479721069,0.05454450000252109,ambiguous or mixed
+CLIP,laion_012,laion_012.jpg,laion_012.jpg,True,0.9406362771987915,0.07011810000039986,vector art
+CLIP,laion_013,laion_013.jpg,laion_013.jpg,True,0.928287148475647,0.051376399998844136,ambiguous or mixed
+CLIP,laion_014,laion_014.jpg,laion_014.jpg,True,0.9222148656845093,0.052046300002984935,ambiguous or mixed
+CLIP,laion_015,laion_015.jpg,laion_015.jpg,True,0.8978227376937866,0.04953860000023269,vector art
+CLIP,laion_016,laion_016.jpg,laion_016.jpg,True,0.9008954763412476,0.049097799997980474,ambiguous or mixed
+CLIP,laion_017,laion_017.jpg,laion_017.jpg,True,0.9153688549995422,0.048262500000419095,vector art
+CLIP,laion_018,laion_018.jpg,laion_018.jpg,True,0.9008857607841492,0.049692500000674045,photograph
+CLIP,laion_019,laion_019.jpg,laion_019.jpg,True,0.895054817199707,0.05023050000090734,photograph
+CLIP,laion_020,laion_020.jpg,laion_020.jpg,True,0.9300739765167236,0.05010039999979199,ambiguous or mixed
+CLIP,laion_021,laion_021.jpg,laion_021.jpg,True,0.9243137240409851,0.05089610000140965,logo
+CLIP,laion_022,laion_022.jpg,laion_022.jpg,True,0.9246955513954163,0.05311260000235052,ambiguous or mixed
+CLIP,laion_023,laion_023.jpg,laion_023.jpg,True,0.9344596266746521,0.049996900001133326,logo
+CLIP,laion_024,laion_024.jpg,laion_024.jpg,True,0.8652240037918091,0.05344100000002072,logo
+CLIP,laion_025,laion_025.jpg,laion_025.jpg,True,0.8981849551200867,0.05440440000165836,logo
+CLIP,laion_026,laion_026.jpg,laion_026.jpg,True,0.9270526766777039,0.05058459999781917,photograph
+CLIP,laion_027,laion_027.jpg,laion_027.jpg,True,0.932572066783905,0.051076699997793185,photograph
+CLIP,laion_028,laion_028.jpg,laion_028.jpg,True,0.9472125768661499,0.054013999997550854,ambiguous or mixed
+CLIP,laion_029,laion_029.jpg,laion_029.jpg,True,0.9138481616973877,0.048347100000682985,photograph
+CLIP,laion_030,laion_030.jpg,laion_030.jpg,True,0.9373008608818054,0.05020210000293446,collage
+CLIP,laion_031,laion_031.jpg,laion_031.jpg,True,0.9008772373199463,0.05352119999952265,logo
+CLIP,laion_032,laion_032.jpg,laion_032.jpg,True,0.9092010855674744,0.05697679999866523,photograph
+CLIP,laion_033,laion_033.jpg,laion_033.jpg,True,0.9024257063865662,0.05044169999746373,collage
+CLIP,laion_034,laion_034.jpg,laion_034.jpg,True,0.9452934265136719,0.06239840000125696,photograph
+CLIP,laion_035,laion_035.jpg,laion_035.jpg,True,0.8605214953422546,0.05050240000127815,ambiguous or mixed
+CLIP,laion_036,laion_036.jpg,laion_036.jpg,True,0.9292665123939514,0.05367639999894891,photograph
+CLIP,laion_037,laion_037.jpg,laion_037.jpg,True,0.9170511960983276,0.06620230000044103,vector art
+CLIP,laion_038,laion_038.jpg,laion_038.jpg,True,0.9107341170310974,0.049680299998726696,vector art
+CLIP,laion_039,laion_039.jpg,laion_039.jpg,True,0.9178546667098999,0.053399000000354135,photograph
+CLIP,laion_040,laion_040.jpg,laion_040.jpg,True,0.9224891662597656,0.04781290000028093,ambiguous or mixed
+CLIP,laion_041,laion_041.jpg,laion_041.jpg,True,0.9333250522613525,0.04983210000136751,photograph
+CLIP,laion_042,laion_042.jpg,laion_042.jpg,True,0.8794851303100586,0.04870730000038748,photograph
+CLIP,laion_043,laion_043.jpg,laion_043.jpg,True,0.9235691428184509,0.04898160000084317,digital painting
+CLIP,laion_044,laion_044.jpg,laion_044.jpg,True,0.9330299496650696,0.05090370000107214,photograph
+CLIP,laion_045,laion_045.jpg,laion_045.jpg,True,0.9222304821014404,0.04955250000057276,digital painting
+CLIP,laion_046,laion_046.jpg,laion_046.jpg,True,0.9794784784317017,0.056783799998811446,vector art
+CLIP,laion_047,laion_047.jpg,laion_047.jpg,True,0.9258531332015991,0.05168180000327993,photograph
+CLIP,laion_048,laion_048.jpg,laion_048.jpg,True,0.9759824275970459,0.051937799998995615,ambiguous or mixed
+CLIP,laion_049,laion_049.jpg,laion_049.jpg,True,0.9496208429336548,0.04833220000000438,vector art
+CLIP,laion_050,laion_050.jpg,laion_050.jpg,True,0.950677752494812,0.049887299999682,logo
+CLIP,laion_051,laion_051.jpg,laion_051.jpg,True,0.9455094933509827,0.05540380000093137,ambiguous or mixed
+CLIP,laion_052,laion_052.jpg,laion_052.jpg,True,0.9373300075531006,0.051284600001963554,ambiguous or mixed
+CLIP,laion_053,laion_053.jpg,laion_053.jpg,True,0.9399611353874207,0.05003280000164523,photograph
+CLIP,laion_054,laion_054.jpg,laion_054.jpg,True,0.9399558901786804,0.05206410000027972,ambiguous or mixed
+CLIP,laion_055,laion_055.jpg,laion_055.jpg,True,0.8857263326644897,0.04949309999938123,photograph
+CLIP,laion_056,laion_056.jpg,laion_056.jpg,True,0.9143108129501343,0.051838899998983834,ambiguous or mixed
+CLIP,laion_057,laion_057.jpg,laion_057.jpg,True,0.9225786328315735,0.05349460000070394,digital painting
+CLIP,laion_058,laion_058.jpg,laion_058.jpg,True,0.8917428851127625,0.057581900000514,photograph
+CLIP,laion_059,laion_059.jpg,laion_059.jpg,True,0.9274098873138428,0.05529739999838057,collage
+CLIP,laion_060,laion_060.jpg,laion_060.jpg,True,0.9378983974456787,0.05441889999929117,logo
+CLIP,laion_061,laion_061.jpg,laion_061.jpg,True,0.9327169060707092,0.056626500001584645,ambiguous or mixed
+CLIP,laion_062,laion_062.jpg,laion_062.jpg,True,0.9649156332015991,0.05510409999988042,vector art
+CLIP,laion_063,laion_063.jpg,laion_063.jpg,True,0.9053958654403687,0.057059400001890026,photograph
+CLIP,laion_064,laion_064.jpg,laion_064.jpg,True,0.8839399814605713,0.05484029999934137,ambiguous or mixed
+CLIP,laion_065,laion_065.jpg,laion_065.jpg,True,0.8968629837036133,0.05558670000027632,ambiguous or mixed
+CLIP,laion_066,laion_066.jpg,laion_066.jpg,True,0.9185857772827148,0.053430899999511894,digital painting
+CLIP,laion_067,laion_067.jpg,laion_067.jpg,True,0.9333462715148926,0.06595279999964987,photograph
+CLIP,laion_068,laion_068.jpg,laion_068.jpg,True,0.9146325588226318,0.052169999999023275,photograph
+CLIP,laion_069,laion_069.jpg,laion_069.jpg,True,0.9197034239768982,0.05429089999961434,ambiguous or mixed
+CLIP,laion_070,laion_070.jpg,laion_070.jpg,True,0.9563755393028259,0.06090380000023288,photograph
+CLIP,laion_071,laion_071.jpg,laion_071.jpg,True,0.8241410255432129,0.08204290000139736,photograph
+CLIP,laion_072,laion_072.jpg,laion_072.jpg,True,0.8903771638870239,0.055455400000937516,digital painting
+CLIP,laion_073,laion_073.jpg,laion_073.jpg,True,0.8932790160179138,0.05318529999931343,digital painting
+CLIP,laion_074,laion_074.jpg,laion_074.jpg,True,0.9011621475219727,0.05319069999677595,photograph
+CLIP,laion_075,laion_075.jpg,laion_075.jpg,True,0.8986791372299194,0.05242259999795351,ambiguous or mixed
+CLIP,laion_076,laion_076.jpg,laion_076.jpg,True,0.7571120262145996,0.05202560000179801,logo
+CLIP,laion_077,laion_077.jpg,laion_077.jpg,True,0.8572781682014465,0.04829099999915343,vector art
+CLIP,laion_078,laion_078.jpg,laion_078.jpg,True,0.8617578744888306,0.0509306000021752,photograph
+CLIP,laion_079,laion_079.jpg,laion_079.jpg,True,0.8522458076477051,0.05079219999970519,photograph
+CLIP,laion_080,laion_080.jpg,laion_080.jpg,True,0.9263688325881958,0.05494379999800003,photograph
+CLIP,laion_081,laion_081.jpg,laion_081.jpg,True,0.9131706357002258,0.06609820000085165,ambiguous or mixed
+CLIP,laion_082,laion_082.jpg,laion_082.jpg,True,0.8549143671989441,0.049975699999777135,photograph
+CLIP,laion_083,laion_083.jpg,laion_083.jpg,True,0.9042470455169678,0.05010689999835449,photograph
+CLIP,laion_084,laion_084.jpg,laion_084.jpg,True,0.94877690076828,0.0503738000006706,ambiguous or mixed
+CLIP,laion_085,laion_085.jpg,laion_085.jpg,True,0.8915541172027588,0.049786700001277495,logo
+CLIP,laion_086,laion_086.jpg,laion_086.jpg,True,0.9036123752593994,0.0485584000016388,vector art
+CLIP,laion_087,laion_087.jpg,laion_087.jpg,True,0.9262382984161377,0.05035829999906127,photograph
+CLIP,laion_088,laion_088.jpg,laion_088.jpg,True,0.9673463106155396,0.04934730000240961,logo
+CLIP,laion_089,laion_089.jpg,laion_089.jpg,True,0.8982869386672974,0.05219959999885759,photograph
+CLIP,laion_090,laion_090.jpg,laion_090.jpg,True,0.9174222350120544,0.05148710000139545,logo
+CLIP,laion_091,laion_091.jpg,laion_091.jpg,True,0.9313963651657104,0.0497300000024552,photograph
+CLIP,laion_092,laion_092.jpg,laion_092.jpg,True,0.9146909713745117,0.048513900001125876,ambiguous or mixed
+CLIP,laion_093,laion_093.jpg,laion_093.jpg,True,0.9333533048629761,0.053348199999163626,photograph
+CLIP,laion_094,laion_094.jpg,laion_094.jpg,True,0.9118521213531494,0.052118999999947846,ambiguous or mixed
+CLIP,laion_095,laion_095.jpg,laion_095.jpg,True,0.9345863461494446,0.050698899998678826,ambiguous or mixed
+CLIP,laion_096,laion_096.jpg,laion_096.jpg,True,0.8488428592681885,0.048700200000894256,ambiguous or mixed
+CLIP,laion_097,laion_097.jpg,laion_097.jpg,True,0.9039206504821777,0.05666449999989709,photograph
+CLIP,laion_098,laion_098.jpg,laion_098.jpg,True,0.8886950016021729,0.05180059999838704,photograph
+CLIP,laion_099,laion_099.jpg,laion_099.jpg,True,0.8943910598754883,0.049871700000949204,ambiguous or mixed
+CLIP,laion_100,laion_100.jpg,laion_100.jpg,True,0.8715828657150269,0.049189299999852665,photograph
+CLIP,laion_101,laion_101.jpg,laion_101.jpg,True,0.8600984811782837,0.049041599999327445,photograph
+CLIP,laion_102,laion_102.jpg,laion_102.jpg,True,0.929673433303833,0.049570399998629,photograph
+CLIP,laion_103,laion_103.jpg,laion_103.jpg,True,0.868706226348877,0.050498199998401105,photograph
+CLIP,laion_104,laion_104.jpg,laion_104.jpg,True,0.9291262030601501,0.053488400000787806,photograph
+CLIP,laion_105,laion_105.jpg,laion_105.jpg,True,0.9056827425956726,0.05026210000141873,photograph
+CLIP,laion_106,laion_106.jpg,laion_106.jpg,True,0.9003830552101135,0.0502727999992203,digital painting
+CLIP,laion_107,laion_107.jpg,laion_107.jpg,True,0.9731161594390869,0.061929900002724025,photograph
+CLIP,laion_108,laion_108.jpg,laion_108.jpg,True,0.9276033043861389,0.053343600000516744,ambiguous or mixed
+CLIP,laion_109,laion_109.jpg,laion_109.jpg,True,0.9049962759017944,0.05169759999989765,photograph
+CLIP,laion_110,laion_110.jpg,laion_110.jpg,True,0.9435547590255737,0.05254600000262144,photograph
+CLIP,laion_111,laion_111.jpg,laion_111.jpg,True,0.9323471188545227,0.051736500001425156,photograph
+CLIP,laion_112,laion_112.jpg,laion_112.jpg,True,0.8928618431091309,0.05144550000113668,photograph
+CLIP,laion_113,laion_113.jpg,laion_113.jpg,True,0.9733178615570068,0.050924099999974715,digital painting
+CLIP,laion_114,laion_114.jpg,laion_114.jpg,True,0.9178294539451599,0.051478000001225155,vector art
+CLIP,laion_115,laion_115.jpg,laion_115.jpg,True,0.9154189825057983,0.050379300002532545,photograph
+CLIP,laion_116,laion_116.jpg,laion_116.jpg,True,0.9092886447906494,0.05312140000023646,photograph
+CLIP,laion_117,laion_117.jpg,laion_117.jpg,True,0.8810965418815613,0.05332329999873764,photograph
+CLIP,laion_118,laion_118.jpg,laion_118.jpg,True,0.882296085357666,0.0550507000007201,ambiguous or mixed
+CLIP,laion_119,laion_119.jpg,laion_119.jpg,True,0.909507155418396,0.05346760000247741,photograph
+CLIP,laion_120,laion_120.jpg,laion_120.jpg,True,0.9401838183403015,0.0490555000033055,photograph
+CLIP,laion_121,laion_121.jpg,laion_121.jpg,True,0.9090312719345093,0.05107760000100825,photograph
+CLIP,laion_122,laion_122.jpg,laion_122.jpg,True,0.8589709997177124,0.05655339999793796,logo
+CLIP,laion_123,laion_123.jpg,laion_123.jpg,True,0.8732860088348389,0.0539786000008462,ambiguous or mixed
+CLIP,laion_124,laion_124.jpg,laion_124.jpg,True,0.8814440369606018,0.05678729999999632,ambiguous or mixed
+CLIP,laion_125,laion_125.jpg,laion_125.jpg,True,0.8983189463615417,0.05711449999944307,ambiguous or mixed
+CLIP,laion_126,laion_126.jpg,laion_126.jpg,True,0.8921678066253662,0.054610800001682946,logo
+CLIP,laion_127,laion_127.jpg,laion_127.jpg,True,0.9367287158966064,0.05501000000003842,ambiguous or mixed
+CLIP,laion_128,laion_128.jpg,laion_128.jpg,True,0.9144725799560547,0.05347020000044722,photograph
+CLIP,laion_129,laion_129.jpg,laion_129.jpg,True,0.902100145816803,0.05221769999843673,digital painting
+CLIP,laion_130,laion_130.jpg,laion_130.jpg,True,0.9122347831726074,0.05288669999936246,photograph
+CLIP,laion_131,laion_131.jpg,laion_131.jpg,True,0.9701855778694153,0.05514680000123917,ambiguous or mixed
+CLIP,laion_132,laion_132.jpg,laion_132.jpg,True,0.8729149103164673,0.05332830000043032,photograph
+CLIP,laion_133,laion_133.jpg,laion_133.jpg,True,0.9261000752449036,0.05480439999882947,ambiguous or mixed
+CLIP,laion_134,laion_134.jpg,laion_134.jpg,True,0.8569402694702148,0.05107040000075358,photograph
+CLIP,laion_135,laion_135.jpg,laion_135.jpg,True,0.9155395030975342,0.05311900000015157,digital painting
+CLIP,laion_136,laion_136.jpg,laion_136.jpg,True,0.9580386877059937,0.052992699998867465,logo
+CLIP,laion_137,laion_137.jpg,laion_137.jpg,True,0.8616841435432434,0.05115190000287839,photograph
+CLIP,laion_138,laion_138.jpg,laion_138.jpg,True,0.9073284864425659,0.05333290000271518,photograph
+CLIP,laion_139,laion_139.jpg,laion_139.jpg,True,0.9443525075912476,0.051201999998738756,digital painting
+CLIP,laion_140,laion_140.jpg,laion_140.jpg,True,0.8674213886260986,0.05023530000107712,vector art
+CLIP,laion_141,laion_141.jpg,laion_141.jpg,True,0.9139400124549866,0.05231690000073286,photograph
+CLIP,laion_142,laion_142.jpg,laion_142.jpg,True,0.9291009902954102,0.0531687000002421,logo
+CLIP,laion_143,laion_143.jpg,laion_143.jpg,True,0.9152153730392456,0.05258309999771882,photograph
+CLIP,laion_144,laion_144.jpg,laion_144.jpg,True,0.9417790770530701,0.05802559999938239,vector art
+CLIP,laion_145,laion_145.jpg,laion_145.jpg,True,0.9553121328353882,0.05684739999924204,ambiguous or mixed
+CLIP,laion_146,laion_146.jpg,laion_146.jpg,True,0.9387077689170837,0.06119599999874481,photograph
+CLIP,laion_147,laion_147.jpg,laion_147.jpg,True,0.9290903210639954,0.05227080000258866,ambiguous or mixed
+CLIP,laion_148,laion_148.jpg,laion_148.jpg,True,0.9493483304977417,0.07659760000024107,photograph
+CLIP,laion_149,laion_149.jpg,laion_149.jpg,True,0.867138683795929,0.05658449999828008,photograph
+CLIP,laion_150,laion_150.jpg,laion_150.jpg,True,0.9144997596740723,0.05287529999986873,logo
+CLIP,laion_151,laion_151.jpg,laion_151.jpg,True,0.9126138687133789,0.05852880000020377,photograph
+CLIP,laion_152,laion_152.jpg,laion_152.jpg,True,0.9144567847251892,0.05413649999900372,vector art
+CLIP,laion_153,laion_153.jpg,laion_153.jpg,True,0.8938667178153992,0.054582299999310635,collage
+CLIP,laion_154,laion_154.jpg,laion_154.jpg,True,0.9103760123252869,0.05556129999968107,ambiguous or mixed
+CLIP,laion_155,laion_155.jpg,laion_155.jpg,True,0.9277433156967163,0.0591653999981645,ambiguous or mixed
+CLIP,laion_156,laion_156.jpg,laion_156.jpg,True,0.9288989305496216,0.05182509999940521,photograph
+CLIP,laion_157,laion_157.jpg,laion_157.jpg,True,0.9178786873817444,0.056222899998829234,logo
+CLIP,laion_158,laion_158.jpg,laion_158.jpg,True,0.8714631795883179,0.0555969000015466,digital painting
+CLIP,laion_159,laion_159.jpg,laion_159.jpg,True,0.9052839279174805,0.05738840000049095,photograph
+CLIP,laion_160,laion_160.jpg,laion_160.jpg,True,0.8515878915786743,0.0559358999998949,ambiguous or mixed
+CLIP,laion_161,laion_161.jpg,laion_161.jpg,True,0.8280166983604431,0.055480099999840604,photograph
+CLIP,laion_162,laion_162.jpg,laion_162.jpg,True,0.9227352738380432,0.05695610000111628,photograph
+CLIP,laion_163,laion_163.jpg,laion_163.jpg,True,0.918821394443512,0.06242230000134441,photograph
+CLIP,laion_164,laion_164.jpg,laion_164.jpg,True,0.9391790628433228,0.1010043999995105,ambiguous or mixed
+CLIP,laion_165,laion_165.jpg,laion_165.jpg,True,0.9303615093231201,0.05212329999994836,vector art
+CLIP,laion_166,laion_166.jpg,laion_166.jpg,True,0.9101423621177673,0.056822799997462425,photograph
+CLIP,laion_167,laion_167.jpg,laion_167.jpg,True,0.9357914924621582,0.055666599997493904,photograph
+CLIP,laion_168,laion_168.jpg,laion_168.jpg,True,0.8841438293457031,0.05390800000168383,photograph
+CLIP,laion_169,laion_169.jpg,laion_169.jpg,True,0.8823719024658203,0.05119360000026063,vector art
+CLIP,laion_170,laion_170.jpg,laion_170.jpg,True,0.9120487570762634,0.05714480000096955,photograph
+CLIP,laion_171,laion_171.jpg,laion_171.jpg,True,0.9546624422073364,0.05290039999817964,logo
+CLIP,laion_172,laion_172.jpg,laion_172.jpg,True,0.9125467538833618,0.05284570000003441,ambiguous or mixed
+CLIP,laion_173,laion_173.jpg,laion_173.jpg,True,0.9298965334892273,0.05239459999938845,ambiguous or mixed
+CLIP,laion_174,laion_174.jpg,laion_174.jpg,True,0.9315040707588196,0.0562411000028078,collage
+CLIP,laion_175,laion_175.jpg,laion_175.jpg,True,0.9248886108398438,0.07664729999669362,ambiguous or mixed
+CLIP,laion_176,laion_176.jpg,laion_176.jpg,True,0.9187051653862,0.06557570000222768,ambiguous or mixed
+CLIP,laion_177,laion_177.jpg,laion_177.jpg,True,0.940292239189148,0.05868869999903836,photograph
+CLIP,laion_178,laion_178.jpg,laion_178.jpg,True,0.9377480149269104,0.055927299999893876,photograph
+CLIP,laion_179,laion_179.jpg,laion_179.jpg,True,0.9321619272232056,0.05204070000036154,ambiguous or mixed
+CLIP,laion_180,laion_180.jpg,laion_180.jpg,True,0.9613592624664307,0.07585960000142222,ambiguous or mixed
+CLIP,laion_181,laion_181.jpg,laion_181.jpg,True,0.9506198167800903,0.0546753999988141,vector art
+CLIP,laion_182,laion_182.jpg,laion_182.jpg,True,0.848888635635376,0.05249850000109291,photograph
+CLIP,laion_183,laion_183.jpg,laion_183.jpg,True,0.8615968227386475,0.052700100000947714,photograph
+CLIP,laion_184,laion_184.jpg,laion_184.jpg,True,0.9428308010101318,0.052963799997087335,logo
+CLIP,laion_185,laion_185.jpg,laion_185.jpg,True,0.9133001565933228,0.05028149999998277,photograph
+CLIP,laion_186,laion_186.jpg,laion_186.jpg,True,0.9251221418380737,0.05401440000059665,digital painting
+CLIP,laion_187,laion_187.jpg,laion_187.jpg,True,0.9632445573806763,0.051456500001222594,ambiguous or mixed
+CLIP,laion_188,laion_188.jpg,laion_188.jpg,True,0.9581186771392822,0.055995099999563536,photograph
+CLIP,laion_189,laion_189.jpg,laion_189.jpg,True,0.8764630556106567,0.055912899999384535,digital painting
+CLIP,laion_190,laion_190.jpg,laion_190.jpg,True,0.8449866771697998,0.050643000002310146,ambiguous or mixed
+CLIP,laion_191,laion_191.jpg,laion_191.jpg,True,0.9299953579902649,0.05037590000210912,digital painting
+CLIP,laion_192,laion_192.jpg,laion_192.jpg,True,0.9119431376457214,0.05390590000024531,logo
+CLIP,laion_193,laion_193.jpg,laion_193.jpg,True,0.9354751110076904,0.05386160000125528,photograph
+CLIP,laion_194,laion_194.jpg,laion_194.jpg,True,0.9403783679008484,0.052796399999351706,ambiguous or mixed
+CLIP,laion_195,laion_195.jpg,laion_195.jpg,True,0.8908711075782776,0.05157139999937499,photograph
+CLIP,laion_196,laion_196.jpg,laion_196.jpg,True,0.9157264232635498,0.05112870000084513,ambiguous or mixed
+CLIP,laion_197,laion_197.jpg,laion_197.jpg,True,0.7971375584602356,0.05090149999887217,ambiguous or mixed
+CLIP,laion_198,laion_198.jpg,laion_198.jpg,True,0.9292058944702148,0.05407520000153454,logo
+CLIP,laion_199,laion_199.jpg,laion_199.jpg,True,0.9388704895973206,0.05232889999751933,photograph
+CLIP,laion_200,laion_200.jpg,laion_200.jpg,True,0.885712742805481,0.05040999999982887,digital painting
+CLIP,laion_201,laion_201.jpg,laion_201.jpg,True,0.8972291946411133,0.04864770000131102,photograph
+CLIP,laion_202,laion_202.jpg,laion_202.jpg,True,0.9329838156700134,0.04943920000005164,photograph
+CLIP,laion_203,laion_203.jpg,laion_203.jpg,True,0.9417083263397217,0.048154000000067754,photograph
+CLIP,laion_204,laion_204.jpg,laion_204.jpg,True,0.894233226776123,0.05116400000042631,photograph
+CLIP,laion_205,laion_205.jpg,laion_205.jpg,True,0.8949986696243286,0.05524100000184262,ambiguous or mixed
+CLIP,laion_206,laion_206.jpg,laion_206.jpg,True,0.8957269191741943,0.05193749999671127,vector art
+CLIP,laion_207,laion_207.jpg,laion_207.jpg,True,0.8112736344337463,0.05174609999812674,photograph
+CLIP,laion_208,laion_208.jpg,laion_208.jpg,True,0.8672646880149841,0.056283000001712935,photograph
+CLIP,laion_209,laion_209.jpg,laion_209.jpg,True,0.9166125655174255,0.05140140000003157,ambiguous or mixed
+CLIP,laion_210,laion_210.jpg,laion_210.jpg,True,0.9327520132064819,0.05134419999740203,photograph
+CLIP,laion_211,laion_211.jpg,laion_211.jpg,True,0.9358994960784912,0.05227770000055898,photograph
+CLIP,laion_212,laion_212.jpg,laion_212.jpg,True,0.9285752773284912,0.05161089999819524,vector art
+CLIP,laion_213,laion_213.jpg,laion_213.jpg,True,0.9424620866775513,0.06259620000128052,photograph
+CLIP,laion_214,laion_214.jpg,laion_214.jpg,True,0.8691474795341492,0.05259559999831254,photograph
+CLIP,laion_215,laion_215.jpg,laion_215.jpg,True,0.8698829412460327,0.049755200001527555,photograph
+CLIP,laion_216,laion_216.jpg,laion_216.jpg,True,0.9631540179252625,0.050761700000293786,photograph
+CLIP,laion_217,laion_217.jpg,laion_217.jpg,True,0.9272186160087585,0.08567570000013802,vector art
+CLIP,laion_218,laion_218.jpg,laion_218.jpg,True,0.9296204447746277,0.05079490000207443,photograph
+CLIP,laion_219,laion_219.jpg,laion_219.jpg,True,0.9214324355125427,0.0521154000016395,vector art
+CLIP,laion_220,laion_220.jpg,laion_220.jpg,True,0.932866096496582,0.054751399999076966,digital painting
+CLIP,laion_221,laion_221.jpg,laion_221.jpg,True,0.9005425572395325,0.05169190000015078,ambiguous or mixed
+CLIP,laion_222,laion_222.jpg,laion_222.jpg,True,0.9022127389907837,0.051230700002633967,photograph
+CLIP,laion_223,laion_223.jpg,laion_223.jpg,True,0.9315448999404907,0.05213459999868064,ambiguous or mixed
+CLIP,laion_224,laion_224.jpg,laion_224.jpg,True,0.9136765003204346,0.04861689999961527,ambiguous or mixed
+CLIP,laion_225,laion_225.jpg,laion_225.jpg,True,0.8732813000679016,0.048107700000400655,vector art
+CLIP,laion_226,laion_226.jpg,laion_226.jpg,True,0.9316396713256836,0.04942539999683504,logo
+CLIP,laion_227,laion_227.jpg,laion_227.jpg,True,0.9544259309768677,0.0489077999991423,ambiguous or mixed
+CLIP,laion_228,laion_228.jpg,laion_228.jpg,True,0.9071986079216003,0.04895989999931771,ambiguous or mixed
+CLIP,laion_229,laion_229.jpg,laion_229.jpg,True,0.950141429901123,0.05013479999979609,vector art
+CLIP,laion_230,laion_230.jpg,laion_230.jpg,True,0.9477492570877075,0.04812120000133291,photograph
+CLIP,laion_231,laion_231.jpg,laion_231.jpg,True,0.9324456453323364,0.049859899998409674,ambiguous or mixed
+CLIP,laion_232,laion_232.jpg,laion_232.jpg,True,0.935673713684082,0.051700799998798175,photograph
+CLIP,laion_233,laion_233.jpg,laion_233.jpg,True,0.9282362461090088,0.05239689999871189,photograph
+CLIP,laion_234,laion_234.jpg,laion_234.jpg,True,0.8995387554168701,0.054110999997647014,photograph
+CLIP,laion_235,laion_235.jpg,laion_235.jpg,True,0.9171295166015625,0.048240899999655085,photograph
+CLIP,laion_236,laion_236.jpg,laion_236.jpg,True,0.8890668153762817,0.050142599997343495,collage
+CLIP,laion_237,laion_237.jpg,laion_237.jpg,True,0.7898739576339722,0.049994500001048436,ambiguous or mixed
+CLIP,laion_238,laion_238.jpg,laion_238.jpg,True,0.838495135307312,0.05055259999789996,photograph
+CLIP,laion_239,laion_239.jpg,laion_239.jpg,True,0.9077262878417969,0.04978290000144625,vector art
+CLIP,laion_240,laion_240.jpg,laion_240.jpg,True,0.8692753911018372,0.05431469999894034,ambiguous or mixed
+CLIP,laion_241,laion_241.jpg,laion_241.jpg,True,0.9382785558700562,0.049436199999036035,vector art
+CLIP,laion_242,laion_242.jpg,laion_242.jpg,True,0.9109442234039307,0.04796680000072229,ambiguous or mixed
+CLIP,laion_243,laion_243.jpg,laion_243.jpg,True,0.934968113899231,0.051490199999534525,ambiguous or mixed
+CLIP,laion_244,laion_244.jpg,laion_244.jpg,True,0.8987712860107422,0.05190710000169929,logo
+CLIP,laion_245,laion_245.jpg,laion_245.jpg,True,0.9205527901649475,0.05002999999851454,ambiguous or mixed
+CLIP,laion_246,laion_246.jpg,laion_246.jpg,True,0.8252289295196533,0.050345799998467555,logo
+CLIP,laion_247,laion_247.jpg,laion_247.jpg,True,0.9497977495193481,0.05002339999919059,vector art
+CLIP,laion_248,laion_248.jpg,laion_248.jpg,True,0.9052696228027344,0.04934680000224034,photograph
+CLIP,laion_249,laion_249.jpg,laion_249.jpg,True,0.8862929940223694,0.05316280000261031,photograph
+CLIP,laion_250,laion_250.jpg,laion_250.jpg,True,0.9478331208229065,0.050638200002140366,digital painting
+CLIP,laion_251,laion_251.jpg,laion_251.jpg,True,0.9596923589706421,0.05142609999893466,photograph
+CLIP,laion_252,laion_252.jpg,laion_252.jpg,True,0.9252285957336426,0.052148799997667084,logo
+CLIP,laion_253,laion_253.jpg,laion_253.jpg,True,0.9373883008956909,0.049895999996806495,photograph
+CLIP,laion_254,laion_254.jpg,laion_254.jpg,True,0.9178194403648376,0.05009740000241436,ambiguous or mixed
+CLIP,laion_255,laion_255.jpg,laion_255.jpg,True,0.9153940677642822,0.05156129999886616,photograph
+CLIP,laion_256,laion_256.jpg,laion_256.jpg,True,0.9026960134506226,0.05309729999862611,photograph
+CLIP,laion_257,laion_257.jpg,laion_257.jpg,True,0.9276686310768127,0.054916199998842785,photograph
+CLIP,laion_258,laion_258.jpg,laion_258.jpg,True,0.8905242085456848,0.05258790000152658,digital painting
+CLIP,laion_259,laion_259.jpg,laion_259.jpg,True,0.9206503629684448,0.050159200000052806,photograph
+CLIP,laion_260,laion_260.jpg,laion_260.jpg,True,0.832899808883667,0.051134400000591995,ambiguous or mixed
+CLIP,laion_261,laion_261.jpg,laion_261.jpg,True,0.8604852557182312,0.04749730000185082,photograph
+CLIP,laion_262,laion_262.jpg,laion_262.jpg,True,0.8584204316139221,0.05140590000155498,ambiguous or mixed
+CLIP,laion_263,laion_263.jpg,laion_263.jpg,True,0.9396103620529175,0.05128340000010212,photograph
+CLIP,laion_264,laion_264.jpg,laion_264.jpg,True,0.8756179213523865,0.0491256000022986,photograph
+CLIP,laion_265,laion_265.jpg,laion_265.jpg,True,0.8709341287612915,0.049268999999185326,vector art
+CLIP,laion_266,laion_266.jpg,laion_266.jpg,True,0.9041482210159302,0.050909499997942476,photograph
+CLIP,laion_267,laion_267.jpg,laion_267.jpg,True,0.928115963935852,0.05057170000145561,ambiguous or mixed
+CLIP,laion_268,laion_268.jpg,laion_268.jpg,True,0.9486376047134399,0.04950789999929839,photograph
+CLIP,laion_269,laion_269.jpg,laion_269.jpg,True,0.8586978912353516,0.048502300000109244,logo
+CLIP,laion_270,laion_270.jpg,laion_270.jpg,True,0.9090723991394043,0.05134850000104052,photograph
+CLIP,laion_271,laion_271.jpg,laion_271.jpg,True,0.9131858944892883,0.049685499998304294,vector art
+CLIP,laion_272,laion_272.jpg,laion_272.jpg,True,0.9447483420372009,0.05678849999821978,photograph
+CLIP,laion_273,laion_273.jpg,laion_273.jpg,True,0.9712462425231934,0.07618290000027628,ambiguous or mixed
+CLIP,laion_274,laion_274.jpg,laion_274.jpg,True,0.947718620300293,0.0575643999982276,digital painting
+CLIP,laion_275,laion_275.jpg,laion_275.jpg,True,0.8702288866043091,0.055160399999294896,photograph
+CLIP,laion_276,laion_276.jpg,laion_276.jpg,True,0.8855823874473572,0.054020799998397706,digital painting
+CLIP,laion_277,laion_277.jpg,laion_277.jpg,True,0.9435548782348633,0.05415300000095158,logo
+CLIP,laion_278,laion_278.jpg,laion_278.jpg,True,0.7933719754219055,0.05144979999749921,digital painting
+CLIP,laion_279,laion_279.jpg,laion_279.jpg,True,0.9099120497703552,0.061543300002085743,vector art
+CLIP,laion_280,laion_280.jpg,laion_280.jpg,True,0.9133158922195435,0.05228510000233655,photograph
+CLIP,laion_281,laion_281.jpg,laion_281.jpg,True,0.9109969139099121,0.05053240000052028,photograph
+CLIP,laion_282,laion_282.jpg,laion_282.jpg,True,0.8783022165298462,0.048333299997466384,photograph
+CLIP,laion_283,laion_283.jpg,laion_283.jpg,True,0.8621228933334351,0.04904329999772017,ambiguous or mixed
+CLIP,laion_284,laion_284.jpg,laion_284.jpg,True,0.9611185789108276,0.04928490000020247,photograph
+CLIP,laion_285,laion_285.jpg,laion_285.jpg,True,0.939560055732727,0.05039459999898099,photograph
+CLIP,laion_286,laion_286.jpg,laion_286.jpg,True,0.930503249168396,0.05071670000324957,logo
+CLIP,laion_287,laion_287.jpg,laion_287.jpg,True,0.9186973571777344,0.05056659999900148,ambiguous or mixed
+CLIP,laion_288,laion_288.jpg,laion_288.jpg,True,0.9747726917266846,0.05058130000179517,vector art
+CLIP,laion_289,laion_289.jpg,laion_289.jpg,True,0.9025107622146606,0.05494420000104583,ambiguous or mixed
+CLIP,laion_290,laion_290.jpg,laion_290.jpg,True,0.9062659740447998,0.06586729999980889,photograph
+CLIP,laion_291,laion_291.jpg,laion_291.jpg,True,0.955608606338501,0.06624329999976908,collage
+CLIP,laion_292,laion_292.jpg,laion_292.jpg,True,0.9217246770858765,0.06108959999983199,photograph
+CLIP,laion_293,laion_293.jpg,laion_293.jpg,True,0.8999719619750977,0.0612840999965556,photograph
+CLIP,laion_294,laion_294.jpg,laion_294.jpg,True,0.9193394780158997,0.06620649999968009,photograph
+CLIP,laion_295,laion_295.jpg,laion_295.jpg,True,0.9006144404411316,0.0685312999994494,photograph
+CLIP,laion_296,laion_296.jpg,laion_296.jpg,True,0.9423689842224121,0.06711079999877256,digital painting
+CLIP,laion_297,laion_297.jpg,laion_297.jpg,True,0.9275104403495789,0.0635909000011452,photograph
+CLIP,laion_298,laion_298.jpg,laion_298.jpg,True,0.9472830295562744,0.06608589999814285,vector art
+CLIP,laion_299,laion_299.jpg,laion_299.jpg,True,0.8477082252502441,0.06160470000031637,digital painting
+CLIP,laion_300,laion_300.jpg,laion_300.jpg,True,0.9214624762535095,0.06214389999877312,ambiguous or mixed
+CLIP,laion_301,laion_301.jpg,laion_301.jpg,True,0.9164443612098694,0.060311799999908544,digital painting
+CLIP,laion_302,laion_302.jpg,laion_302.jpg,True,0.9066394567489624,0.05415250000078231,photograph
+CLIP,laion_303,laion_303.jpg,laion_303.jpg,True,0.7832828760147095,0.06307039999956032,ambiguous or mixed
+CLIP,laion_304,laion_304.jpg,laion_304.jpg,True,0.9430370330810547,0.055423700003302656,photograph
+CLIP,laion_305,laion_305.jpg,laion_305.jpg,True,0.919403612613678,0.05673720000049798,ambiguous or mixed
+CLIP,laion_306,laion_306.jpg,laion_306.jpg,True,0.9213122725486755,0.05503120000139461,digital painting
+CLIP,laion_307,laion_307.jpg,laion_307.jpg,True,0.8610372543334961,0.05523840000023483,photograph
+CLIP,laion_308,laion_308.jpg,laion_308.jpg,True,0.9084892272949219,0.05306939999718452,photograph
+CLIP,laion_309,laion_309.jpg,laion_309.jpg,True,0.9420827031135559,0.06145459999970626,ambiguous or mixed
+CLIP,laion_310,laion_310.jpg,laion_310.jpg,True,0.9318498373031616,0.056580699998448836,ambiguous or mixed
+CLIP,laion_311,laion_311.jpg,laion_311.jpg,True,0.9178647398948669,0.060347599999658996,photograph
+CLIP,laion_312,laion_312.jpg,laion_312.jpg,True,0.8852434158325195,0.0582920999986527,ambiguous or mixed
+CLIP,laion_313,laion_313.jpg,laion_313.jpg,True,0.8659015893936157,0.057263200000306824,logo
+CLIP,laion_314,laion_314.jpg,laion_314.jpg,True,0.9492572546005249,0.06266030000188039,photograph
+CLIP,laion_315,laion_315.jpg,laion_315.jpg,True,0.9310972094535828,0.05486620000010589,vector art
+CLIP,laion_316,laion_316.jpg,laion_316.jpg,True,0.9169394969940186,0.05290020000029472,photograph
+CLIP,laion_317,laion_317.jpg,laion_317.jpg,True,0.9280418753623962,0.05179580000185524,photograph
+CLIP,laion_318,laion_318.jpg,laion_318.jpg,True,0.9083423018455505,0.05036639999889303,photograph
+CLIP,laion_319,laion_319.jpg,laion_319.jpg,True,0.940652072429657,0.05724700000064331,digital painting
+CLIP,laion_320,laion_320.jpg,laion_320.jpg,True,0.9627220630645752,0.05538159999923664,ambiguous or mixed
+CLIP,laion_321,laion_321.jpg,laion_321.jpg,True,0.8929038643836975,0.05453230000057374,photograph
+CLIP,laion_322,laion_322.jpg,laion_322.jpg,True,0.9342397451400757,0.05815280000024359,photograph
+CLIP,laion_323,laion_323.jpg,laion_323.jpg,True,0.8820117712020874,0.05437960000199382,ambiguous or mixed
+CLIP,laion_324,laion_324.jpg,laion_324.jpg,True,0.9292866587638855,0.05547139999907813,photograph
+CLIP,laion_325,laion_325.jpg,laion_325.jpg,True,0.8532450199127197,0.0538533999970241,photograph
+CLIP,laion_326,laion_326.jpg,laion_326.jpg,True,0.9273554682731628,0.07552050000231247,photograph
+CLIP,laion_327,laion_327.jpg,laion_327.jpg,True,0.9010146856307983,0.05511499999920488,photograph
+CLIP,laion_328,laion_328.jpg,laion_328.jpg,True,0.9637854099273682,0.06842999999935273,digital painting
+CLIP,laion_329,laion_329.jpg,laion_329.jpg,True,0.9134342074394226,0.05763169999772799,ambiguous or mixed
+CLIP,laion_330,laion_330.jpg,laion_330.jpg,True,0.9060795903205872,0.058426500003406545,photograph
+CLIP,laion_331,laion_331.jpg,laion_331.jpg,True,0.8827402591705322,0.15360270000019227,photograph
+CLIP,laion_332,laion_332.jpg,laion_332.jpg,True,0.9052968621253967,0.062145200001396006,photograph
+CLIP,laion_333,laion_333.jpg,laion_333.jpg,True,0.9091836214065552,0.05548900000212598,logo
+CLIP,laion_334,laion_334.jpg,laion_334.jpg,True,0.9377422332763672,0.05481839999993099,photograph
+CLIP,laion_335,laion_335.jpg,laion_335.jpg,True,0.9470741152763367,0.05737030000091181,ambiguous or mixed
+CLIP,laion_336,laion_336.jpg,laion_336.jpg,True,0.872144877910614,0.05765909999900032,photograph
+CLIP,laion_337,laion_337.jpg,laion_337.jpg,True,0.8800662755966187,0.05525420000049053,logo
+CLIP,laion_338,laion_338.jpg,laion_338.jpg,True,0.8684670925140381,0.05722239999886369,photograph
+CLIP,laion_339,laion_339.jpg,laion_339.jpg,True,0.9516667127609253,0.05967810000220197,logo
+CLIP,laion_340,laion_340.jpg,laion_340.jpg,True,0.8883129954338074,0.058879500000330154,photograph
+CLIP,laion_341,laion_341.jpg,laion_341.jpg,True,0.884321391582489,0.05879500000082771,photograph
+CLIP,laion_342,laion_342.jpg,laion_342.jpg,True,0.9059582352638245,0.06646799999725772,photograph
+CLIP,laion_343,laion_343.jpg,laion_343.jpg,True,0.9469751715660095,0.05748939999830327,photograph
+CLIP,laion_344,laion_344.jpg,laion_344.jpg,True,0.9207002520561218,0.055136299997684546,photograph
+CLIP,laion_345,laion_345.jpg,laion_345.jpg,True,0.9322125911712646,0.051773099999991246,photograph
+CLIP,laion_346,laion_346.jpg,laion_346.jpg,True,0.9340076446533203,0.048782899997604545,photograph
+CLIP,laion_347,laion_347.jpg,laion_347.jpg,True,0.9070866107940674,0.0488258000004862,photograph
+CLIP,laion_348,laion_348.jpg,laion_348.jpg,True,0.9241082668304443,0.05041770000025281,ambiguous or mixed
+CLIP,laion_349,laion_349.jpg,laion_349.jpg,True,0.876242995262146,0.051142199998139404,photograph
+CLIP,laion_350,laion_350.jpg,laion_350.jpg,True,0.8539826273918152,0.05097160000150325,ambiguous or mixed
+CLIP,laion_351,laion_351.jpg,laion_351.jpg,True,0.8658027648925781,0.05140590000155498,digital painting
+CLIP,laion_352,laion_352.jpg,laion_352.jpg,True,0.8290681838989258,0.048925399998552166,photograph
+CLIP,laion_353,laion_353.jpg,laion_353.jpg,True,0.881775438785553,0.048313200000848155,logo
+CLIP,laion_354,laion_354.jpg,laion_354.jpg,True,0.8737583756446838,0.04972369999813964,photograph
+CLIP,laion_355,laion_355.jpg,laion_355.jpg,True,0.9701852798461914,0.05164190000141389,collage
+CLIP,laion_356,laion_356.jpg,laion_356.jpg,True,0.921522855758667,0.05385740000201622,ambiguous or mixed
+CLIP,laion_357,laion_357.jpg,laion_357.jpg,True,0.9150747060775757,0.05110910000075819,photograph
+CLIP,laion_358,laion_358.jpg,laion_358.jpg,True,0.9233718514442444,0.04766649999874062,photograph
+CLIP,laion_359,laion_359.jpg,laion_359.jpg,True,0.9427453279495239,0.050329099998634774,photograph
+CLIP,laion_360,laion_360.jpg,laion_360.jpg,True,0.9077363610267639,0.053566099999443395,collage
+CLIP,laion_361,laion_361.jpg,laion_361.jpg,True,0.928001880645752,0.04972049999923911,ambiguous or mixed
+CLIP,laion_362,laion_362.jpg,laion_362.jpg,True,0.859487771987915,0.050241600001754705,digital painting
+CLIP,laion_363,laion_363.jpg,laion_363.jpg,True,0.8885552883148193,0.05129719999968074,digital painting
+CLIP,laion_364,laion_364.jpg,laion_364.jpg,True,0.8835182785987854,0.0473372999986168,photograph
+CLIP,laion_365,laion_365.jpg,laion_365.jpg,True,0.930393397808075,0.05636589999994612,photograph
+CLIP,laion_366,laion_366.jpg,laion_366.jpg,True,0.9176279306411743,0.05093960000158404,ambiguous or mixed
+CLIP,laion_367,laion_367.jpg,laion_367.jpg,True,0.8716773986816406,0.05307399999946938,photograph
+CLIP,laion_368,laion_368.jpg,laion_368.jpg,True,0.9093875885009766,0.050420800002029864,ambiguous or mixed
+CLIP,laion_369,laion_369.jpg,laion_369.jpg,True,0.9525307416915894,0.06518800000048941,digital painting
+CLIP,laion_370,laion_370.jpg,laion_370.jpg,True,0.8985872268676758,0.05312890000277548,ambiguous or mixed
+CLIP,laion_371,laion_371.jpg,laion_371.jpg,True,0.9436318874359131,0.04759639999974752,vector art
+CLIP,laion_372,laion_372.jpg,laion_372.jpg,True,0.9573616981506348,0.052714100002049236,photograph
+CLIP,laion_373,laion_373.jpg,laion_373.jpg,True,0.9335645437240601,0.049389900003006915,digital painting
+CLIP,laion_374,laion_374.jpg,laion_374.jpg,True,0.927911102771759,0.048598700002912665,logo
+CLIP,laion_375,laion_375.jpg,laion_375.jpg,True,0.912041425704956,0.04894380000041565,ambiguous or mixed
+CLIP,laion_376,laion_376.jpg,laion_376.jpg,True,0.8299708366394043,0.05126489999747719,photograph
+CLIP,laion_377,laion_377.jpg,laion_377.jpg,True,0.9218013286590576,0.05051869999806513,collage
+CLIP,laion_378,laion_378.jpg,laion_378.jpg,True,0.8895060420036316,0.0512985999994271,photograph
+CLIP,laion_379,laion_379.jpg,laion_379.jpg,True,0.9231239557266235,0.05151110000224435,ambiguous or mixed
+CLIP,laion_380,laion_380.jpg,laion_380.jpg,True,0.9003070592880249,0.05151389999809908,ambiguous or mixed
+CLIP,laion_381,laion_381.jpg,laion_470.jpg,False,0.7347292900085449,0.04934739999953308,photograph
+CLIP,laion_382,laion_382.jpg,laion_382.jpg,True,0.9011116027832031,0.05159099999946193,photograph
+CLIP,laion_383,laion_383.jpg,laion_383.jpg,True,0.9069920778274536,0.04841830000077607,ambiguous or mixed
+CLIP,laion_384,laion_384.jpg,laion_384.jpg,True,0.8673590421676636,0.05019200000242563,ambiguous or mixed
+CLIP,laion_385,laion_385.jpg,laion_385.jpg,True,0.909575343132019,0.04895010000109323,ambiguous or mixed
+CLIP,laion_386,laion_386.jpg,laion_386.jpg,True,0.9076125025749207,0.04914220000136993,photograph
+CLIP,laion_387,laion_387.jpg,laion_387.jpg,True,0.8722735643386841,0.04828499999712221,photograph
+CLIP,laion_388,laion_388.jpg,laion_388.jpg,True,0.9377402067184448,0.048795099999551894,photograph
+CLIP,laion_389,laion_389.jpg,laion_389.jpg,True,0.9062359929084778,0.05154990000301041,ambiguous or mixed
+CLIP,laion_390,laion_390.jpg,laion_390.jpg,True,0.9316328763961792,0.04921400000239373,ambiguous or mixed
+CLIP,laion_391,laion_391.jpg,laion_206.jpg,False,0.9516410827636719,0.04807720000098925,vector art
+CLIP,laion_392,laion_392.jpg,laion_392.jpg,True,0.9175191521644592,0.04987500000061118,photograph
+CLIP,laion_393,laion_393.jpg,laion_393.jpg,True,0.9267157316207886,0.049731099999917205,photograph
+CLIP,laion_394,laion_394.jpg,laion_394.jpg,True,0.9196981191635132,0.053396999999677064,photograph
+CLIP,laion_395,laion_395.jpg,laion_395.jpg,True,0.8867670297622681,0.05123300000195741,ambiguous or mixed
+CLIP,laion_396,laion_396.jpg,laion_396.jpg,True,0.908128559589386,0.05001959999935934,photograph
+CLIP,laion_397,laion_397.jpg,laion_397.jpg,True,0.9311050176620483,0.05034230000092066,logo
+CLIP,laion_398,laion_398.jpg,laion_398.jpg,True,0.9411382675170898,0.049994500001048436,digital painting
+CLIP,laion_399,laion_399.jpg,laion_399.jpg,True,0.8080505132675171,0.049025000000256114,ambiguous or mixed
+CLIP,laion_400,laion_400.jpg,laion_400.jpg,True,0.8530357480049133,0.05298000000038883,photograph
+CLIP,laion_401,laion_401.jpg,laion_401.jpg,True,0.9184954166412354,0.04999300000054063,ambiguous or mixed
+CLIP,laion_402,laion_402.jpg,laion_402.jpg,True,0.9460639953613281,0.049453299998276634,ambiguous or mixed
+CLIP,laion_403,laion_403.jpg,laion_403.jpg,True,0.969177782535553,0.050580799997987924,digital painting
+CLIP,laion_404,laion_404.jpg,laion_404.jpg,True,0.8907982110977173,0.052576399997633416,digital painting
+CLIP,laion_405,laion_405.jpg,laion_405.jpg,True,0.9308664798736572,0.04942519999895012,logo
+CLIP,laion_406,laion_406.jpg,laion_406.jpg,True,0.9354802370071411,0.04985390000001644,logo
+CLIP,laion_407,laion_407.jpg,laion_407.jpg,True,0.9052592515945435,0.04874990000098478,photograph
+CLIP,laion_408,laion_408.jpg,laion_408.jpg,True,0.9630625247955322,0.048516999999264954,logo
+CLIP,laion_409,laion_409.jpg,laion_409.jpg,True,0.9174603223800659,0.051211800000601215,ambiguous or mixed
+CLIP,laion_410,laion_410.jpg,laion_410.jpg,True,0.8988125920295715,0.050972600001841784,photograph
+CLIP,laion_411,laion_411.jpg,laion_411.jpg,True,0.8544034957885742,0.05158020000089891,digital painting
+CLIP,laion_412,laion_412.jpg,laion_412.jpg,True,0.9127932190895081,0.051756000000750646,ambiguous or mixed
+CLIP,laion_413,laion_413.jpg,laion_413.jpg,True,0.917323112487793,0.05218619999868679,ambiguous or mixed
+CLIP,laion_414,laion_414.jpg,laion_414.jpg,True,0.9527826905250549,0.051756499997281935,logo
+CLIP,laion_415,laion_415.jpg,laion_415.jpg,True,0.9469013810157776,0.0535678000014741,photograph
+CLIP,laion_416,laion_416.jpg,laion_416.jpg,True,0.8982236385345459,0.05016969999996945,ambiguous or mixed
+CLIP,laion_417,laion_417.jpg,laion_417.jpg,True,0.9061772227287292,0.050273000000743195,photograph
+CLIP,laion_418,laion_418.jpg,laion_418.jpg,True,0.9271835088729858,0.050043100000038976,photograph
+CLIP,laion_419,laion_419.jpg,laion_419.jpg,True,0.8931337594985962,0.05163600000014412,photograph
+CLIP,laion_420,laion_420.jpg,laion_420.jpg,True,0.8972160816192627,0.05528319999939413,photograph
+CLIP,laion_421,laion_421.jpg,laion_421.jpg,True,0.9179626107215881,0.053924200001347344,ambiguous or mixed
+CLIP,laion_422,laion_422.jpg,laion_422.jpg,True,0.9213823676109314,0.055695699997158954,ambiguous or mixed
+CLIP,laion_423,laion_423.jpg,laion_423.jpg,True,0.9316320419311523,0.05195319999984349,ambiguous or mixed
+CLIP,laion_424,laion_424.jpg,laion_424.jpg,True,0.9478452801704407,0.05460099999982049,photograph
+CLIP,laion_425,laion_425.jpg,laion_425.jpg,True,0.8792483806610107,0.05293580000216025,photograph
+CLIP,laion_426,laion_426.jpg,laion_426.jpg,True,0.8962903022766113,0.050909999998111743,ambiguous or mixed
+CLIP,laion_427,laion_427.jpg,laion_427.jpg,True,0.9130010604858398,0.05141360000197892,photograph
+CLIP,laion_428,laion_428.jpg,laion_428.jpg,True,0.8838703632354736,0.04945880000013858,photograph
+CLIP,laion_429,laion_429.jpg,laion_429.jpg,True,0.8975101709365845,0.04888620000201627,photograph
+CLIP,laion_430,laion_430.jpg,laion_430.jpg,True,0.9385353922843933,0.05175269999745069,logo
+CLIP,laion_431,laion_431.jpg,laion_431.jpg,True,0.9208045601844788,0.05176030000075116,photograph
+CLIP,laion_432,laion_432.jpg,laion_432.jpg,True,0.917827844619751,0.05018010000276263,logo
+CLIP,laion_433,laion_433.jpg,laion_433.jpg,True,0.9511977434158325,0.05763700000170502,photograph
+CLIP,laion_434,laion_434.jpg,laion_434.jpg,True,0.8441258072853088,0.05045369999788818,logo
+CLIP,laion_435,laion_435.jpg,laion_435.jpg,True,0.9134033918380737,0.05256509999890113,ambiguous or mixed
+CLIP,laion_436,laion_436.jpg,laion_436.jpg,True,0.9369739294052124,0.052412000000913395,photograph
+CLIP,laion_437,laion_437.jpg,laion_437.jpg,True,0.8845425844192505,0.055107500000303844,photograph
+CLIP,laion_438,laion_438.jpg,laion_438.jpg,True,0.9354000091552734,0.05362450000029639,ambiguous or mixed
+CLIP,laion_439,laion_439.jpg,laion_439.jpg,True,0.9316664934158325,0.053798100001586135,logo
+CLIP,laion_440,laion_440.jpg,laion_440.jpg,True,0.9034141302108765,0.055162500000733417,digital painting
+CLIP,laion_441,laion_441.jpg,laion_441.jpg,True,0.903268039226532,0.058564300001307856,ambiguous or mixed
+CLIP,laion_442,laion_442.jpg,laion_442.jpg,True,0.922762393951416,0.05177489999914542,photograph
+CLIP,laion_443,laion_443.jpg,laion_443.jpg,True,0.9486961960792542,0.05487540000103763,photograph
+CLIP,laion_444,laion_444.jpg,laion_444.jpg,True,0.863042950630188,0.051262500001030276,photograph
+CLIP,laion_445,laion_445.jpg,laion_445.jpg,True,0.9036630988121033,0.053740499999548774,ambiguous or mixed
+CLIP,laion_446,laion_446.jpg,laion_446.jpg,True,0.8885819911956787,0.050224700000399025,photograph
+CLIP,laion_447,laion_447.jpg,laion_447.jpg,True,0.899640679359436,0.0510534999993979,ambiguous or mixed
+CLIP,laion_448,laion_448.jpg,laion_448.jpg,True,0.9148610830307007,0.052056500000617234,photograph
+CLIP,laion_449,laion_449.jpg,laion_449.jpg,True,0.7626885175704956,0.048211400000582216,ambiguous or mixed
+CLIP,laion_450,laion_450.jpg,laion_450.jpg,True,0.932558536529541,0.049063000002206536,logo
+CLIP,laion_451,laion_451.jpg,laion_451.jpg,True,0.8872925639152527,0.04842140000255313,photograph
+CLIP,laion_452,laion_452.jpg,laion_452.jpg,True,0.9125648140907288,0.051371799996559275,photograph
+CLIP,laion_453,laion_453.jpg,laion_453.jpg,True,0.892196536064148,0.04840449999755947,digital painting
+CLIP,laion_454,laion_454.jpg,laion_454.jpg,True,0.8829454183578491,0.049847400001453934,photograph
+CLIP,laion_455,laion_455.jpg,laion_455.jpg,True,0.9004053473472595,0.051187699998990865,collage
+CLIP,laion_456,laion_456.jpg,laion_456.jpg,True,0.833945631980896,0.05018660000132513,ambiguous or mixed
+CLIP,laion_457,laion_457.jpg,laion_457.jpg,True,0.9260408282279968,0.05128080000213231,ambiguous or mixed
+CLIP,laion_458,laion_458.jpg,laion_458.jpg,True,0.9222853183746338,0.04972290000296198,logo
+CLIP,laion_459,laion_459.jpg,laion_459.jpg,True,0.8889678716659546,0.04936889999953564,vector art
+CLIP,laion_460,laion_460.jpg,laion_460.jpg,True,0.8713070154190063,0.05115440000008675,ambiguous or mixed
+CLIP,laion_461,laion_461.jpg,laion_461.jpg,True,0.9348809719085693,0.05093230000056792,ambiguous or mixed
+CLIP,laion_462,laion_462.jpg,laion_462.jpg,True,0.8618363738059998,0.05568459999994957,photograph
+CLIP,laion_463,laion_463.jpg,laion_463.jpg,True,0.9129798412322998,0.05016329999853042,photograph
+CLIP,laion_464,laion_464.jpg,laion_464.jpg,True,0.8980882167816162,0.050519899999926565,ambiguous or mixed
+CLIP,laion_465,laion_465.jpg,laion_465.jpg,True,0.9242602586746216,0.05065699999977369,ambiguous or mixed
+CLIP,laion_466,laion_466.jpg,laion_466.jpg,True,0.8827041387557983,0.05027440000048955,photograph
+CLIP,laion_467,laion_467.jpg,laion_467.jpg,True,0.9326512217521667,0.05204729999968549,logo
+CLIP,laion_468,laion_468.jpg,laion_468.jpg,True,0.7737345695495605,0.04945109999971464,photograph
+CLIP,laion_469,laion_469.jpg,laion_469.jpg,True,0.8958593606948853,0.04875259999971604,photograph
+CLIP,laion_470,laion_470.jpg,laion_470.jpg,True,0.8881381750106812,0.05109969999830355,digital painting
+CLIP,laion_471,laion_471.jpg,laion_471.jpg,True,0.93870609998703,0.049305299999105046,digital painting
+CLIP,laion_472,laion_472.jpg,laion_472.jpg,True,0.8497795462608337,0.05159969999658642,logo
+CLIP,laion_473,laion_473.jpg,laion_473.jpg,True,0.8853724002838135,0.054621200000838144,ambiguous or mixed
+CLIP,laion_474,laion_474.jpg,laion_474.jpg,True,0.9316676259040833,0.049811000000772765,ambiguous or mixed
+CLIP,laion_475,laion_475.jpg,laion_475.jpg,True,0.8057966828346252,0.0491645999973116,ambiguous or mixed
+CLIP,laion_476,laion_476.jpg,laion_476.jpg,True,0.966870903968811,0.04989529999875231,photograph
+CLIP,laion_477,laion_477.jpg,laion_477.jpg,True,0.8880329728126526,0.0743800000018382,photograph
+CLIP,laion_478,laion_478.jpg,laion_478.jpg,True,0.921567440032959,0.05492669999875943,ambiguous or mixed
+CLIP,laion_479,laion_479.jpg,laion_479.jpg,True,0.9078830480575562,0.051202599999669474,photograph
+CLIP,laion_480,laion_480.jpg,laion_480.jpg,True,0.9199392795562744,0.05645799999911105,photograph
+CLIP,laion_481,laion_481.jpg,laion_481.jpg,True,0.9400151968002319,0.052516599997034064,photograph
+CLIP,laion_482,laion_482.jpg,laion_482.jpg,True,0.9588040113449097,0.050228000000061,vector art
+CLIP,laion_483,laion_483.jpg,laion_483.jpg,True,0.9219484329223633,0.05336410000018077,digital painting
+CLIP,laion_484,laion_484.jpg,laion_484.jpg,True,0.9228882789611816,0.05061829999976908,photograph
+CLIP,laion_485,laion_485.jpg,laion_485.jpg,True,0.9615085124969482,0.05518120000124327,photograph
+CLIP,laion_486,laion_486.jpg,laion_486.jpg,True,0.8893818855285645,0.051792300000670366,photograph
+CLIP,laion_487,laion_487.jpg,laion_487.jpg,True,0.9465261697769165,0.0554013999972085,photograph
+CLIP,laion_488,laion_488.jpg,laion_488.jpg,True,0.8941891193389893,0.05531699999846751,photograph
+CLIP,laion_489,laion_489.jpg,laion_489.jpg,True,0.9150867462158203,0.04867340000055265,photograph
+CLIP,laion_490,laion_490.jpg,laion_490.jpg,True,0.9129807949066162,0.05031370000142488,photograph
+CLIP,laion_491,laion_491.jpg,laion_491.jpg,True,0.933529257774353,0.04955840000184253,ambiguous or mixed
+CLIP,laion_492,laion_492.jpg,laion_492.jpg,True,0.8222553730010986,0.04899420000219834,photograph
+CLIP,laion_493,laion_493.jpg,laion_493.jpg,True,0.9657391309738159,0.05157329999929061,collage
+CLIP,laion_494,laion_494.jpg,laion_494.jpg,True,0.9208136796951294,0.050139900002250215,ambiguous or mixed
+CLIP,laion_495,laion_495.jpg,laion_495.jpg,True,0.8866854906082153,0.04943730000013602,photograph
+CLIP,laion_496,laion_496.jpg,laion_496.jpg,True,0.8760620951652527,0.04974640000000363,photograph
+CLIP,laion_497,laion_497.jpg,laion_497.jpg,True,0.9327579736709595,0.05008829999860609,vector art
+CLIP,laion_498,laion_498.jpg,laion_498.jpg,True,0.9211556911468506,0.04972469999847817,photograph
+CLIP,laion_499,laion_499.jpg,laion_499.jpg,True,0.8944911360740662,0.05115319999822532,photograph
+CLIP,laion_500,laion_500.jpg,laion_500.jpg,True,0.8949268460273743,0.05050689999916358,ambiguous or mixed

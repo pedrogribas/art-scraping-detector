@@ -1,4 +1,4 @@
-# Auditor de Datasets
+# Auditor de Datasets — PAVD
 
 **Análise comparativa de técnicas de similaridade visual para identificação de obras artísticas em datasets**
 
@@ -156,3 +156,129 @@ As 500 JPEG entram no Git **só para fins acadêmicos**. São obras de terceiros
 ---
 
 Desenvolvido por **Pedro Garcia Ribas** — IFMG Campus Sabará.
+
+## PAVD modular
+
+O diretório `pavd/` contém uma implementação modular do Protocolo de Auditoria
+Visual de Datasets. A camada nova não remove os módulos legados de `src/`,
+porque eles reproduzem a prova oficial de 500 imagens e os resultados
+publicados no TCC. O PAVD reutiliza a galeria local e permite evoluir para uma
+galeria expandida sem adulterar os itens URL-only adicionais.
+
+Fluxo:
+
+```text
+metadados/galeria -> manifestos -> consultas degradadas
+    -> CLIP ViT-B/32 + FAISS Top-50
+    -> SIFT + Lowe + RANSAC
+    -> decisão técnica -> JSON por consulta + CSV agregado
+```
+
+### Instalação
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+`faiss-cpu` é o backend suportado por padrão. `faiss-gpu` pode ser usado em
+ambientes compatíveis, mas não é obrigatório e não foi necessário para os
+resultados oficiais.
+
+### Comandos do PAVD
+
+Os comandos não fazem download automaticamente. O diretório oficial existente
+`data/raw/` é aceito diretamente:
+
+```powershell
+python -m pavd.cli.build_gallery --source data/raw
+python -m pavd.cli.generate_queries --source data/raw --limit 500 --resume
+python -m pavd.cli.build_remote_manifest --limit 100
+python -m pavd.cli.classify_categories --source data/raw
+python -m pavd.cli.build_clip_index --source data/raw --limit 500
+python -m pavd.cli.run_block_a --source data/raw --queries data/queries/degraded --limit 500
+python -m pavd.cli.run_block_b --source data/raw --queries data/queries/degraded --limit 500
+python -m pavd.cli.run_block_c --source data/raw --queries data/queries/degraded --limit 500
+python -m pavd.cli.run_block_d --input data/reports/summary/open_set.csv
+python -m pavd.cli.run_tcc_evaluation
+python -m pavd.cli.build_tcc_report
+```
+
+O `--limit` permite testes rápidos e `--resume` evita regenerar consultas já
+existentes. A construção do índice CLIP exige o modelo configurado e pode
+consumir tempo e memória significativos. Para o experimento atual, o catálogo remoto contém 100 itens URL-only e as
+500 imagens oficiais permanecem locais. A expansão para aproximadamente 100
+mil continua documentada como uma etapa futura; nesse caso, use
+`config/default.yaml` para selecionar HNSW, IVF ou IVFPQ e ajuste os parâmetros
+do índice.
+
+O comando `build_remote_manifest` é o fluxo padrão para o catálogo remoto:
+ele percorre o streaming de metadados do subset LAION e grava somente
+identificadores, URLs, textos e scores, sem baixar nem decodificar imagens.
+Isso preserva a natureza URL-based do dataset. Embeddings visuais de 100 mil
+itens atuais exigem um índice visual pré-computado ou acesso remoto a um
+serviço de embeddings; metadados sozinhos não permitem executar CLIP local.
+
+O comando `download_gallery` permanece apenas como rota de aquisição
+opcional e bloqueada por padrão. Para usá-la conscientemente, é necessário
+informar `--allow-download`; seus arquivos locais não devem ser confundidos
+com a galeria URL-only do protocolo.
+
+As 500 imagens oficiais são classificadas por CLIP zero-shot nas categorias
+fotografia, pintura digital, arte vetorial, logo, colagem e ambígua/mista.
+O resultado é operacional, inclui confiança e fica marcado como `pending`
+até revisão manual; não é uma verdade ontológica sobre a imagem. O mesmo
+manifesto registra atributos secundários independentes: colorido ou
+preto-e-branco, composição (quadrada/retrato/paisagem), nível de textura,
+densidade de bordas, saturação média, texto visível, rosto visível e fundo
+uniforme ou complexo. Esses atributos não substituem as categorias e podem
+ser revisados separadamente.
+
+O guia completo, com a justificativa de cada método, categoria, limiar,
+formato de entrada e limitação, está em
+[`docs/PAVD_GUIDE.md`](docs/PAVD_GUIDE.md).
+
+Os comandos `run_tcc_evaluation` e `build_tcc_report` geram CSV, JSON e
+gráficos em `results/pavd/`. O Bloco A mede os 500 itens. O Bloco B, quando
+usa somente o manifesto URL-only, registra cobertura e custo estimado; não
+preenche Top-1, Recall@K ou MRR sem embeddings visuais pré-computados.
+
+Os resultados históricos medidos na CPU local foram:
+
+| Método | Acertos | Top-1 | Busca média |
+|---|---:|---:|---:|
+| SSIM | 443/500 | 88,6% | 0,3290 s |
+| SIFT | 496/500 | 99,2% | 0,0368 s |
+| CLIP | 498/500 | 99,6% | 0,0543 s |
+
+São resultados de conjunto fechado, com a fonte presente, e não propriedades
+de todo o LAION.
+
+### Saídas e rastreabilidade
+
+O PAVD escreve o manifesto da galeria em Parquet, o manifesto das consultas
+em `data/queries/query_manifest.parquet`, embeddings e índice FAISS em
+`data/embeddings/`, relatórios individuais JSON em
+`data/reports/per_query/` e tabelas agregadas em
+`data/reports/summary/`. Cada item é associado a `gallery_id`, SHA-256,
+dimensões, MIME type, status de download e informações de duplicidade.
+
+### Testes
+
+```powershell
+pytest -q
+```
+
+Os testes cobrem semente determinística, degradação, hashes, métricas, regra
+de conjunto aberto e cálculos de ranking. A prova histórica completa continua
+disponível em `python -m src.main_eval`; seus resultados não são sobrescritos
+pela camada PAVD.
+
+### Limites éticos
+
+A presença em uma galeria experimental não prova autoria, titularidade,
+ausência de licença, scraping ilícito, treinamento efetivo, memorização ou
+infração autoral. O sistema produz evidência técnica para auditoria e revisão
+humana; não substitui perícia, cadeia de custódia ou decisão judicial. Consulte
+`ETHICS.md`.
