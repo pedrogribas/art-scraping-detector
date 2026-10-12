@@ -1,0 +1,1 @@
+"""Componentes centrais do PAVD."""

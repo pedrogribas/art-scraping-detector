@@ -1,0 +1,20 @@
+{
+  "status": "metadata_only",
+  "remote_url_only_target": 100,
+  "current_experiment": "500 local official + 100 URL-only",
+  "official_local_rows": 500,
+  "remote_manifest_rows": 100,
+  "combined_catalog_rows": 600,
+  "remote_manifest_reaches_target": true,
+  "visual_metrics_available": false,
+  "reason": "metadata/URLs do not contain image bytes or CLIP embeddings",
+  "estimated_clip_embedding_gib_float32": 0.0011444091796875,
+  "estimated_flat_index_gib_float32": 0.0011444091796875,
+  "estimated_query_dot_products_for_500_queries": 153600000,
+  "required_for_measured_block_b": [
+    "precomputed CLIP embeddings aligned to gallery_id",
+    "embedding provenance and model version",
+    "FAISS index parameters",
+    "same 500 degraded queries"
+  ]
+}

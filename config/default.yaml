@@ -1,0 +1,43 @@
+model_name: openai/clip-vit-base-patch32
+device: auto
+gallery:
+  source_dataset: laion/laion2B-en-aesthetic
+  image_dir: data/gallery/images
+  metadata_path: data/gallery/gallery_index.parquet
+  official_dir: data/raw
+  official_size: 500
+  expanded_size: 100000
+degradation:
+  scale_factor: 0.8
+  crop_fraction: 0.05
+  gaussian_sigma: 8.0
+  jpeg_quality: 35
+  interpolation: INTER_AREA
+  min_crop_size: 16
+sift:
+  max_keypoints: 500
+  lowe_ratio: 0.75
+  ransac_reproj_threshold: 5.0
+  ransac_confidence: 0.995
+  ransac_max_iters: 2000
+  min_keypoints: 50
+  min_matches: 10
+  min_inliers: 10
+  min_inlier_ratio: 0.30
+  max_reprojection_error: 5.0
+open_set:
+  absolute_threshold: 0.82
+  secondary_threshold: 0.75
+  margin_threshold: 0.10
+faiss:
+  backend: flat
+  k: 50
+  hnsw_m: 32
+  ef_construction: 80
+  ef_search: 64
+  nlist: 4096
+  nprobe: 16
+  nbits: 8
+reports_dir: data/reports
+queries_dir: data/queries/degraded
+embeddings_dir: data/embeddings

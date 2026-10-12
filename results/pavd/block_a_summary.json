@@ -1,0 +1,38 @@
+{
+  "summaries": [
+    {
+      "method": "SSIM",
+      "gallery_size": 500,
+      "query_count": 500,
+      "correct": 443,
+      "top1": 0.886,
+      "indexing_seconds": 0.9987232999992557,
+      "mean_search_seconds": 0.3361298024000062
+    },
+    {
+      "method": "SIFT",
+      "gallery_size": 500,
+      "query_count": 500,
+      "correct": 496,
+      "top1": 0.992,
+      "indexing_seconds": 20.577746200000547,
+      "mean_search_seconds": 0.03716232459999446
+    },
+    {
+      "method": "CLIP",
+      "gallery_size": 500,
+      "query_count": 500,
+      "correct": 498,
+      "top1": 0.996,
+      "indexing_seconds": 25.510907300002145,
+      "mean_search_seconds": 0.05385170380005729
+    }
+  ],
+  "methodology": {
+    "gallery": "C:\\Users\\pedro\\OneDrive\\\u00c1rea de Trabalho\\Projetos\\copilot-worktrees\\art-scraping-detector\\pedrogribas-cautious-memory\\data\\raw",
+    "queries": "C:\\Users\\pedro\\OneDrive\\\u00c1rea de Trabalho\\Projetos\\copilot-worktrees\\art-scraping-detector\\pedrogribas-cautious-memory\\data\\adulterated",
+    "closed_set": true,
+    "query_generation": "legacy fixed degradation preserved for official results"
+  },
+  "created_at": "2026-10-12T02:51:03Z"
+}
